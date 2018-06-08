@@ -1,4 +1,7 @@
 import React from 'react'
+import {connect} from 'react-redux'
+import PropTypes from 'prop-types'
+import { createPost } from '../actions/postActions'
 
 class Postform extends React.Component{
 
@@ -19,16 +22,7 @@ onSubmit = (e) => {
     title: this.state.title,
     body: this.state.body
   }
-
-  fetch('http://localhost:3000/api/v1/posts',{
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json'
-    },
-    body: JSON.stringify(post)
-  })
-  .then(res => res.json())
-  .then(post => console.log(post))
+  this.props.createPost(post);
 }
 
 
@@ -55,4 +49,9 @@ onSubmit = (e) => {
   }
 }
 
-export default Postform
+Postform.propTypes = {
+  createPost: PropTypes.func.isRequired
+}
+
+
+export default connect(null,{createPost})(Postform)
