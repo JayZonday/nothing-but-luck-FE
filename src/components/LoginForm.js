@@ -1,6 +1,9 @@
 import React from 'react';
+import {connect} from 'react-redux'
+import { login } from '../actions/loginActions'
 
-class SignupForm extends React.Component{
+
+class LoginForm extends React.Component{
 
   state = {
     username: "",
@@ -15,14 +18,14 @@ class SignupForm extends React.Component{
 
   onSubmit = (e) => {
     e.preventDefault();
-    console.log(this.state)
+    this.props.dispatch(login(this.state.username, this.state.password));
   }
 
   render() {
 
     return (
       <div>
-        <h1>Join Our Community!</h1>
+        <h1>Spread The Luck!</h1>
         <div>
           <form onSubmit={this.onSubmit}>
           <div>
@@ -33,7 +36,7 @@ class SignupForm extends React.Component{
             <label>Password: </label>
             <input  type="password" name="password" onChange={this.onChange} value={this.state.password}></input>
             <br />
-            <button type='submit'>Sign-Up!</button>
+            <button type='submit'>Login</button>
           </div>
           </form>
         </div>
@@ -41,7 +44,9 @@ class SignupForm extends React.Component{
       </div>
     );
   }
-
 }
 
-export default SignupForm;
+
+
+
+export default connect()(LoginForm);
