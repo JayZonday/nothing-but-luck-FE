@@ -36,11 +36,11 @@ onSubmit = (e) => {
         <div>
           <label>Title: </label>
           <input type="text" name="title" onChange={this.onChange} value={this.state.title}></input>
-          <br></br>
-          <br></br>
+          <br />
+          <br />
           <label>Body: </label>
           <textarea name="body" cols="10" rows="1" onChange={this.onChange} value={this.state.body}></textarea>
-          <br></br>
+          <br />
           <button type='submit'>Submit Post</button>
         </div>
         </form>
