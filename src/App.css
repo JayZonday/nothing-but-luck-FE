@@ -1,26 +1,142 @@
-.App {
-  width: 90%;
-  margin: auto;
+/*Main Background image for whole app*/
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-image: url('https://images7.alphacoders.com/662/662365.jpg ');
+  background-size: cover;
+  color:white;
+}
+/* https://hdwallsource.com/img/2014/12/basketball-wallpaper-13988-14427-hd-wallpapers.jpg */
+/* https://images7.alphacoders.com/662/662365.jpg  */
+/*Login Input Styling*/
+input#submit{
+  margin-bottom: 10px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  border: 4px solid green;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 10px;
+  margin-top: -5px;
+  padding: 4px;
+  border-radius: 2pc;
+  width: 125px;
+  font-weight: bold;
+}
+input#submit:hover{
+  background-color: #3e8e41; /* Green */
+  color: white;
+  width: 200px;
+}
+input#submit:active{
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
 
+
+/*App Styling over main background image*/
+.App {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.8);
+  border: 5px solid black;
+  border-radius:  2pc;
+  width: 900px;
+  margin: 5% auto;
+}
+/*Main App Logo Styling*/
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 80px;
 }
+/*Main AppPage Logo Spinning Clover Sizing*/
+#clover{
+  height: 70px;
+  width: 70px;
+}
 
+/*Second background for Main Page*/
 .App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
+  background-color: rgba(210,180,150,0.8);
+  height: 355px;
+  width: 655px;
+  padding: 0px;
   color: white;
+  border: 4px solid white;
+  border-radius: 2pc;
+  align-content: center;
+  margin: 2% auto;
 }
 
+/*Main Page App Title Styling*/
 .App-title {
-  font-size: 1.5em;
+  font-size: 2.5em;
+  border: 5px solid black;
+  border-radius: 3pc;
+  background: rgba(0,0,0,0.7);
+  width: 585px;
+  height: auto;
+  margin: 2% auto;
+  text-shadow: 3px 2px green;
+  padding: 15px;
 }
 
-.App-intro {
+/*Seconday App Logo Styling*/
+#fanasty-logo{
+  height: 160px;
+  width: 250px;
+  margin-top: 5px;
+  margin-bottom: -20px;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+}
+
+/*Intro Text on Main Page*/
+#intro{
+  color:black;
   font-size: large;
+}
+
+
+
+
+/*General Stylings Buttons/Forms/Ect*/
+button{
+    margin-bottom: 10px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    border: 4px solid green;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    margin-top: -5px;
+    padding: 4px;
+    border-radius: 2pc;
+    width: 125px;
+    font-weight: bold;
+}
+
+button:hover{
+    background-color: #3e8e41; /* Green */
+    color: white;
+    width: 200px;
+}
+
+button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.fcontent{
+  text-align: center;
+  background: rgba(0, 0, 0, 0.7);
+  border: 5px solid black;
+  border-radius:  2pc;
+  width: 900px;
+  margin: 5% auto;
+  color: white
 }
 
 @keyframes App-logo-spin {

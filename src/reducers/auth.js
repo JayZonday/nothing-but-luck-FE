@@ -8,7 +8,7 @@ const initialAuthState = {
 const auth = (state = initialAuthState, action) => {
   switch(action.type) {
     case USER_LOGIN:
-      return {
+      return { 
       ...state,
       id: action.payload,
       token: action.payload
