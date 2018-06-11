@@ -2,6 +2,8 @@ import React from 'react'
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { fetchPosts } from '../actions/postActions';
+import Postform from './Postform';
+import {Route, Link, NavLink, Switch} from 'react-router-dom'
 
 
 class NbaForum extends React.Component{
@@ -17,18 +19,25 @@ class NbaForum extends React.Component{
   }
 
   render(){
-    const filteredPosts = this.props.posts.filter((post) => {
-      post.league === "NBA"
-    }).map(post => (
+    const postItems = this.props.posts.filter((post) => {
+      return post.league === "NBA"
+    })
+
+    const filtered = postItems.map(post => (
       <div key={post.id}>
         <h3>{post.title}</h3>
         <p>{post.body}</p>
       </div>
     ));
+    console.log(this.props.posts.league)
     return (
       <div>
-        <h1>NBA Posts</h1>
-        {filteredPosts}
+        <h1>NBA Forum</h1>
+        <hr />
+        <Postform />
+        <hr />
+        <h2>NBA Articles</h2>
+        {filtered}
       </div>
     )
   }

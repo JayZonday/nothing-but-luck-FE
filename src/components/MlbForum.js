@@ -2,7 +2,8 @@ import React from 'react'
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { fetchPosts } from '../actions/postActions';
-
+import Postform from './Postform';
+import {Route, Link, NavLink, Switch} from 'react-router-dom'
 
 class MlbForum extends React.Component{
 
@@ -17,19 +18,25 @@ class MlbForum extends React.Component{
   }
 
   render(){
-    const postItems = this.props.posts.filter( (post) => {
+    const postItems = this.props.posts.filter((post) => {
       return post.league === "MLB"
     })
-    postItems.map(post => (
+
+    const filtered = postItems.map(post => (
       <div key={post.id}>
         <h3>{post.title}</h3>
         <p>{post.body}</p>
       </div>
     ));
+    console.log(this.props.posts.league)
     return (
       <div>
-        <h1>MLB Posts</h1>
-        {postItems}
+        <h1>MLB Forum</h1>
+        <hr />
+        <Postform />
+        <hr />
+        <h2>MLB Articles</h2>
+        {filtered}
       </div>
     )
   }

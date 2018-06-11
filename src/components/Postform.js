@@ -2,6 +2,7 @@ import React from 'react'
 import {connect} from 'react-redux'
 import PropTypes from 'prop-types'
 import { createPost } from '../actions/postActions'
+import {Route, Link, NavLink, Switch} from 'react-router-dom'
 
 class Postform extends React.Component{
 
@@ -22,6 +23,7 @@ onSubmit = (e) => {
   const post = {
     title: this.state.title,
     body: this.state.body,
+    league: this.state.league,
     user_id: localStorage.user_id
   }
   this.props.createPost(post);
@@ -33,20 +35,20 @@ onSubmit = (e) => {
   render(){
     return (
       <div>
-        <h1>Add Posts</h1>
+        <h3>Add Posts</h3>
         <form onSubmit={this.onSubmit}>
         <div>
           <label>Title: </label>
           <input type="text" name="title" onChange={this.onChange} value={this.state.title}></input>
           <br />
           <label>League: </label>
-          <input type="text" name="league"  onChange={this.onChange} value={this.state.league}></input>
+          <input type="text" name="league" onChange={this.onChange} value={this.state.league}></input>
           <br />
           <br />
           <label>Body: </label>
           <textarea name="body" cols="10" rows="1" onChange={this.onChange} value={this.state.body}></textarea>
           <br />
-          <button type='submit'>Submit Post</button>
+          <button type='submit'>Spread The Luck</button>
         </div>
         </form>
       </div>

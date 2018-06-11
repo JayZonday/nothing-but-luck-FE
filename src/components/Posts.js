@@ -2,7 +2,8 @@ import React from 'react'
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { fetchPosts } from '../actions/postActions';
-
+import {Route, Link, NavLink, Switch} from 'react-router-dom'
+import Postform from './Postform';
 
 class Posts extends React.Component{
 
@@ -26,6 +27,7 @@ class Posts extends React.Component{
     return (
       <div>
         <h1>All Posts</h1>
+        <Postform />
         {postItems}
       </div>
     )

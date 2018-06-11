@@ -2,7 +2,8 @@ import React from 'react'
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { fetchPosts } from '../actions/postActions';
-
+import Postform from './Postform';
+import {Route, Link, NavLink, Switch} from 'react-router-dom'
 
 class NflForum extends React.Component{
 
@@ -18,22 +19,28 @@ class NflForum extends React.Component{
 
   render(){
     const postItems = this.props.posts.filter((post) => {
-      post.league === "NFL"
+      return post.league === "NFL"
     })
-    const fPostItems = postItems.map(post => (
+
+    const filtered = postItems.map(post => (
       <div key={post.id}>
         <h3>{post.title}</h3>
         <p>{post.body}</p>
       </div>
     ));
+    console.log(this.props.posts.league)
     return (
       <div>
-        <h1>NFL Posts</h1>
-        {fPostItems}
+        <h1>NFL Forum</h1>
+        <hr />
+        <Postform />
+        <hr />
+        <h2>NFL Articles</h2>
+        {filtered}
       </div>
     )
   }
-}
+  }
 
 NflForum.propTypes = {
   fetchPosts: PropTypes.func.isRequired,
