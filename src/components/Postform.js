@@ -37,6 +37,9 @@ onSubmit = (e) => {
           <label>Title: </label>
           <input type="text" name="title" onChange={this.onChange} value={this.state.title}></input>
           <br />
+          <label>League: </label>
+          <input type="text" name="league"  onChange={this.onChange} value={this.state.league}></input>
+          <br />
           <br />
           <label>Body: </label>
           <textarea name="body" cols="10" rows="1" onChange={this.onChange} value={this.state.body}></textarea>
