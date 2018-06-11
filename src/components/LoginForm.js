@@ -1,7 +1,7 @@
 import React from 'react';
 import {connect} from 'react-redux'
 import { login } from '../actions/loginActions'
-
+import PropTypes from 'prop-types'
 
 class LoginForm extends React.Component{
 
@@ -16,10 +16,11 @@ class LoginForm extends React.Component{
     })
   }
 
-  onSubmit = (e) => {
-    e.preventDefault();
-    this.props.dispatch(login(this.state.username, this.state.password));
+  handleSubmit = (event) => {
+    event.preventDefault();
+    this.props.login(this.state.username, this.state.password);
   }
+
 
   render() {
 
@@ -27,14 +28,14 @@ class LoginForm extends React.Component{
       <div>
         <h1>Spread The Luck!</h1>
         <div>
-          <form onSubmit={this.onSubmit}>
+          <form onSubmit={this.handleSubmit}>
           <div>
-            <label>Username: </label>
+            <label htmlFor="username">Username: </label>
             <input type="text" name="username" onChange={this.onChange} value={this.state.username}></input>
             <br />
             <br />
-            <label>Password: </label>
-            <input  type="password" name="password" onChange={this.onChange} value={this.state.password}></input>
+            <label htmlFor="password">Password: </label>
+            <input type="password" name="password" onChange={this.onChange} value={this.state.password}></input>
             <br />
             <button type='submit'>Login</button>
           </div>
@@ -47,6 +48,9 @@ class LoginForm extends React.Component{
 }
 
 
+LoginForm.propTypes = {
+  login: PropTypes.func.isRequired
+}
 
 
-export default connect()(LoginForm);
+export default connect(null,{login})(LoginForm)

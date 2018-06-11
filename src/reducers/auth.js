@@ -6,12 +6,14 @@ const initialAuthState = {
 };
 
 const auth = (state = initialAuthState, action) => {
+  console.log(action)
   switch(action.type) {
     case USER_LOGIN:
-      return { 
+      return {
       ...state,
-      id: action.payload,
-      token: action.payload
+      id: action.user_id,
+      token: action.token,
+      username: action.username
     }
     default:
       return state;

@@ -7,7 +7,8 @@ class Postform extends React.Component{
 
     state = {
       title: "",
-      body: ""
+      body: "",
+      league: "",
     }
 
 onChange = (e) => {
@@ -20,7 +21,8 @@ onSubmit = (e) => {
   e.preventDefault();
   const post = {
     title: this.state.title,
-    body: this.state.body
+    body: this.state.body,
+    user_id: localStorage.user_id
   }
   this.props.createPost(post);
 }
