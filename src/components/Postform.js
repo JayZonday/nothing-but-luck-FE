@@ -41,8 +41,18 @@ onSubmit = (e) => {
           <label>Title: </label>
           <input type="text" name="title" onChange={this.onChange} value={this.state.title}></input>
           <br />
+          <br />
           <label>League: </label>
-          <input type="text" name="league" onChange={this.onChange} value={this.state.league}></input>
+          <br />
+          <br />
+          <label>NBA: </label>
+          <input type="checkbox" id="league" name="league" onChange={this.onChange} value="NBA"></input>
+          <br />
+          <label>NFL: </label>
+          <input type="checkbox" id="league" name="league" onChange={this.onChange} value="NFL"></input>
+          <br />
+          <label>MLB: </label>
+          <input type="checkbox" id="league" name="league" onChange={this.onChange} value="MLB"></input>
           <br />
           <br />
           <label>Body: </label>

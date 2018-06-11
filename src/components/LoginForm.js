@@ -38,8 +38,9 @@ class LoginForm extends React.Component{
             <label htmlFor="password">Password: </label>
             <input type="password" name="password" onChange={this.onChange} value={this.state.password}></input>
             <br />
+            <br />
             <button type='submit'>Spread The Luck</button>
-            <Link to='/signup'>Don't Have an Account?</Link>
+            <button><Link to='/signup'>Don't Have an Account?</Link></button>
           </div>
           </form>
         </div>

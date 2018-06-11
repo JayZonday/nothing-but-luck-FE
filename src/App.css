@@ -3,7 +3,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background-image: url('https://images7.alphacoders.com/662/662365.jpg ');
+  background-image: url('https://images7.alphacoders.com/662/662365.jpg');
   background-size: cover;
   color:white;
 }
@@ -113,7 +113,7 @@ button{
     margin-top: -5px;
     padding: 4px;
     border-radius: 2pc;
-    width: 125px;
+    width: 150px;
     font-weight: bold;
 }
 

@@ -5,6 +5,8 @@ import { fetchPosts } from '../actions/postActions';
 import Postform from './Postform';
 import {Route, Link, NavLink, Switch} from 'react-router-dom'
 
+import './mlb.css';
+
 class MlbForum extends React.Component{
 
   componentDidMount(){

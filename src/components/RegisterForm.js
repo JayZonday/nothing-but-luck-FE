@@ -50,4 +50,4 @@ class RegisterForm extends React.Component{
 
 
 
-export default connect()(RegisterForm)
+export default connect(null,{register})(RegisterForm)

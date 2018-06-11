@@ -10,6 +10,8 @@ import Nav from './components/Nav';
 import NflForum from './components/NflForum'
 import NbaForum from './components/NbaForum'
 import MlbForum from './components/MlbForum'
+import Users from './components/Users'
+
 
 class App extends Component {
 
@@ -28,6 +30,7 @@ class App extends Component {
           <Route path='/nba' component={NbaForum}/>
           <Route path='/nfl' component={NflForum}/>
           <Route path='/mlb' component={MlbForum}/>
+          <Route path='/members' component={Users}/>
         </div>
     );
   }
