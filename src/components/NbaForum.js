@@ -17,10 +17,9 @@ class NbaForum extends React.Component{
   }
 
   render(){
-    const postItems = this.props.posts.filter((post) => {
+    const filteredPosts = this.props.posts.filter((post) => {
       post.league === "NBA"
-    })
-    const fPostItems = this.props.posts.map(post => (
+    }).map(post => (
       <div key={post.id}>
         <h3>{post.title}</h3>
         <p>{post.body}</p>
@@ -29,7 +28,7 @@ class NbaForum extends React.Component{
     return (
       <div>
         <h1>NBA Posts</h1>
-        {fPostItems}
+        {filteredPosts}
       </div>
     )
   }
