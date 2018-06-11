@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import { fetchPosts } from '../actions/postActions';
 
 
-class Posts extends React.Component{
+class MlbForum extends React.Component{
 
   componentDidMount(){
     this.props.fetchPosts();
@@ -17,7 +17,10 @@ class Posts extends React.Component{
   }
 
   render(){
-    const postItems = this.props.posts.map(post => (
+    const postItems = this.props.posts.filter( (post) => {
+      return post.league === "MLB"
+    })
+    postItems.map(post => (
       <div key={post.id}>
         <h3>{post.title}</h3>
         <p>{post.body}</p>
@@ -25,14 +28,14 @@ class Posts extends React.Component{
     ));
     return (
       <div>
-        <h1>All Posts</h1>
+        <h1>MLB Posts</h1>
         {postItems}
       </div>
     )
   }
 }
 
-Posts.propTypes = {
+MlbForum.propTypes = {
   fetchPosts: PropTypes.func.isRequired,
   posts: PropTypes.array.isRequired,
   newPost: PropTypes.object
@@ -44,4 +47,4 @@ const mapStateToProps = state => ({
 });
 
 
-export default connect(mapStateToProps, { fetchPosts })(Posts);
+export default connect(mapStateToProps, { fetchPosts })(MlbForum);
