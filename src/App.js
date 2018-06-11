@@ -4,13 +4,10 @@ import './App.css';
 import Posts from './components/Posts';
 import Postform from './components/Postform';
 import LoginForm from './components/LoginForm';
+import RegisterForm from './components/RegisterForm';
 
 
 class App extends Component {
-
-
-  register = () => {
-  }
 
   render() {
     return (
@@ -20,6 +17,7 @@ class App extends Component {
           </header>
           <p className="App-intro"></p>
           <LoginForm onSubmit={this.login} />
+          <RegisterForm/>
           <Postform />
           <hr />
           <Posts />
