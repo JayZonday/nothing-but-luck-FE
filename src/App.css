@@ -60,10 +60,12 @@ input#submit:active{
 
 .navBar{
   border: 2px solid white;
+  border-radius: 2pc;
   padding: 5px;
   width: 600px;
   margin: auto;
   background-color: rgba(0, 0, 0, 0.5);
+
 }
 
 
