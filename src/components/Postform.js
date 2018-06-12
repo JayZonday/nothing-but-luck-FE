@@ -35,7 +35,7 @@ onSubmit = (e) => {
   render(){
     return (
       <div className="add-post">
-        <h3>Posterizer</h3>
+        <h2>Posterizer</h2>
         <form onSubmit={this.onSubmit}>
         <div>
           <textarea name="title" cols="40" rows="1" placeholder="Headline" onChange={this.onChange} value={this.state.title}></textarea>

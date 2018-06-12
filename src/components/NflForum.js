@@ -25,7 +25,7 @@ class NflForum extends React.Component{
 
     const filtered = postItems.map(post => (
       <div className='post' key={post.id}>
-        <h3>{post.title}</h3>
+        <h2>{post.title}</h2>
         <hr></hr>
         <p>{post.body}</p>
       </div>

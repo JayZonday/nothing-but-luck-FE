@@ -57,15 +57,7 @@ input#submit:active{
   width: 70px;
 }
 
-.add-post{
-  border: 2px solid white;
-  border-radius: 2pc;
-  margin: auto;
-  width: 500px;
-  height: auto;
-  color: lightgreen;
-  background: rgba(0,0,0,0.6);
-}
+
 
 /*Second background for Main Page*/
 .App-header {
@@ -105,7 +97,8 @@ input#submit:active{
 
 /*Intro Text on Main Page*/
 #intro{
-  color:black;
+  color:white;
+  text-shadow: 3px 3px black;
   font-size: large;
 }
 
@@ -150,6 +143,17 @@ button:active {
   color: white
 }
 
+.add-post{
+  border: 2px solid white;
+  border-radius: 2pc;
+  margin: auto;
+  width: 500px;
+  height: auto;
+  color: rgb(0,180,150);
+  background: rgba(0,0,0,0.6);
+  box-shadow: 8px 4px rgba(0,180,150,0.6);
+}
+
 .post{
   border: 2px solid white;
   height: 200px;
@@ -157,8 +161,9 @@ button:active {
   margin: auto;
   padding: 5%;
   border-radius: 2pc;
-  color: lightgreen;
+  color: rgb(0,180,150);
   background: rgba(0,0,0,0.6);
+  box-shadow: 8px 4px rgba(0,180,150,0.6);
 }
 
 .forum-container{
