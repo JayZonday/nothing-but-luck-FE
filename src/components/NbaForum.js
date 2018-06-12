@@ -27,7 +27,7 @@ class NbaForum extends React.Component{
       <div className='post' key={post.id}>
         <h2>{post.title}</h2>
         <hr></hr>
-        <p>{post.body}</p>
+        <p className="post-body">{post.body}</p>
       </div>
     ));
     console.log(this.props.posts.league)

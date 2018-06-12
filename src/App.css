@@ -166,6 +166,10 @@ button:active {
   box-shadow: 8px 4px rgba(0,180,150,0.6);
 }
 
+.post-body{
+  color:white;
+}
+
 .forum-container{
   padding: 15px;
 }
