@@ -3,12 +3,13 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background-image: url('https://images7.alphacoders.com/662/662365.jpg');
+  background-image: url('https://images7.alphacoders.com/662/662365.jpg ');
   background-size: cover;
   color:white;
 }
 /* https://hdwallsource.com/img/2014/12/basketball-wallpaper-13988-14427-hd-wallpapers.jpg */
 /* https://images7.alphacoders.com/662/662365.jpg  */
+/* https://www.pixelstalk.net/wp-content/uploads/2016/10/Football-field-desktop-background-wallpapers-1920x1080.jpg*/
 /*Login Input Styling*/
 input#submit{
   margin-bottom: 10px;
@@ -55,6 +56,14 @@ input#submit:active{
 #clover{
   height: 70px;
   width: 70px;
+}
+
+.navBar{
+  border: 2px solid white;
+  padding: 5px;
+  width: 600px;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 

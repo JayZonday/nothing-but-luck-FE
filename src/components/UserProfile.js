@@ -19,6 +19,7 @@ class UserProfile extends React.Component {
     const filtered = postItems.map(post => (
     <div className="profile-posts">
       <div className='post' key={post.id}>
+        <h4>{post.league}</h4>
         <h2>{post.title}</h2>
         <hr />
         <p className="post-body">{post.body}</p>
