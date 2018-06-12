@@ -49,7 +49,7 @@ class MlbForum extends React.Component{
 MlbForum.propTypes = {
   fetchPosts: PropTypes.func.isRequired,
   posts: PropTypes.array.isRequired,
-  newPost: PropTypes.object
+  newPost: PropTypes.object,
 }
 
 const mapStateToProps = state => ({
