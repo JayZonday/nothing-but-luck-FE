@@ -9,7 +9,7 @@ class Postform extends React.Component{
     state = {
       title: "",
       body: "",
-      league: "",
+      league: this.props.league,
     }
 
 onChange = (e) => {
@@ -42,21 +42,8 @@ onSubmit = (e) => {
           <input type="text" name="title" onChange={this.onChange} value={this.state.title}></input>
           <br />
           <br />
-          <label>League: </label>
-          <br />
-          <br />
-          <label>NBA: </label>
-          <input type="checkbox" id="league" name="league" onChange={this.onChange} value="NBA"></input>
-          <br />
-          <label>NFL: </label>
-          <input type="checkbox" id="league" name="league" onChange={this.onChange} value="NFL"></input>
-          <br />
-          <label>MLB: </label>
-          <input type="checkbox" id="league" name="league" onChange={this.onChange} value="MLB"></input>
-          <br />
-          <br />
           <label>Body: </label>
-          <textarea name="body" cols="10" rows="1" onChange={this.onChange} value={this.state.body}></textarea>
+          <textarea name="body" cols="45" rows="5" onChange={this.onChange} value={this.state.body}></textarea>
           <br />
           <button type='submit'>Spread The Luck</button>
         </div>

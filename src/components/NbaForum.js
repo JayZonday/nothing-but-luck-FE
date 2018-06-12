@@ -24,17 +24,17 @@ class NbaForum extends React.Component{
     })
 
     const filtered = postItems.map(post => (
-      <div key={post.id}>
+      <div className='post' key={post.id}>
         <h3>{post.title}</h3>
         <p>{post.body}</p>
       </div>
     ));
     console.log(this.props.posts.league)
     return (
-      <div>
+      <div className="forum-container">
         <h1>NBA Forum</h1>
         <hr />
-        <Postform />
+        <Postform league='NBA'/>
         <hr />
         <h2>NBA Articles</h2>
         {filtered}

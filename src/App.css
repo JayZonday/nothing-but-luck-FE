@@ -139,6 +139,17 @@ button:active {
   color: white
 }
 
+.post{
+  border: 2px solid white;
+  height: 200px;
+  width: 475px;
+  margin: auto;
+}
+
+.forum-container{
+  padding: 15px;
+}
+
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
