@@ -44,7 +44,7 @@ input#submit:active{
   border-radius:  2pc;
   width: 900px;
   margin: 5% auto;
-  box-shadow: 5px 5px black
+  box-shadow: 5px 5px black;
 }
 /*Main App Logo Styling*/
 .App-logo {
@@ -59,7 +59,7 @@ input#submit:active{
 
 /*Second background for Main Page*/
 .App-header {
-  background-color: rgba(210,180,150,0.8);
+  background-color: rgba(0,180,150,0.6);
   height: 355px;
   width: 655px;
   padding: 0px;
