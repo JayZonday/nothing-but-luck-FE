@@ -11,6 +11,7 @@ import NflForum from './components/NflForum'
 import NbaForum from './components/NbaForum'
 import MlbForum from './components/MlbForum'
 import Users from './components/Users'
+import UserProfile from './components/UserProfile'
 
 
 class App extends Component {
@@ -19,7 +20,7 @@ class App extends Component {
     return (
         <div className="App">
           <header className="App-header">
-            <h1 className="App-title"><img src='https://upload.wikimedia.org/wikipedia/commons/1/15/Shamrock_svg.svg' id="clover" className="App-logo" alt="logo" />   Nothing But Luck   <img src='https://upload.wikimedia.org/wikipedia/commons/1/15/Shamrock_svg.svg' id="clover" className="App-logo" alt="logo" /></h1><img src='https://cdn-images-1.medium.com/max/532/0*EbTpf1h92YKCdNNv.png' id="fanasty-logo" className='animated infinite pulse' alt="flogo" /><h3 id="intro">A One-Spot, Non-Stop Fantasy Sport's Center</h3>
+            <h1 className="App-title"><img src='https://upload.wikimedia.org/wikipedia/commons/1/15/Shamrock_svg.svg' id="clover" className="App-logo" alt="logo" />   Nothing But Luck   <img src='https://upload.wikimedia.org/wikipedia/commons/1/15/Shamrock_svg.svg' id="clover" className="App-logo" alt="logo" /></h1><img src='https://cdn-images-1.medium.com/max/532/0*EbTpf1h92YKCdNNv.png' id="fanasty-logo" className='animated infinite pulse' alt="flogo" /><h3 id="intro">A One-Spot, Non-Stop Fantasy Sports's Center</h3>
           </header>
           <p className="App-intro"></p>
           <Nav/>
@@ -31,6 +32,7 @@ class App extends Component {
           <Route path='/nfl' component={NflForum}/>
           <Route path='/mlb' component={MlbForum}/>
           <Route path='/members' component={Users}/>
+          <Route path='/profile' component={UserProfile}/>
         </div>
     );
   }

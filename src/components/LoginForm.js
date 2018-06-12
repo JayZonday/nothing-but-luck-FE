@@ -2,13 +2,16 @@ import React from 'react';
 import {connect} from 'react-redux'
 import { login } from '../actions/loginActions'
 import PropTypes from 'prop-types'
-import {Route, Link, NavLink, Switch} from 'react-router-dom'
+import {Route, Link, NavLink, Switch, Redirect} from 'react-router-dom'
+import UserProfile from './UserProfile'
+
 
 class LoginForm extends React.Component{
 
   state = {
     username: "",
-    password: ""
+    password: "",
+    loggedin: false
   }
 
   onChange = (e) => {
@@ -23,8 +26,8 @@ class LoginForm extends React.Component{
   }
 
 
-  render() {
 
+  render() {
     return (
       <div>
         <h1>Login into NBL!</h1>
@@ -39,8 +42,8 @@ class LoginForm extends React.Component{
             <input type="password" name="password" onChange={this.onChange} value={this.state.password}></input>
             <br />
             <br />
-            <button type='submit'>Spread The Luck</button>
-            <button><Link to='/signup'>Don't Have an Account?</Link></button>
+            <button type='submit' onClick={this.loginHandler}>Spread The Luck </button>
+            <Link to='/signup'><button>Don't Have an Account?</button></Link>
           </div>
           </form>
         </div>

@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import { fetchPosts } from '../actions/postActions';
 import Postform from './Postform';
 import {Route, Link, NavLink, Switch} from 'react-router-dom'
-
+import UserProfile from './UserProfile'
 
 class NbaForum extends React.Component{
 
@@ -33,6 +33,8 @@ class NbaForum extends React.Component{
     return (
       <div className="forum-container">
         <h1>NBA Forum</h1>
+        <br />
+        <Link to='/profile'><button>Check Your Profile</button></Link>
         <hr />
         <Postform league='NBA'/>
         <hr />
