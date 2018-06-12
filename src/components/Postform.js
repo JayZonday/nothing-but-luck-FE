@@ -34,7 +34,7 @@ onSubmit = (e) => {
 
   render(){
     return (
-      <div>
+      <div className="add-post">
         <h3>Add Posts</h3>
         <form onSubmit={this.onSubmit}>
         <div>

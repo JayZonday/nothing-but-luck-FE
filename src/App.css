@@ -57,6 +57,11 @@ input#submit:active{
   width: 70px;
 }
 
+.add-post{
+  border: 2px solid white;
+  border-radius: 2pc;
+}
+
 /*Second background for Main Page*/
 .App-header {
   background-color: rgba(0,180,150,0.6);
