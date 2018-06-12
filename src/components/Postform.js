@@ -35,15 +35,13 @@ onSubmit = (e) => {
   render(){
     return (
       <div className="add-post">
-        <h3>Add Posts</h3>
+        <h3>Posterizer</h3>
         <form onSubmit={this.onSubmit}>
         <div>
-          <label>Title: </label>
-          <input type="text" name="title" onChange={this.onChange} value={this.state.title}></input>
+          <textarea name="title" cols="40" rows="1" placeholder="Headline" onChange={this.onChange} value={this.state.title}></textarea>
           <br />
           <br />
-          <label>Body: </label>
-          <textarea name="body" cols="45" rows="5" onChange={this.onChange} value={this.state.body}></textarea>
+          <textarea name="body" cols="45" rows="5" placeholder="Body" onChange={this.onChange} value={this.state.body}></textarea>
           <br />
           <button type='submit'>Spread The Luck</button>
         </div>

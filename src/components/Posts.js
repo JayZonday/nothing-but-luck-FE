@@ -21,6 +21,7 @@ class Posts extends React.Component{
     const postItems = this.props.posts.map(post => (
       <div key={post.id}>
         <h3>{post.title}</h3>
+        <hr />
         <p>{post.body}</p>
       </div>
     ));

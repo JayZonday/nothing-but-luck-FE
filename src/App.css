@@ -60,6 +60,11 @@ input#submit:active{
 .add-post{
   border: 2px solid white;
   border-radius: 2pc;
+  margin: auto;
+  width: 500px;
+  height: auto;
+  color: lightgreen;
+  background: rgba(0,0,0,0.6);
 }
 
 /*Second background for Main Page*/
@@ -152,6 +157,8 @@ button:active {
   margin: auto;
   padding: 5%;
   border-radius: 2pc;
+  color: lightgreen;
+  background: rgba(0,0,0,0.6);
 }
 
 .forum-container{

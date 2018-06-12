@@ -26,6 +26,7 @@ class NbaForum extends React.Component{
     const filtered = postItems.map(post => (
       <div className='post' key={post.id}>
         <h3>{post.title}</h3>
+        <hr></hr>
         <p>{post.body}</p>
       </div>
     ));
@@ -34,7 +35,6 @@ class NbaForum extends React.Component{
       <div className="forum-container">
         <h1>NBA Forum</h1>
         <br />
-        <Link to='/profile'><button>Check Your Profile</button></Link>
         <hr />
         <Postform league='NBA'/>
         <hr />
