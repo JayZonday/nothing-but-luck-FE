@@ -58,6 +58,13 @@ input#submit:active{
   width: 70px;
 }
 
+.logout{
+  width: 100px;
+}
+
+.logout:hover{
+  width: 120px;
+}
 .navBar{
   border: 2px solid white;
   border-radius: 2pc;
@@ -65,7 +72,6 @@ input#submit:active{
   width: 600px;
   margin: auto;
   background-color: rgba(0, 0, 0, 0.5);
-
 }
 
 
