@@ -33,7 +33,7 @@ class NflForum extends React.Component{
     console.log(this.props.posts.league)
     return (
       <div className="forum-container">
-        <h1>NFL Forum</h1>
+        <div className="nfl-title-bg"><h1 className="forum-title">NFL Forum</h1></div>
         <br />
         <hr />
         <Postform league="NFL" />

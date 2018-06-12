@@ -174,6 +174,46 @@ button:active {
   padding: 15px;
 }
 
+.mlb-title-bg{
+  border: 2px solid white;
+  border-radius: 2pc;
+  background-image: url('https://thumbs.imagekind.com/4546065_650/Vintage-Baseballs-Little-Slugger_art.jpg?v=1496600910');
+  background-size: contain;
+  width: 500px;
+  height: 150px;
+  margin: 2% auto;
+}
+.nba-title-bg{
+  border: 2px solid white;
+  border-radius: 2pc;
+  background-image: url('https://www.prodirectbasketball.com/siteimages/Pages/wembley/double/all-basketballs.jpg');
+  width: 500px;
+  height: 150px;
+  margin: 2% auto;
+}
+.nfl-title-bg{
+  border: 2px solid white;
+  border-radius: 2pc;
+  background-image: url('https://s.yimg.com/uu/api/res/1.2/iBBEr7ugcIf46mQz0TSxKw--~B/aD00MTk7dz02MzA7c209MTthcHBpZD15dGFjaHlvbg--/http://media.zenfs.com/en/blogs/sptusinvestigations/NCAA-Footballs.jpg');
+  background-size: contain;
+  width: 500px;
+  height: 150px;
+  margin: 2% auto;
+}
+
+.forum-title{
+  border: 2px solid white;
+  margin: 30px auto;
+  width: 300px;
+  height: auto;
+  border-radius: 2pc;
+  background: black;
+  text-shadow: 2px 2px rgb(0,180,150);
+}
+
+
+
+
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }

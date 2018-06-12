@@ -34,7 +34,7 @@ class MlbForum extends React.Component{
     console.log(this.props.posts.league)
     return (
       <div className="forum-container">
-        <h1>MLB Forum</h1>
+        <div className="mlb-title-bg"><h1 className="forum-title">MLB Forum</h1></div>
         <br />
         <hr />
         <Postform league="MLB"/>
