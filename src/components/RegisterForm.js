@@ -25,7 +25,7 @@ class RegisterForm extends React.Component{
   render() {
 
     return (
-      <div>
+      <div className="login-form">
         <h1>Join The NBL Squad!</h1>
         <div>
           <form onSubmit={this.handleSubmit}>
@@ -37,11 +37,11 @@ class RegisterForm extends React.Component{
             <label htmlFor="password">Password: </label>
             <input type="password" name="password" onChange={this.onChange} value={this.state.password}></input>
             <br />
+            <br />
             <button type='submit'>Signup</button>
           </div>
           </form>
         </div>
-        <hr />
       </div>
     );
   }

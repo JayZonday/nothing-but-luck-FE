@@ -45,7 +45,7 @@ input#submit:active{
   border-radius:  2pc;
   width: 900px;
   margin: 5% auto;
-  box-shadow: 5px 5px black;
+  box-shadow: 8px 4px rgba(0,180,150,0.6);
 }
 /*Main App Logo Styling*/
 .App-logo {
@@ -150,14 +150,20 @@ button:active {
   transform: translateY(4px);
 }
 
-.fcontent{
-  text-align: center;
-  background: rgba(0, 0, 0, 0.7);
-  border: 5px solid black;
-  border-radius:  2pc;
-  width: 900px;
-  margin: 5% auto;
-  color: white
+.post-container{
+  overflow: scroll;
+  height:600px;
+}
+
+.login-form{
+  border: 2px solid white;
+  border-radius: 2pc;
+  margin: 10px auto 20px auto;
+  width: 500px;
+  height: auto;
+  color: rgb(0,180,150);
+  background: rgba(0,0,0,0.6);
+  box-shadow: 8px 4px rgba(0,180,150,0.6);
 }
 
 .add-post{

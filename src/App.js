@@ -32,7 +32,6 @@ class App extends Component {
           <Route path="/login"  component={ LoginForm }/>
           <Route path="/signup" component={ RegisterForm } />
           <Route path='/posterizer' component={ Postform } />
-          <hr />
           <Route path='/nba' component={NbaForum}/>
           <Route path='/nfl' component={NflForum}/>
           <Route path='/mlb' component={MlbForum}/>
