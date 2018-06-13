@@ -151,12 +151,16 @@ button:active {
 }
 
 
+.members-container{
+  height: 440px;
+  overflow: scroll;
+}
 
 .members{
   border: 5px solid white;
   border-radius: 2pc;
   width: 200px;
-  height: auto;
+  height: 180px;
   padding: 2px;
   margin: 5px;
   display: inline-block;

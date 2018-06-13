@@ -15,13 +15,13 @@ class Users extends React.Component{
   render(){
     const userItems = this.props.users.map(user => (
       <div className="members" key={user.id}>
-        <h3>{user.username}</h3>
+        <h4>{user.username}</h4>
       </div>
     ));
     return (
-      <div>
+      <div className="members-page">
         <h1>All NBL Members</h1>
-        {userItems}
+        <div className="members-container">{userItems}</div>
       </div>
     )
   }

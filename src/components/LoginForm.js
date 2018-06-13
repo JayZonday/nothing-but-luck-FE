@@ -23,6 +23,11 @@ class LoginForm extends React.Component{
   handleSubmit = (event) => {
     event.preventDefault();
     this.props.login(this.state.username, this.state.password);
+    if (localStorage.username !== "undefined"){
+      alert("successful login")
+    }else{
+      alert("failed login - [if initial attempt failed - retry same combo (bug)]")
+    }
   }
 
   render() {
