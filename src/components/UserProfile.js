@@ -18,7 +18,7 @@ class UserProfile extends React.Component {
     })
     const filtered = postItems.map(post => (
     <div className="profile-posts">
-      <div className='post' key={post.id}>
+      <div className='profile-post' key={post.id}>
         <h4>{post.league}</h4>
         <h2>{post.title}</h2>
         <hr />
@@ -30,13 +30,35 @@ class UserProfile extends React.Component {
       <div className="user-profile">
         <h1> The {localStorage.username} NBL Zone </h1>
         <hr />
-        <div className="profile-info">
-            <h1>General Info</h1>
-          <p>Email/Motto/RealName/Picture </p>
-        </div>
-        <div className="profile-posts">
+
+      <div className="profile-info">
+        <figure className="snip1336">
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample87.jpg" alt="sample87" />
+            <figcaption>
+              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/profile-sample4.jpg" alt="profile-sample4" class="profile" />
+              <h2>{localStorage.username}</h2>
+              <hr />
+              <br />
+              <br />
+              <span>motto</span>
+              <br />
+              <hr />
+              <span>email</span>
+              <br />
+              <hr />
+              <span>real name</span>
+              <br />
+              <hr />
+              <span>hobbies</span>
+              <br />
+              <hr />
+              <span>Favorite Sport</span>
+            </figcaption>
+          </figure>
+      </div>
+      <div className="profile-posts">
           <h1>Articles</h1>
-          <div className="post-container">{filtered}</div>
+        <div className="profileposts-container">{filtered}</div>
         </div>
       </div>
     )
