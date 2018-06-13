@@ -20,7 +20,7 @@ class Users extends React.Component{
     ));
     return (
       <div className="members-page">
-        <h1>All NBL Members</h1>
+        <h1>The NBL Squad</h1>
         <div className="members-container">{userItems}</div>
       </div>
     )
