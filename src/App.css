@@ -211,7 +211,7 @@ button:active {
 .members-container{
   color: white;
   height: 440px;
-  overflow: scroll;
+  overflow-y: scroll;
   border: 2px solid white;
   padding: 10px;
   margin: 25px;
@@ -332,14 +332,14 @@ button:active {
 }
 
 .post-container{
-  overflow: scroll;
+  overflow-y: scroll;
   height:600px;
   border: 2px solid white;
   padding: 10px;
   margin: 25px;
 }
 .profileposts-container{
-  overflow: scroll;
+  overflow-y: scroll;
   height:600px;
   border: 2px solid white;
   border-radius: 2pc;
@@ -373,6 +373,7 @@ button:active {
 .post{
   border: 2px solid white;
   height: 200px;
+  overflow-y: scroll;
   width: 475px;
   margin: auto;
   padding: 5%;
@@ -383,6 +384,7 @@ button:active {
 }
 .profile-post{
   border: 2px solid white;
+  overflow-y: scroll;
   height: 275px;
   width: 300px;
   margin: auto;
