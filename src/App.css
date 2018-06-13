@@ -164,7 +164,7 @@ button:active {
 }
 
 .members:hover{
-  border: 5px solid green;
+  border: 5px solid white;
   background: green;
 }
 
