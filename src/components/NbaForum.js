@@ -38,7 +38,7 @@ class NbaForum extends React.Component{
         <hr />
         <Postform league='NBA'/>
         <hr />
-        <h2>NBA Articles</h2>
+      <h2>NBA Posts</h2>
         <div className="post-container">{filtered}</div>
       </div>
     )
