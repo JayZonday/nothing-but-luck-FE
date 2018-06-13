@@ -40,7 +40,7 @@ class LoginForm extends React.Component{
             <input type="password" name="password" onChange={this.onChange} value={this.state.password}></input>
             <br />
             <br />
-            <button type='submit'>Spread The Luck </button>
+            <button type='submit'>Feelin' Lucky</button>
             <Link to='/signup'><button>Don't Have an Account?</button></Link>
           </div>
           </form>

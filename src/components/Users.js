@@ -14,7 +14,7 @@ class Users extends React.Component{
 
   render(){
     const userItems = this.props.users.map(user => (
-      <div key={user.id}>
+      <div className="members" key={user.id}>
         <h3>{user.username}</h3>
       </div>
     ));

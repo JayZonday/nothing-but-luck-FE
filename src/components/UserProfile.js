@@ -36,7 +36,7 @@ class UserProfile extends React.Component {
         </div>
         <div className="profile-posts">
           <h1>Articles</h1>
-          <p>{filtered}</p>
+          <div className="post-container">{filtered}</div>
         </div>
       </div>
     )

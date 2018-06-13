@@ -3,7 +3,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background-image: url('https://images7.alphacoders.com/662/662365.jpg ');
+  background-image: url('http://getwallpapers.com/wallpaper/full/1/d/d/304702.jpg');
   background-size: cover;
   color:white;
 }
@@ -148,6 +148,23 @@ button:active {
   background-color: #3e8e41;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
+}
+
+
+
+.members{
+  border: 5px solid white;
+  border-radius: 2pc;
+  width: 200px;
+  height: auto;
+  padding: 2px;
+  margin: 5px;
+  display: inline-block;
+}
+
+.members:hover{
+  border: 5px solid green;
+  background: green;
 }
 
 .post-container{
