@@ -10,6 +10,62 @@ body {
 /* https://hdwallsource.com/img/2014/12/basketball-wallpaper-13988-14427-hd-wallpapers.jpg */
 /* https://images7.alphacoders.com/662/662365.jpg  */
 /* https://www.pixelstalk.net/wp-content/uploads/2016/10/Football-field-desktop-background-wallpapers-1920x1080.jpg*/
+
+
+
+/* scrollbar styling */
+
+.members-container::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1);
+	background-color: rgba(0,0,0,0.8);
+	border-radius: 2pc;
+
+}
+
+.members-container::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: rgba(0,0,0,0.8);
+}
+
+.members-container::-webkit-scrollbar-thumb
+{
+  border-radius: 10px;
+	background-color: #FFF;
+	background-image: -webkit-gradient(linear,
+									   40% 0%,
+									   75% 84%,
+									   from(#4D9C41),
+									   to(#19911D),
+									   color-stop(.6,#54DE5D))
+}
+.post-container::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1);
+	background-color: rgba(0,0,0,0.8);
+	border-radius: 2pc;
+}
+
+.post-container::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: rgba(0,0,0,0.8);
+}
+
+.post-container::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	background-color: #FFF;
+	background-image: -webkit-gradient(linear,
+									   40% 0%,
+									   75% 84%,
+									   from(#4D9C41),
+									   to(#19911D),
+									   color-stop(.6,#54DE5D))
+}
+
+
 /*Login Input Styling*/
 input#submit{
   margin-bottom: 10px;
@@ -123,6 +179,7 @@ input#submit:active{
 
 
 /*General Stylings Buttons/Forms/Ect*/
+
 button{
     margin-bottom: 10px;
     -webkit-transition-duration: 0.4s; /* Safari */
@@ -152,8 +209,12 @@ button:active {
 
 
 .members-container{
+  color: white;
   height: 440px;
   overflow: scroll;
+  border: 2px solid white;
+  padding: 10px;
+  margin: 25px;
 }
 
 .members{
@@ -175,6 +236,9 @@ button:active {
 .post-container{
   overflow: scroll;
   height:600px;
+  border: 2px solid white;
+  padding: 10px;
+  margin: 25px;
 }
 
 .login-form{
@@ -184,7 +248,7 @@ button:active {
   width: 500px;
   height: auto;
   color: rgb(0,180,150);
-  background: rgba(0,0,0,0.6);
+  background: rgba(0,0,0,0.7);
   box-shadow: 8px 4px rgba(0,180,150,0.6);
 }
 
