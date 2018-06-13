@@ -32,10 +32,10 @@ class UserProfile extends React.Component {
         <hr />
 
       <div className="profile-info">
-        <figure className="snip1336">
-          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample87.jpg" alt="sample87" />
+        <figure className="profile-card">
+          <img src="http://symphonyguildofwinterhaven.com/wp-content/uploads/Shamrocks.jpg" alt="profile-background" />
             <figcaption>
-              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/profile-sample4.jpg" alt="profile-sample4" class="profile" />
+              <img src="http://i66.tinypic.com/212fi8k.jpg" alt="profile-picture" class="profile" />
               <h2>{localStorage.username}</h2>
               <hr />
               <br />

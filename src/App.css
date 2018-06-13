@@ -231,12 +231,12 @@ button:active {
 
 /* Profile Card */
 @import url(https://fonts.googleapis.com/css?family=Roboto:300,400,600);
-.snip1336 {
+.profile-card {
   font-family: 'Roboto', Arial, sans-serif;
   position: relative;
   float: left;
   overflow: hidden;
-  margin: 90px 4%;
+  margin: 145px 4%;
   min-width: 230px;
   max-width: 315px;
   width: 100%;
@@ -248,24 +248,24 @@ button:active {
   border-radius: 2pc;
 
 }
-.snip1336 * {
+.profile-card * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease;
 }
-.snip1336 img {
+.profile-card img {
   max-width: 100%;
   vertical-align: top;
   opacity: 0.85;
 }
-.snip1336 figcaption {
+.profile-card figcaption {
   width: 100%;
   background-color: #141414;
   padding: 25px;
   position: relative;
 }
-.snip1336 figcaption:before {
+.profile-card figcaption:before {
   position: absolute;
   content: '';
   bottom: 100%;
@@ -276,7 +276,7 @@ button:active {
   border-width: 55px 0 0 400px;
   border-color: transparent transparent transparent #141414;
 }
-.snip1336 figcaption a {
+.profile-card figcaption a {
   padding: 5px;
   border: 1px solid #ffffff;
   color: #ffffff;
@@ -291,10 +291,10 @@ button:active {
   font-weight: 600;
   letter-spacing: 1px;
 }
-.snip1336 figcaption a:hover {
+.profile-card figcaption a:hover {
   opacity: 1;
 }
-.snip1336 .profile {
+.profile-card .profile {
   border-radius: 50%;
   position: absolute;
   bottom: 100%;
@@ -303,26 +303,17 @@ button:active {
   max-width: 90px;
   opacity: 1;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  border: 2px solid white;
 }
-.snip1336 .follow {
-  margin-right: 4%;
-  border-color: #2980b9;
-  color: #2980b9;
-}
-.snip1336 h2 {
+
+.profile-card h2 {
   margin: 0 0 5px;
   font-weight: 300;
 }
-.snip1336 h2 span {
+.profile-card h2 span {
   display: block;
   font-size: 0.5em;
   color: #2980b9;
-}
-.snip1336 p {
-  margin: 0 0 10px;
-  font-size: 0.8em;
-  letter-spacing: 1px;
-  opacity: 0.8;
 }
 /*  End Profile Card */
 
