@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import { Route } from 'react-router-dom'
+import { Route, Switch } from 'react-router-dom'
 import PropTypes from 'prop-types';
 
 import Postform from './Postform';
@@ -13,6 +13,7 @@ import MlbForum from './MlbForum'
 import Users from './Users'
 import UserProfile from './UserProfile'
 import EditUserForm from './EditUserForm'
+import NotFound from './NotFound'
 
 class App extends Component {
 
@@ -30,15 +31,18 @@ class App extends Component {
           </header>
           <div className="App-intro">Current User:  {!(localStorage.username === 'undefined')? localStorage.username:null}<button className="logout" onClick={this.onClickHandler}>Logout</button></div>
           <Nav/>
+          <Switch>
           <Route path="/login"  component={ LoginForm }/>
           <Route path="/signup" component={ RegisterForm } />
           <Route path='/posterizer' component={ Postform } />
-          <Route path='/nba' component={NbaForum}/>
-          <Route path='/nfl' component={NflForum}/>
-          <Route path='/mlb' component={MlbForum}/>
-          <Route path='/' exact component={Users}/>
-          <Route path='/profile' component={UserProfile}/>
-          <Route path='/edit-profile' component={EditUserForm}/>
+          <Route path='/nba' component={ NbaForum }/>
+          <Route path='/nfl' component={ NflForum }/>
+          <Route path='/mlb' component={ MlbForum }/>
+          <Route path='/' exact component={ Users }/>
+          <Route path='/profile' component={ UserProfile }/>
+          <Route path='/edit-profile' component={ EditUserForm }/>
+          <Route component={ NotFound } />
+          </Switch>
         </div>
     );
   }
