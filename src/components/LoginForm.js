@@ -1,10 +1,6 @@
-import React from 'react-redux'
+import React from 'react'
 import { login } from '../actions/userActions'
-import {connect} from 'react-redux'
-<<<<<<< Updated upstream
-=======
-import { login } from '../actions/userActions'
->>>>>>> Stashed changes
+import { connect } from 'react-redux'
 import PropTypes from 'prop-types'
 import {Link} from 'react-router-dom'
 

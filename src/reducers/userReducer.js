@@ -21,16 +21,6 @@ export default function(state = initialState, action) {
         ...state,
         items: action.payload,
       };
-<<<<<<< Updated upstream
-    case USER_LOGIN:
-        return {
-        ...state,
-        id: action.user_id,
-        token: action.token,
-        username: action.username
-      };
-=======
->>>>>>> Stashed changes
     case NEW_USER:
       return{
         ...state,
