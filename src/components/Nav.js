@@ -1,16 +1,16 @@
 import React from 'react';
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 class Nav extends React.Component{
   render(){
 
     return (
     <div className="navBar">
-      <Link to='/login'><button id='Login' >Login into NBL</button></Link>
-      <Link to='/profile'><button>Your NBL-Zone</button></Link>
-      <Link to='/'><button id='members' >NBL Members</button></Link>
-      <Link to='/nfl'><button id='nflButton' >NFL</button></Link>
-      <Link to='/mlb'><button id='mlbButton' >MLB</button></Link>
-      <Link to='/nba'><button id='nbaButton' >NBA</button></Link>
+      <NavLink to='/login'><button id='Login' >Login into NBL</button></NavLink>
+      <NavLink to='/profile'><button>Your NBL-Zone</button></NavLink>
+      <NavLink to='/'><button id='members' >NBL Members</button></NavLink>
+      <NavLink to='/nfl'><button id='nflButton' >NFL</button></NavLink>
+      <NavLink to='/mlb'><button id='mlbButton' >MLB</button></NavLink>
+      <NavLink to='/nba'><button id='nbaButton' >NBA</button></NavLink>
     </div>
     )
   }

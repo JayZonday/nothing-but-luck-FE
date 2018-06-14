@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import './App.css';
-import { Route, Switch } from 'react-router-dom'
+import { Route, Switch, Redirect } from 'react-router-dom'
 import PropTypes from 'prop-types';
-
+import { connect } from 'react-redux';
+import { fetchUsers } from '../actions/userActions';
 import Postform from './Postform';
 import LoginForm from './LoginForm';
 import RegisterForm from './RegisterForm';
@@ -17,11 +18,12 @@ import NotFound from './NotFound'
 
 class App extends Component {
 
-
   onClickHandler = () => {
     localStorage.clear();
     alert('You Logged Out! - Have a Great Day!')
   }
+
+  componentDidMount
 
   render() {
     return (
@@ -32,7 +34,7 @@ class App extends Component {
           <div className="App-intro">Current User:  {!(localStorage.username === 'undefined')? localStorage.username:null}<button className="logout" onClick={this.onClickHandler}>Logout</button></div>
           <Nav/>
           <Switch>
-          <Route path="/login"  component={ LoginForm }/>
+          <Route path="/login" component={ LoginForm } />
           <Route path="/signup" component={ RegisterForm } />
           <Route path='/posterizer' component={ Postform } />
           <Route path='/nba' component={ NbaForum }/>
@@ -49,5 +51,4 @@ class App extends Component {
 }
 
 
-
-export default App;
+export default App
