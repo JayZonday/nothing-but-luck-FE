@@ -229,6 +229,14 @@ button:active {
   overflow-y: scroll;
 }
 
+.not-found{
+  border: 2px solid white;
+  border: 2pc;
+  width: 600px;
+  height: auto;
+  margin: 2% auto;
+}
+
 
 /* Profile Card */
 .profile-card {
