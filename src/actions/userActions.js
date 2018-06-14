@@ -33,7 +33,7 @@ export const login = (username, password) => {
     })
   }
 }
-export const register = (username, password) => {
+export const register = (username, password, motto, email, name, favsport, profurl, bgurl) => {
   return (dispatch) => {
     fetch(`http://localhost:3000/api/v1/users`,{
       method: 'POST',
@@ -41,7 +41,7 @@ export const register = (username, password) => {
         'Content-Type': 'application/json',
         'Accept': 'application/json',
       },
-      body: JSON.stringify({username: username, password: password})
+      body: JSON.stringify({username: username, password: password, motto: motto, email: email, name: name, favsport: favsport, profurl: profurl, bgurl:bgurl})
     })
     .then(res => res.json())
     .then(user => {
@@ -52,7 +52,6 @@ export const register = (username, password) => {
         type: NEW_USER,
         token: localStorage.getItem('token'),
         user_id: localStorage.getItem('user_id'),
-        username: localStorage.getItem('username'),
         payload: user
       })
     })
