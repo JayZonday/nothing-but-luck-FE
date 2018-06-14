@@ -3,9 +3,6 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { fetchPosts } from '../actions/postActions';
 import Postform from './Postform';
-import {Route, Link, NavLink, Switch} from 'react-router-dom'
-import UserProfile from './UserProfile'
-import './mlb.css';
 
 class MlbForum extends React.Component{
 

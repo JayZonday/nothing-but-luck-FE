@@ -1,7 +1,6 @@
 import React from 'react';
-import {connect} from 'react-redux'
+import { connect } from 'react-redux'
 import { register } from '../actions/loginActions'
-import PropTypes from 'prop-types'
 
 class RegisterForm extends React.Component{
 

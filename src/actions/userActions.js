@@ -1,4 +1,4 @@
-import {FETCH_USERS} from './types';
+import { FETCH_USERS } from './types';
 
 export const fetchUsers = () => dispatch => {
     fetch('http://localhost:3000/api/v1/users')

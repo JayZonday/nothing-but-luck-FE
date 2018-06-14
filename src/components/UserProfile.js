@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { fetchPosts } from '../actions/postActions';
 import { fetchUsers } from '../actions/userActions';
-import {Route, Link, NavLink, Switch} from 'react-router-dom'
 
 class UserProfile extends React.Component {
 
@@ -35,7 +34,7 @@ class UserProfile extends React.Component {
         <figure className="profile-card">
           <img src="http://symphonyguildofwinterhaven.com/wp-content/uploads/Shamrocks.jpg" alt="profile-background" />
             <figcaption>
-              <img src="http://i66.tinypic.com/212fi8k.jpg" alt="profile-picture" class="profile" />
+              <img src="http://i66.tinypic.com/212fi8k.jpg" alt="profile-picture" className="profile" />
               <h2>{localStorage.username}</h2>
               <hr />
               <br />

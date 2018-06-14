@@ -1,4 +1,4 @@
-import {USER_LOGIN, NEW_USER} from './types'
+import { USER_LOGIN, NEW_USER } from './types'
 
 export const login = (username, password) => {
   return (dispatch) => {

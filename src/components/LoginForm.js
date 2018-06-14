@@ -1,9 +1,8 @@
 import React from 'react';
-import {connect} from 'react-redux'
+import { connect } from 'react-redux'
 import { login } from '../actions/loginActions'
 import PropTypes from 'prop-types'
-import {Route, Link, NavLink, Switch, Redirect} from 'react-router-dom'
-import UserProfile from './UserProfile'
+import { Link } from 'react-router-dom'
 
 
 class LoginForm extends React.Component{

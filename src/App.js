@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
-import {Route, Link, NavLink, Switch} from 'react-router-dom'
+import {Route } from 'react-router-dom'
 
-import Posts from './components/Posts';
 import Postform from './components/Postform';
 import LoginForm from './components/LoginForm';
 import RegisterForm from './components/RegisterForm';
