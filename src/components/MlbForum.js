@@ -28,7 +28,6 @@ class MlbForum extends React.Component{
         <p className="post-body">{post.body}</p>
       </div>
     ));
-    console.log(this.props.posts.league)
     return (
       <div className="forum-container">
         <div className="mlb-title-bg"><h1 className="forum-title">MLB Forum</h1></div>
