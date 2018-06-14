@@ -13,7 +13,7 @@ class UserProfile extends React.Component {
 
   render (){
     const postItems = this.props.posts.filter((post) => {
-      return post.user_id === parseInt(localStorage.user_id)
+      return post.id === parseInt(localStorage.user_id)
     })
     const filtered = postItems.map(post => (
     <div className="profile-posts">
