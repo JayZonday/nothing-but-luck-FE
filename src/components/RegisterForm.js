@@ -6,7 +6,14 @@ class RegisterForm extends React.Component{
 
   state = {
     username: "",
-    password: ""
+    password: "",
+    motto: "",
+    email: "",
+    name: "",
+    favsport: "",
+    profurl: "",
+    bgurl: ""
+
   }
 
   onChange = (e) => {
@@ -17,7 +24,16 @@ class RegisterForm extends React.Component{
 
   handleSubmit = (event) => {
     event.preventDefault();
-    this.props.register(this.state.username, this.state.password);
+    this.props.register(
+      this.state.username,
+      this.state.password,
+      this.state.motto,
+      this.state.email,
+      this.state.name,
+      this.state.favsport,
+      this.state.profurl,
+      this.state.bgurl
+    );
     if (localStorage.username !== "undefined"){
       alert("successful login")
     }else{
@@ -40,6 +56,22 @@ class RegisterForm extends React.Component{
             <br />
             <label htmlFor="password">Password: </label>
             <input type="password" name="password" onChange={this.onChange} value={this.state.password}></input>
+            <br />
+            <br />
+            <label htmlFor="name">Name: </label>
+            <input type="text" name="name" onChange={this.onChange} value={this.state.name}></input>
+            <br />
+            <br />
+            <label htmlFor="motto">Motto: </label>
+            <input type="text" name="motto" onChange={this.onChange} value={this.state.motto}></input>
+            <br />
+            <br />
+            <label htmlFor="email">Email: </label>
+            <input type="text" name="email" onChange={this.onChange} value={this.state.email}></input>
+            <br />
+            <br />
+            <label htmlFor="favsport">Favorite Sport: </label>
+            <input type="text" name="favsport" onChange={this.onChange} value={this.state.favsport}></input>
             <br />
             <br />
             <button type='submit'>Sign-Up!</button>

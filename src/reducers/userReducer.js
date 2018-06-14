@@ -1,4 +1,4 @@
-import { FETCH_USERS, NEW_USER, USER_LOGIN} from '../actions/types';
+import { FETCH_USERS, NEW_USER, USER_LOGIN } from '../actions/types';
 
 const initialState = {
   id: null,
