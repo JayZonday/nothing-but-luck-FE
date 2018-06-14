@@ -34,7 +34,7 @@ class UserProfile extends React.Component {
         <figure className="profile-card">
           <img src="http://symphonyguildofwinterhaven.com/wp-content/uploads/Shamrocks.jpg" alt="profile-background" />
             <figcaption>
-              <img src="http://i66.tinypic.com/212fi8k.jpg" alt="profile-picture" className="profile" />
+              <img src="http://i66.tinypic.com/212fi8k.jpg" alt="profile" className="profile" />
               <h2>{localStorage.username}</h2>
               <hr />
               <br />
