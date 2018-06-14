@@ -34,7 +34,7 @@ class RegisterForm extends React.Component{
       this.state.profurl,
       this.state.bgurl
     );
-    
+
     if (localStorage.username !== "undefined"){
       alert("successful login")
     }else{
@@ -73,6 +73,14 @@ class RegisterForm extends React.Component{
             <br />
             <label htmlFor="favsport">Favorite Sport: </label>
             <input type="text" name="favsport" onChange={this.onChange} value={this.state.favsport}></input>
+            <br />
+            <br />
+            <label htmlFor="profurl">Profile Pic(url): </label>
+            <input type="text" name="profurl" onChange={this.onChange} value={this.state.profurl}></input>
+            <br />
+            <br />
+            <label htmlFor="bgurl">Background Img(url): </label>
+            <input type="text" name="bgurl" onChange={this.onChange} value={this.state.bgurl}></input>
             <br />
             <br />
             <button type='submit'>Sign-Up!</button>

@@ -32,9 +32,9 @@ class UserProfile extends React.Component {
 
       <div className="profile-info">
         <figure className="profile-card">
-          <img src="http://symphonyguildofwinterhaven.com/wp-content/uploads/Shamrocks.jpg" alt="profile-background" />
+          <img src={this.props.user.bgurl} alt="bg-pic" />
             <figcaption>
-              <img src="http://i66.tinypic.com/212fi8k.jpg" alt="profile" className="profile" />
+              <img src={this.props.user.profurl} alt="prof-pic" className="profile" />
               <h2>{this.props.user.username}</h2>
               <hr />
               <br />
