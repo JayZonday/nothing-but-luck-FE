@@ -18,6 +18,7 @@ class App extends Component {
 
   onClickHandler = () => {
     localStorage.clear();
+    alert('You Logged Out! - Have a Great Day!')
   }
 
   render() {

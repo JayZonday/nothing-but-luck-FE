@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux'
-import { login } from '../actions/loginActions'
+import { login } from '../actions/userActions'
 import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom'
 
