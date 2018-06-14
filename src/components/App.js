@@ -1,16 +1,19 @@
 import React, { Component } from 'react';
 import './App.css';
-import {Route } from 'react-router-dom'
+import { Route } from 'react-router-dom'
+import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
+import { fetchUsers } from '../actions/userActions'
 
-import Postform from './components/Postform';
-import LoginForm from './components/LoginForm';
-import RegisterForm from './components/RegisterForm';
-import Nav from './components/Nav';
-import NflForum from './components/NflForum'
-import NbaForum from './components/NbaForum'
-import MlbForum from './components/MlbForum'
-import Users from './components/Users'
-import UserProfile from './components/UserProfile'
+import Postform from './Postform';
+import LoginForm from './LoginForm';
+import RegisterForm from './RegisterForm';
+import Nav from './Nav';
+import NflForum from './NflForum'
+import NbaForum from './NbaForum'
+import MlbForum from './MlbForum'
+import Users from './Users'
+import UserProfile from './UserProfile'
 
 
 class App extends Component {
