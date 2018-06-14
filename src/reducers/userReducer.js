@@ -13,7 +13,8 @@ export default function(state = initialState, action) {
       ...state,
       id: action.user_id,
       token: action.token,
-      username: action.username
+      username: action.username,
+      item: action.payload
     };
     case FETCH_USERS:
       return {

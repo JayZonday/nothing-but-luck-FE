@@ -27,7 +27,8 @@ export const login = (username, password) => {
         type: USER_LOGIN,
         token: localStorage.getItem('token'),
         user_id: localStorage.getItem('user_id'),
-        username: localStorage.getItem('username')
+        username: localStorage.getItem('username'),
+        payload: user
       })
     })
   }
@@ -51,7 +52,8 @@ export const register = (username, password) => {
         type: NEW_USER,
         token: localStorage.getItem('token'),
         user_id: localStorage.getItem('user_id'),
-        username: localStorage.getItem('username')
+        username: localStorage.getItem('username'),
+        payload: user
       })
     })
   }
