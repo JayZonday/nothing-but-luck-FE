@@ -230,7 +230,6 @@ button:active {
 
 
 /* Profile Card */
-@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,600);
 .profile-card {
   font-family: 'Roboto', Arial, sans-serif;
   position: relative;
