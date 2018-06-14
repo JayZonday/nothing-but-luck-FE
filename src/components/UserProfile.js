@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { fetchPosts } from '../actions/postActions';
 import { fetchUsers } from '../actions/userActions';
+import { Link } from 'react-router-dom'
 
 class UserProfile extends React.Component {
 
@@ -29,6 +30,7 @@ class UserProfile extends React.Component {
     return (
       <div className="user-profile">
         <h1> The {this.props.user.username} NBL Zone </h1>
+        <Link to='/edit-profile'><button>[dont click]edit-profile</button></Link>
         <hr />
 
       <div className="profile-info">
