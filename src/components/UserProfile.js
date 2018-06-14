@@ -13,54 +13,56 @@ class UserProfile extends React.Component {
   }
 
   render (){
-    const postItems = this.props.posts.filter((post) => {
-      return post.user_id === parseInt(localStorage.user_id)
-    })
-    const filtered = postItems.map(post => (
-    <div className="profile-posts">
-      <div className='profile-post' key={post.id}>
-        <h5>{post.league} forum</h5>
-        <hr />
-        <h2>{post.title}</h2>
-        <hr />
-        <p className="post-body">{post.body}</p>
-      </div>
-    </div>
-    ));
-    return (
-      <div className="user-profile">
-        <h1> The {this.props.user.username} NBL Zone </h1>
-        <Link to='/edit-profile'><button>[dont click]edit-profile</button></Link>
-        <hr />
-
-      <div className="profile-info">
-        <figure className="profile-card">
-          <img src={this.props.user.bgurl} alt="bg-pic" />
-            <figcaption>
-              <img src={this.props.user.profurl} alt="prof-pic" className="profile" />
-              <h2>{this.props.user.username}</h2>
-              <hr />
-              <br />
-              <br />
-              <span>Motto: {this.props.user.motto}</span>
-              <br />
-              <hr />
-              <span>Name: {this.props.user.name}</span>
-              <br />
-              <hr />
-              <span>Email: {this.props.user.email}</span>
-              <br />
-              <hr />
-              <span>Favorite Sport: {this.props.user.favsport}</span>
-            </figcaption>
-          </figure>
-      </div>
+    if (!!this.props.users[0]){
+      console.log(this.props.users[0])
+      const userPosts = this.props.posts.map(post => (
       <div className="profile-posts">
-          <h1>Posts</h1>
-        <div className="profileposts-container">{filtered}</div>
+        <div className='profile-post' key={post.id}>
+          <h5>{post.league} forum</h5>
+          <hr />
+          <h2>{post.title}</h2>
+          <hr />
+          <p className="post-body">{post.body}</p>
         </div>
       </div>
-    )
+      ));
+      return (
+        <div className="user-profile">
+          <h1> The {this.props.user.username} NBL Zone </h1>
+          <Link to='/edit-profile'><button>[dont click]edit-profile</button></Link>
+          <hr />
+
+        <div className="profile-info">
+          <figure className="profile-card">
+            <img src={this.props.user.bgurl} alt="bg-pic" />
+              <figcaption>
+                <img src={this.props.user.profurl} alt="prof-pic" className="profile" />
+                <h2>{this.props.user.username}</h2>
+                <hr />
+                <br />
+                <br />
+                <span>Motto: {this.props.user.motto}</span>
+                <br />
+                <hr />
+                <span>Name: {this.props.user.name}</span>
+                <br />
+                <hr />
+                <span>Email: {this.props.user.email}</span>
+                <br />
+                <hr />
+                <span>Favorite Sport: {this.props.user.favsport}</span>
+              </figcaption>
+            </figure>
+        </div>
+        <div className="profile-posts">
+            <h1>Posts</h1>
+          <div className="profileposts-container">{userPosts}</div>
+          </div>
+        </div>
+      )
+    } else {
+      return (<div></div>)
+    }
   }
 }
 

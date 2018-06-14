@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import { Route, Switch, Redirect } from 'react-router-dom'
+import { Route, Switch, Redirect, withRouter } from 'react-router-dom'
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { fetchUsers } from '../actions/userActions';
@@ -23,9 +23,13 @@ class App extends Component {
     alert('You Logged Out! - Have a Great Day!')
   }
 
-  componentDidMount
+  componentDidMount(){
+    this.props.fetchUsers();
+  }
+
 
   render() {
+    console.log(this.props)
     return (
         <div className="App">
           <header className="App-header">
@@ -50,5 +54,15 @@ class App extends Component {
   }
 }
 
+App.propTypes = {
+    fetchUsers: PropTypes.func.isRequired,
+    users: PropTypes.array.isRequired,
+    user: PropTypes.object
+  }
+  const mapStateToProps = state => ({
+    users: state.users.items,
+    user: state.users.item
+  });
 
-export default App
+
+export default withRouter(connect(null, {fetchUsers})(App))
