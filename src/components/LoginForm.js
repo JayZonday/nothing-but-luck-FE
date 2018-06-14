@@ -9,8 +9,7 @@ class LoginForm extends React.Component{
 
   state = {
     username: "",
-    password: "",
-    loggedin: false
+    password: ""
   }
 
   onChange = (e) => {
