@@ -221,8 +221,8 @@ button:active {
   border: 5px solid white;
   border-radius: 2pc;
   width: 200px;
-  height: 180px;
-  padding: 12px;
+  height: 300px;
+  padding: 5px;
   margin: 5px;
   display: inline-block;
   background: black;

@@ -15,6 +15,7 @@ class Users extends React.Component{
       <div className="members" key={user.id}>
         <h4>{user.username}</h4>
         <img src={user.profurl} alt="prof-pic" className="member-img" />
+        <p>"{user.motto}"</p>
       </div>
     ));
     return (
