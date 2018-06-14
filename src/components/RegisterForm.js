@@ -38,9 +38,9 @@ class RegisterForm extends React.Component{
     );
 
     if (localStorage.username !== "undefined"){
-      alert("successful login")
+      alert("YOU'VE JOINED THE SQUAD - START SPREADIN THE LUCK")
     }else{
-      alert("failed login - [if initial attempt failed retry same combo (bug)]")
+      alert("Something went haywire -- TRY AGAIN...or email me jmoloughney25@gmail.com")
     }
   }
 
