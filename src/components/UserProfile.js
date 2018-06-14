@@ -27,7 +27,7 @@ class UserProfile extends React.Component {
     ));
     return (
       <div className="user-profile">
-        <h1> The {localStorage.username} NBL Zone </h1>
+        <h1> The {this.props.user.username} NBL Zone </h1>
         <hr />
 
       <div className="profile-info">
@@ -35,23 +35,20 @@ class UserProfile extends React.Component {
           <img src="http://symphonyguildofwinterhaven.com/wp-content/uploads/Shamrocks.jpg" alt="profile-background" />
             <figcaption>
               <img src="http://i66.tinypic.com/212fi8k.jpg" alt="profile" className="profile" />
-              <h2>{localStorage.username}</h2>
+              <h2>{this.props.user.username}</h2>
               <hr />
               <br />
               <br />
-              <span>motto</span>
+              <span>Motto: {this.props.user.motto}</span>
               <br />
               <hr />
-              <span>email</span>
+              <span>Name: {this.props.user.name}</span>
               <br />
               <hr />
-              <span>real name</span>
+              <span>Email: {this.props.user.email}</span>
               <br />
               <hr />
-              <span>hobbies</span>
-              <br />
-              <hr />
-              <span>Favorite Sport</span>
+              <span>Favorite Sport: {this.props.user.favsport}</span>
             </figcaption>
           </figure>
       </div>
@@ -69,10 +66,12 @@ UserProfile.propTypes = {
     posts: PropTypes.array.isRequired,
     fetchUsers: PropTypes.func.isRequired,
     users: PropTypes.array.isRequired,
+    user: PropTypes.object
   }
   const mapStateToProps = state => ({
     users: state.users.items,
-    posts: state.posts.items
+    posts: state.posts.items,
+    user: state.users.item
   });
 
 export default connect(mapStateToProps, { fetchUsers, fetchPosts })(UserProfile);
