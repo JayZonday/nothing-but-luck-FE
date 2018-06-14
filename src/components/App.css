@@ -226,6 +226,7 @@ button:active {
   margin: 5px;
   display: inline-block;
   background: black;
+  overflow: scroll;
 }
 
 
@@ -340,6 +341,7 @@ button:active {
 
 .member-img{
   width: 100px;
+  height: 100px;
   border-radius: 2pc;
   border: 2px solid lightgreen;
 }
