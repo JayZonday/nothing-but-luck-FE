@@ -3,8 +3,6 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { fetchPosts } from '../actions/postActions';
 import Postform from './Postform';
-import {Route, Link, NavLink, Switch} from 'react-router-dom'
-import UserProfile from './UserProfile'
 
 class NflForum extends React.Component{
 
@@ -30,7 +28,6 @@ class NflForum extends React.Component{
         <p className="post-body">{post.body}</p>
       </div>
     ));
-    console.log(this.props.posts.league)
     return (
       <div className="forum-container">
         <div className="nfl-title-bg"><h1 className="forum-title">NFL Forum</h1></div>
@@ -38,7 +35,7 @@ class NflForum extends React.Component{
         <hr />
         <Postform league="NFL" />
         <hr />
-        <h2>NFL Articles</h2>
+      <h2>NFL Posts</h2>
         <div className="post-container">{filtered}</div>
       </div>
     )

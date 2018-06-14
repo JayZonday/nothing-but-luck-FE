@@ -2,8 +2,6 @@ import React from 'react'
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { fetchUsers } from '../actions/userActions';
-import {Route, Link, NavLink, Switch} from 'react-router-dom'
-import Postform from './Postform';
 
 class Users extends React.Component{
 

@@ -2,7 +2,6 @@ import React from 'react'
 import {connect} from 'react-redux'
 import PropTypes from 'prop-types'
 import { createPost } from '../actions/postActions'
-import {Route, Link, NavLink, Switch} from 'react-router-dom'
 
 class Postform extends React.Component{
 
@@ -53,7 +52,7 @@ onSubmit = (e) => {
 
 Postform.propTypes = {
   createPost: PropTypes.func.isRequired
-}
+};
 
 
 export default connect(null,{createPost})(Postform)

@@ -6,13 +6,22 @@ const initialState = {
   items: [],
   item: {}
 }
+
 export default function(state = initialState, action) {
   switch(action.type){
+    case USER_LOGIN:
+      return {
+      ...state,
+      id: action.user_id,
+      token: action.token,
+      item: action.payload
+    }
     case FETCH_USERS:
       return {
         ...state,
         items: action.payload,
       };
+<<<<<<< Updated upstream
     case USER_LOGIN:
         return {
         ...state,
@@ -20,6 +29,8 @@ export default function(state = initialState, action) {
         token: action.token,
         username: action.username
       };
+=======
+>>>>>>> Stashed changes
     case NEW_USER:
       return{
         ...state,

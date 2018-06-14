@@ -1,9 +1,12 @@
 import React from 'react-redux'
 import { login } from '../actions/userActions'
 import {connect} from 'react-redux'
+<<<<<<< Updated upstream
+=======
+import { login } from '../actions/userActions'
+>>>>>>> Stashed changes
 import PropTypes from 'prop-types'
-import {Route, Link, NavLink, Switch, Redirect} from 'react-router-dom'
-import UserProfile from './UserProfile'
+import {Link} from 'react-router-dom'
 
 
 class LoginForm extends React.Component{

@@ -24,16 +24,17 @@ export const login = (username, password) => {
       localStorage.setItem('token', user.token)
       localStorage.setItem('user_id', user.user_id)
       localStorage.setItem('username', user.username)
+
       dispatch({
         type: USER_LOGIN,
-        token: localStorage.token,
-        user_id: localStorage.user_id,
-        username: localStorage.username
+        token: localStorage.getItem("token"),
+        user_id: localStorage.getItem("user_id"),
+        username: localStorage.getItem("username"),
       })
     })
   }
 }
-export const register = (username, password) => {
+export const register = (username, password, motto, name, imgurl, bgurl, hobbies) => {
   return (dispatch) => {
     fetch(`http://localhost:3000/api/v1/users/`,{
       method: 'POST',
@@ -41,7 +42,7 @@ export const register = (username, password) => {
         'Content-Type': 'application/json',
         'Accept': 'application/json',
       },
-      body: JSON.stringify({username: username, password: password})
+      body: JSON.stringify({username: username, password: password, motto: motto, name:name, imgurl:imgurl, bgurl:bgurl, hobbies:hobbies})
     })
     .then(res => res.json())
     .then(user => {
@@ -50,9 +51,10 @@ export const register = (username, password) => {
       localStorage.setItem('username', user.username)
       dispatch({
         type: NEW_USER,
-        token: localStorage.token,
-        user_id: localStorage.user_id,
-        username: localStorage.username
+        token: localStorage.getItem("token"),
+        user_id: localStorage.getItem("user_id"),
+        username: localStorage.getItem("username"),
+        payload: user
       })
     })
   }

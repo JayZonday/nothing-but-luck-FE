@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import {Route, Link, NavLink, Switch} from 'react-router-dom'
-
-import Posts from './components/Posts';
+import {Route} from 'react-router-dom'
 import Postform from './components/Postform';
 import LoginForm from './components/LoginForm';
 import RegisterForm from './components/RegisterForm';
@@ -19,6 +17,7 @@ class App extends Component {
 
   onClickHandler = () => {
     localStorage.clear();
+    alert("Thanks for stopping in and spreading the luck - JayZonday ")
   }
 
   render() {
