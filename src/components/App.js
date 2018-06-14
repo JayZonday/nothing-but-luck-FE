@@ -54,6 +54,8 @@ class App extends Component {
   }
 }
 
+
+
 App.propTypes = {
     fetchUsers: PropTypes.func.isRequired,
     users: PropTypes.array.isRequired,
@@ -65,4 +67,4 @@ App.propTypes = {
   });
 
 
-export default withRouter(connect(null, {fetchUsers})(App))
+export default withRouter(connect(mapStateToProps, { fetchUsers })(App))
