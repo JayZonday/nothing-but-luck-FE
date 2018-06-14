@@ -41,7 +41,7 @@ export const register = (username, password, motto, email, name, favsport, profu
         'Content-Type': 'application/json',
         'Accept': 'application/json',
       },
-      body: JSON.stringify({username: username, password: password, motto: motto, email: email, name: name, favsport: favsport, profurl: profurl, bgurl:bgurl})
+      body: JSON.stringify({username, password, motto, email, name, favsport, profurl, bgurl})
     })
     .then(res => res.json())
     .then(user => {

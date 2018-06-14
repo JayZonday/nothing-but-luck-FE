@@ -34,6 +34,7 @@ class RegisterForm extends React.Component{
       this.state.profurl,
       this.state.bgurl
     );
+    
     if (localStorage.username !== "undefined"){
       alert("successful login")
     }else{
