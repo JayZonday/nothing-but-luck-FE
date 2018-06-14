@@ -338,6 +338,12 @@ button:active {
   width: 460px;
 }
 
+.member-img{
+  width: 100px;
+  border-radius: 2pc;
+  border: 2px solid lightgreen;
+}
+
 .login-form{
   border: 2px solid white;
   border-radius: 2pc;
