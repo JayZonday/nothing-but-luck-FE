@@ -1,6 +1,6 @@
-import React from 'react';
+import React from 'react-redux'
+import { login } from '../actions/userActions'
 import {connect} from 'react-redux'
-import { login } from '../actions/loginActions'
 import PropTypes from 'prop-types'
 import {Route, Link, NavLink, Switch, Redirect} from 'react-router-dom'
 import UserProfile from './UserProfile'

@@ -1,4 +1,4 @@
-import {FETCH_POSTS, NEW_POSTS} from './types';
+import {FETCH_POSTS, NEW_POST} from './types';
 
 export const fetchPosts = () => dispatch => {
     fetch('http://localhost:3000/api/v1/posts')
@@ -19,7 +19,7 @@ export const createPost = (postData) => dispatch => {
     })
     .then(res => res.json())
     .then(post => dispatch({
-      type: NEW_POSTS,
+      type: NEW_POST,
       payload: post
     })
   );
