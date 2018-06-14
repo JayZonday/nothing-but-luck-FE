@@ -226,7 +226,7 @@ button:active {
   margin: 5px;
   display: inline-block;
   background: black;
-  overflow: scroll;
+  overflow-y: scroll;
 }
 
 
