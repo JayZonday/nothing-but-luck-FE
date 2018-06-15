@@ -50,7 +50,7 @@ class App extends Component {
           {!(localStorage.getItem("token") === 'undefined')?
           <Route path='/notfound' component={ NotFound } />
           :
-          <Redirect to='/notfound' />
+          <Redirect to='/notfoundhelp' />
           }
           {(localStorage.getItem("token"))?
           <Route path='/mlb' component={ MlbForum }/>
