@@ -15,6 +15,7 @@ import MlbForum from './MlbForum'
 import Users from './Users'
 import UserProfile from './UserProfile'
 import EditUserForm from './EditUserForm'
+import EditPostform from './EditPostform'
 import NotFound from './NotFound'
 
 //Round-about component that is a copy of above component//
@@ -81,8 +82,13 @@ class App extends Component {
         :
         <Redirect to="/" />
       }
-        {(localStorage.getItem("token"))?
+      {(localStorage.getItem("token"))?
         <Route path='/edit-profile' component={ EditUserForm }/>
+        :
+        <Redirect to="/" />
+      }
+      {(localStorage.getItem("token"))?
+        <Route path='/edit-post/:id' component={ EditPostform }/>
         :
         <Redirect to="/" />
       }

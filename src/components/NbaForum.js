@@ -2,9 +2,11 @@ import React from 'react'
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { fetchPosts } from '../actions/postActions';
+import { Link } from 'react-router-dom'
 
 //Component//
 import Postform from './Postform';
+import EditPostform from './EditPostform';
 
 class NbaForum extends React.Component{
 

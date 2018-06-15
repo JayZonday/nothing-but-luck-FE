@@ -1,8 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { fetchPosts } from '../actions/postActions';
+import { fetchPosts, editPost} from '../actions/postActions';
 import { fetchUsers } from '../actions/userActions';
+import { Link } from 'react-router-dom'
 
 class UserProfile extends React.Component {
 
@@ -24,6 +25,7 @@ class UserProfile extends React.Component {
           <h2>{post.title}</h2>
           <hr />
           <p className="post-body">{post.body}</p>
+          <Link to={`/edit-post/${post.id}`}><button> edit </button></Link>
         </div>
       ));
 
@@ -72,6 +74,7 @@ UserProfile.propTypes = {
     fetchPosts: PropTypes.func.isRequired,
     posts: PropTypes.array.isRequired,
     fetchUsers: PropTypes.func.isRequired,
+    editPost: PropTypes.func.isRequired,
     users: PropTypes.array.isRequired,
     user: PropTypes.object
 }
@@ -82,4 +85,4 @@ const mapStateToProps = state => ({
     user: state.users.item
 });
 
-export default connect(mapStateToProps, { fetchUsers, fetchPosts })(UserProfile);
+export default connect(mapStateToProps, { fetchUsers, fetchPosts})(UserProfile);

@@ -10,7 +10,6 @@ export const fetchUsers = () => dispatch => {
 }
 
 export const login = (username, password) => {
-
   return (dispatch) => {
     fetch(`http://localhost:3000/api/v1/sessions/`,{
       method: 'POST',
@@ -21,7 +20,7 @@ export const login = (username, password) => {
       body: JSON.stringify({username: username, password: password})
     })
     .then(res => res.json())
-    .then(user => {
+    .then(user => { (console.log(user))
       localStorage.setItem('token', user.token)
       localStorage.setItem('user_id', user.user_id)
       localStorage.setItem('username', user.username)
