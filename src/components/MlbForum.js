@@ -3,6 +3,8 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { fetchPosts } from '../actions/postActions';
 import { fetchUsers } from '../actions/userActions';
+
+//Component//
 import Postform from './Postform';
 
 class MlbForum extends React.Component{
@@ -19,6 +21,7 @@ class MlbForum extends React.Component{
   }
 
   render(){
+
     const postItems = this.props.posts.filter((post) => {
       return post.league === "MLB"
     })
@@ -31,6 +34,7 @@ class MlbForum extends React.Component{
         <p className="post-body">{post.body}</p>
       </div>
     ));
+
     return (
       <div className="forum-container">
         <div className="mlb-title-bg"><h1 className="forum-title">MLB Forum</h1></div>

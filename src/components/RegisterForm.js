@@ -15,7 +15,6 @@ class RegisterForm extends React.Component{
     favsport: "",
     profurl: "",
     bgurl: ""
-
   }
 
   onChange = (e) => {
@@ -46,48 +45,57 @@ class RegisterForm extends React.Component{
 
 
   render() {
-
     return (
       <div className="login-form">
         <h1>Join The NBL Squad!</h1>
         <div>
+
           <form onSubmit={this.handleSubmit}>
           <div>
             <label htmlFor="username">Username: </label>
             <input type="text" name="username" onChange={this.onChange} value={this.state.username}></input>
             <br />
             <br />
+
             <label htmlFor="password">Password: </label>
             <input type="password" name="password" onChange={this.onChange} value={this.state.password}></input>
             <br />
             <br />
+
             <label htmlFor="name">Name: </label>
             <input type="text" name="name" onChange={this.onChange} value={this.state.name}></input>
             <br />
             <br />
+
             <label htmlFor="motto">Motto: </label>
             <input type="text" name="motto" onChange={this.onChange} value={this.state.motto}></input>
             <br />
             <br />
+
             <label htmlFor="email">Email: </label>
             <input type="text" name="email" onChange={this.onChange} value={this.state.email}></input>
             <br />
             <br />
+
             <label htmlFor="favsport">Favorite Sport: </label>
             <input type="text" name="favsport" onChange={this.onChange} value={this.state.favsport}></input>
             <br />
             <br />
+
             <label htmlFor="profurl">Profile Pic(url): </label>
             <input type="text" name="profurl" onChange={this.onChange} value={this.state.profurl}></input>
             <br />
             <br />
+
             <label htmlFor="bgurl">Background Img(url): </label>
             <input type="text" name="bgurl" onChange={this.onChange} value={this.state.bgurl}></input>
             <br />
             <br />
+
             <button type='submit'>Sign-Up!</button>
           </div>
           </form>
+
         </div>
       </div>
     );
@@ -97,4 +105,4 @@ class RegisterForm extends React.Component{
 
 
 
-export default connect(null,{register})(RegisterForm)
+export default connect(null,{ register })(RegisterForm)

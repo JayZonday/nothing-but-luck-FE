@@ -5,46 +5,52 @@ import { createPost } from '../actions/postActions'
 
 class Postform extends React.Component{
 
-    state = {
-      title: "",
-      body: "",
-      league: this.props.league,
-    }
-
-onChange = (e) => {
-  this.setState({
-    [e.target.name]: e.target.value
-  })
-}
-
-onSubmit = (e) => {
-  e.preventDefault();
-  const post = {
-    title: this.state.title,
-    body: this.state.body,
-    league: this.state.league,
-    user_id: localStorage.user_id
+  state = {
+    title: "",
+    body: "",
+    league: this.props.league,
   }
-  this.props.createPost(post);
-}
+
+  onChange = (e) => {
+    this.setState({
+    [e.target.name]: e.target.value
+    })
+  }
+
+  onSubmit = (e) => {
+    e.preventDefault();
+    const post = {
+      title: this.state.title,
+      body: this.state.body,
+      league: this.state.league,
+      user_id: localStorage.user_id
+    }
+    this.props.createPost(post);
+  }
 
 
 
 
   render(){
+
     return (
       <div className="add-post">
+
         <h2>Posterizer</h2>
+
         <form onSubmit={this.onSubmit}>
         <div>
+
           <textarea name="title" cols="40" rows="1" placeholder="Headline" onChange={this.onChange} value={this.state.title}></textarea>
           <br />
           <br />
+
           <textarea name="body" cols="45" rows="5" placeholder="Body" onChange={this.onChange} value={this.state.body}></textarea>
           <br />
           <button type='submit'>Spread The Luck</button>
         </div>
         </form>
+
       </div>
     )
   }
@@ -55,4 +61,4 @@ Postform.propTypes = {
 }
 
 
-export default connect(null,{createPost})(Postform)
+export default connect(null,{ createPost })(Postform)

@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux'
 import { login } from '../actions/userActions'
 import PropTypes from 'prop-types'
-import { Link, Route, Redirect } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 
 class LoginForm extends React.Component{
@@ -12,7 +12,6 @@ class LoginForm extends React.Component{
   state = {
     username: "",
     password: ""
-
   }
 
   onChange = (e) => {
@@ -31,20 +30,24 @@ class LoginForm extends React.Component{
       <div className="login-form">
         <h1>Login into NBL!</h1>
         <div>
+
           <form onSubmit={this.handleSubmit}>
           <div>
             <label htmlFor="username">Username: </label>
             <input type="text" name="username" onChange={this.onChange} value={this.state.username}></input>
             <br />
             <br />
+
             <label htmlFor="password">Password: </label>
             <input type="password" name="password" onChange={this.onChange} value={this.state.password}></input>
             <br />
             <br />
+
             <button type='submit'>Feelin' Lucky</button>
             <Link to='/signup'><button>Don't Have an Account?</button></Link>
           </div>
           </form>
+
         </div>
       </div>
     );

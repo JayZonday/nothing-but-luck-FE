@@ -14,7 +14,6 @@ class EditUserForm extends React.Component{
     favsport: "",
     profurl: "",
     bgurl: ""
-
   }
 
   onChange = (e) => {
@@ -40,31 +39,39 @@ class EditUserForm extends React.Component{
   render() {
 
     return (
+
       <div className="edit-user-form">
         <h1>Update Profile!</h1>
+
         <div>
+
           <form onSubmit={this.handleSubmit}>
           <div>
             <label htmlFor="name">Name: </label>
             <input type="text" name="name" onChange={this.onChange} value={this.state.name}></input>
             <br />
             <br />
+
             <label htmlFor="motto">Motto: </label>
             <input type="text" name="motto" onChange={this.onChange} value={this.state.motto}></input>
             <br />
             <br />
+
             <label htmlFor="email">Email: </label>
             <input type="text" name="email" onChange={this.onChange} value={this.state.email}></input>
             <br />
             <br />
+
             <label htmlFor="favsport">Favorite Sport: </label>
             <input type="text" name="favsport" onChange={this.onChange} value={this.state.favsport}></input>
             <br />
             <br />
+
             <label htmlFor="profurl">Profile Pic(url): </label>
             <input type="text" name="profurl" onChange={this.onChange} value={this.state.profurl}></input>
             <br />
             <br />
+
             <label htmlFor="bgurl">Background Img(url): </label>
             <input type="text" name="bgurl" onChange={this.onChange} value={this.state.bgurl}></input>
             <br />
@@ -72,6 +79,7 @@ class EditUserForm extends React.Component{
             <button type='submit'>Update Profile!</button>
           </div>
           </form>
+
         </div>
       </div>
     );

@@ -8,7 +8,9 @@ export const fetchUsers = () => dispatch => {
       payload: users
     }));
 }
+
 export const login = (username, password) => {
+
   return (dispatch) => {
     fetch(`http://localhost:3000/api/v1/sessions/`,{
       method: 'POST',
@@ -33,7 +35,9 @@ export const login = (username, password) => {
     })
   }
 }
+
 export const register = (username, password, motto, email, name, favsport, profurl, bgurl) => {
+
   return (dispatch) => {
     fetch(`http://localhost:3000/api/v1/users`,{
       method: 'POST',
@@ -57,7 +61,9 @@ export const register = (username, password, motto, email, name, favsport, profu
     })
   }
 }
+
 export const edit = (username, password, motto, email, name, favsport, profurl, bgurl) => {
+
   return (dispatch) => {
     fetch(`http://localhost:3000/api/v1/user/${localStorage.user_id}`,{
       method: 'PATCH',

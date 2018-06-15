@@ -11,6 +11,7 @@ class Users extends React.Component{
 
 
   render(){
+
     const userItems = this.props.users.map(user => (
       <div className="members" key={user.id}>
         <h4>{user.username}</h4>
@@ -18,6 +19,7 @@ class Users extends React.Component{
         <p>"{user.motto}"</p>
       </div>
     ));
+
     return (
       <div className="members-page">
         <h1 className="member-title">The NBL Squad</h1>

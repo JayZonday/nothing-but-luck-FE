@@ -2,6 +2,8 @@ import React from 'react'
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { fetchPosts } from '../actions/postActions';
+
+//Component//
 import Postform from './Postform';
 
 class NflForum extends React.Component{
@@ -28,14 +30,14 @@ class NflForum extends React.Component{
         <hr></hr>
         <p className="post-body">{post.body}</p>
       </div>
-    ));
-    console.log(this.props.posts.league)
-    return (
+      ));
+
+      return (
       <div className="forum-container">
         <div className="nfl-title-bg"><h1 className="forum-title">NFL Forum</h1></div>
         <br />
         <hr />
-      <h2>NFL Posts</h2>
+        <h2>NFL Posts</h2>
         <div className="post-container">{filtered}</div>
         <br />
         <hr />
@@ -43,7 +45,7 @@ class NflForum extends React.Component{
       </div>
     )
   }
-  }
+}
 
 NflForum.propTypes = {
   fetchPosts: PropTypes.func.isRequired,

@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { fetchPosts } from '../actions/postActions';
 import { fetchUsers } from '../actions/userActions';
-import { Link } from 'react-router-dom'
 
 class UserProfile extends React.Component {
 
@@ -14,10 +13,11 @@ class UserProfile extends React.Component {
 
   render (){
     if (!!this.props.users[0]){
-      console.log(this.props.users[0])
+
       const postItems = this.props.posts.filter((post) => {
         return post.user_id === parseInt(localStorage.user_id)
       })
+
       const filtered = postItems.map(post => (
         <div className='profile-post' key={post.id}>
           <h4>{post.league}</h4>
@@ -26,6 +26,7 @@ class UserProfile extends React.Component {
           <p className="post-body">{post.body}</p>
         </div>
       ));
+
       return (
         <div className="user-profile">
           <h1> The {localStorage.username} NBL Zone </h1>
@@ -52,11 +53,13 @@ class UserProfile extends React.Component {
                 <span>Favorite Sport: {this.props.user.favsport}</span>
               </figcaption>
             </figure>
+
         </div>
         <div className="profile-posts">
-            <h1>Posts</h1>
+          <h1>Posts</h1>
           <div className="profileposts-container">{filtered}</div>
-          </div>
+        </div>
+
         </div>
       )
     } else {
@@ -71,11 +74,12 @@ UserProfile.propTypes = {
     fetchUsers: PropTypes.func.isRequired,
     users: PropTypes.array.isRequired,
     user: PropTypes.object
-  }
-  const mapStateToProps = state => ({
+}
+
+const mapStateToProps = state => ({
     users: state.users.items,
     posts: state.posts.items,
     user: state.users.item
-  });
+});
 
 export default connect(mapStateToProps, { fetchUsers, fetchPosts })(UserProfile);
