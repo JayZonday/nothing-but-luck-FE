@@ -106,11 +106,11 @@ input#submit:active{
 }
 
 .App-intro{
-  border: 4px solid green;
+  border: 2px solid rgba(0,180,150,0.6);
   width: 270px;
   height: 35px;
   border-radius: 2pc;
-  margin: 10px auto;
+  margin: 20px auto;
   padding: 5px;
   background: rgba(0,0,0,0.8);
   color: white;
