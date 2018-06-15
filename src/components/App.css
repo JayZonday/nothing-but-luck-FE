@@ -112,8 +112,8 @@ input#submit:active{
   border-radius: 2pc;
   margin: 10px auto;
   padding: 5px;
-  background: white;
-  color: black;
+  background: rgba(0,0,0,0.4);
+  color: white;
 }
 
 /*Main AppPage Logo Spinning Clover Sizing*/
