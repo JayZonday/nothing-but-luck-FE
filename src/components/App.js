@@ -44,13 +44,32 @@ class App extends Component {
           <Switch>
           <Route path="/login" component={ LoginForm } />
           <Route path="/signup" component={ RegisterForm } />
-          <Route path='/posterizer' component={ Postform } />
-          <Route path='/nba' component={ NbaForum }/>
-          <Route path='/nfl' component={ NflForum }/>
+          {(localStorage.getItem("token"))?
           <Route path='/mlb' component={ MlbForum }/>
-          <Route path='/' exact component={ Users }/>
+          :
+          <Redirect to="/" />
+          }
+          {(localStorage.getItem("token"))?
+          <Route path='/nfl' component={ NflForum }/>
+          :
+          <Redirect to="/" />
+          }
+          {(localStorage.getItem("token"))?
+          <Route path='/nba' component={ NbaForum }/>
+          :
+          <Redirect to="/" />
+          }
+          {(localStorage.getItem("token"))?
           <Route path='/profile' component={ UserProfile }/>
+          :
+          <Redirect to="/" />
+          }
+          {(localStorage.getItem("token"))?
           <Route path='/edit-profile' component={ EditUserForm }/>
+          :
+          <Redirect to="/" />
+          }
+          <Route path='/' exact component={ Users }/>
           <Route component={ NotFound } />
           </Switch>
         </div>

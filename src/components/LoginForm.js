@@ -26,8 +26,6 @@ class LoginForm extends React.Component{
     this.props.login(this.state.username, this.state.password);
     if (localStorage.username !== "undefined"){
       alert("YOU'RE IN - START SPREADIN THE LUCK")
-    }else{
-      alert("Wrong Credientials Pal - TRY AGAIN")
     }
   }
 
