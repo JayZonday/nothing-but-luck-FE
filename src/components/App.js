@@ -44,6 +44,7 @@ class App extends Component {
           <Switch>
           <Route path="/login" component={ LoginForm } />
           <Route path="/signup" component={ RegisterForm } />
+          <Route path='/' exact component={ Users }/>
           {(localStorage.getItem("token"))?
           <Route path='/mlb' component={ MlbForum }/>
           :
@@ -69,7 +70,6 @@ class App extends Component {
           :
           <Redirect to="/" />
           }
-          <Route path='/' exact component={ Users }/>
           <Route component={ NotFound } />
           </Switch>
         </div>
