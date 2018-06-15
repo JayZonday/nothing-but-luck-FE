@@ -31,7 +31,6 @@ class UserProfile extends React.Component {
       return (
         <div className="user-profile">
           <h1> The {this.props.user.username} NBL Zone </h1>
-          <Link to='/edit-profile'><button>[dont click]edit-profile</button></Link>
           <hr />
 
         <div className="profile-info">

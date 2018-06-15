@@ -18,6 +18,10 @@ import NotFound from './NotFound'
 
 class App extends Component {
 
+  state = {
+    loggedOut: false
+  }
+
   onClickHandler = () => {
     localStorage.clear();
     alert('You Logged Out! - Have a Great Day!')
