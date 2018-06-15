@@ -46,6 +46,16 @@ class App extends Component {
           <Route path="/signup" component={ RegisterForm } />
           <Route path='/' exact component={ Users }/>
           {(localStorage.getItem("token"))?
+          <Route component={ NotFound } />
+          :
+          <Redirect to="/" />
+          }
+          {(localStorage.getItem("token"))?
+          <Route path='/mlb' component={ MlbForum }/>
+          :
+          <Redirect to="/" />
+          }
+          {(localStorage.getItem("token"))?
           <Route path='/mlb' component={ MlbForum }/>
           :
           <Redirect to="/" />
@@ -70,7 +80,6 @@ class App extends Component {
           :
           <Redirect to="/" />
           }
-          <Route component={ NotFound } />
           </Switch>
         </div>
     );
