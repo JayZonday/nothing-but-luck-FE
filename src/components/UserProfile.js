@@ -74,7 +74,6 @@ UserProfile.propTypes = {
     fetchPosts: PropTypes.func.isRequired,
     posts: PropTypes.array.isRequired,
     fetchUsers: PropTypes.func.isRequired,
-    editPost: PropTypes.func.isRequired,
     users: PropTypes.array.isRequired,
     user: PropTypes.object
 }
