@@ -231,9 +231,11 @@ button:active {
 
 .not-found{
   border: 2px solid white;
-  border: 2pc;
+  border-radius: 2pc;
+  background:black;
   width: 600px;
   height: auto;
+  padding: 10px;
   margin: 2% auto;
 }
 
