@@ -18,8 +18,9 @@ class UserProfile extends React.Component {
       const postItems = this.props.posts.filter((post) => {
         return post.user_id === parseInt(localStorage.user_id)
       })
-
-      const filtered = postItems.map(post => (
+      const rPostItems = postItems.reverse()
+      
+      const filtered = rPostItems.map(post => (
         <div className='profile-post' key={post.id}>
           <h4>{post.league}</h4>
           <h2>{post.title}</h2>

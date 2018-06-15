@@ -25,8 +25,8 @@ class NbaForum extends React.Component{
     const postItems = this.props.posts.filter((post) => {
       return post.league === "NBA"
     })
-
-    const filtered = postItems.map(post => (
+    const rPostItems = postItems.reverse()
+    const filtered = rPostItems.map(post => (
       <div className='post' key={post.id}>
         <h2>{post.title}</h2>
         <h5>Contributed by: {post.user.username}</h5>
