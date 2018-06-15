@@ -15,11 +15,13 @@ class UserProfile extends React.Component {
   render (){
     if (!!this.props.users[0]){
       console.log(this.props.users[0])
-      const userPosts = this.props.posts.map(post => (
+      const postItems = this.props.posts.filter((post) => {
+        return post.user_id === parseInt(localStorage.user_id)
+      })
+      const filtered = postItems.map(post => (
       <div className="profile-posts">
         <div className='profile-post' key={post.id}>
-          <h5>{post.league} forum</h5>
-          <hr />
+          <h4>{post.league}</h4>
           <h2>{post.title}</h2>
           <hr />
           <p className="post-body">{post.body}</p>
@@ -56,7 +58,7 @@ class UserProfile extends React.Component {
         </div>
         <div className="profile-posts">
             <h1>Posts</h1>
-          <div className="profileposts-container">{userPosts}</div>
+          <div className="profileposts-container">{filtered}</div>
           </div>
         </div>
       )
