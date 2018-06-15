@@ -35,7 +35,7 @@ class UserProfile extends React.Component {
 
         <div className="profile-info">
           <figure className="profile-card">
-            <img src={this.props.user.bgurl} alt="bg-pic" />
+            <img id="b" src={this.props.user.bgurl} alt="bg-pic" />
               <figcaption>
                 <img src={this.props.user.profurl} alt="prof-pic" className="profile" />
                 <h2>{this.props.user.username}</h2>

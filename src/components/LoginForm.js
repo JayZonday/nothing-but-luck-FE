@@ -24,9 +24,6 @@ class LoginForm extends React.Component{
   handleSubmit = (event) => {
     event.preventDefault();
     this.props.login(this.state.username, this.state.password);
-    if (localStorage.username !== "undefined"){
-      alert("YOU'RE IN - START SPREADIN THE LUCK")
-    }
   }
 
   render() {

@@ -263,7 +263,13 @@ button:active {
   transition: all 0.25s ease;
 }
 .profile-card img {
-  max-width: 100%;
+  width: 100%;
+  vertical-align: top;
+  opacity: 0.85;
+}
+.profile-card img#b {
+  width: 315px;
+  height: 180px;
   vertical-align: top;
   opacity: 0.85;
 }
