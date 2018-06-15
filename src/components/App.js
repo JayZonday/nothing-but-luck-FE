@@ -45,27 +45,27 @@ class App extends Component {
           <Route path="/login" component={ LoginForm } />
           <Route path="/signup" component={ RegisterForm } />
           <Route path='/' exact component={ Users }/>
-          {!(localStorage.getItem("token") === "undefined")?
+          {(localStorage.getItem("token"))?
           <Route path='/mlb' component={ MlbForum }/>
           :
           <Redirect to="/" />
           }
-          {!(localStorage.getItem("token") === "undefined")?
+          {(localStorage.getItem("token"))?
           <Route path='/nfl' component={ NflForum }/>
           :
           <Redirect to="/" />
           }
-          {!(localStorage.getItem("token") === "undefined")?
+          {(localStorage.getItem("token"))?
           <Route path='/nba' component={ NbaForum }/>
           :
           <Redirect to="/" />
           }
-          {!(localStorage.getItem("token") === "undefined")?
+          {(localStorage.getItem("token"))?
           <Route path='/profile' component={ UserProfile }/>
           :
           <Redirect to="/" />
           }
-          {!(localStorage.getItem("token") === "undefined")?
+          {(localStorage.getItem("token"))?
           <Route path='/edit-profile' component={ EditUserForm }/>
           :
           <Redirect to="/" />
