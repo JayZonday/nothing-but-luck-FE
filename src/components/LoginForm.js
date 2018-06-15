@@ -33,6 +33,7 @@ class LoginForm extends React.Component{
 
           <form onSubmit={this.handleSubmit}>
           <div>
+
             <label htmlFor="username">Username: </label>
             <input type="text" name="username" onChange={this.onChange} value={this.state.username}></input>
             <br />
@@ -45,6 +46,7 @@ class LoginForm extends React.Component{
 
             <button type='submit'>Feelin' Lucky</button>
             <Link to='/signup'><button>Don't Have an Account?</button></Link>
+
           </div>
           </form>
 

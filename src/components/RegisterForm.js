@@ -52,6 +52,7 @@ class RegisterForm extends React.Component{
 
           <form onSubmit={this.handleSubmit}>
           <div>
+
             <label htmlFor="username">Username: </label>
             <input type="text" name="username" onChange={this.onChange} value={this.state.username}></input>
             <br />
@@ -93,6 +94,7 @@ class RegisterForm extends React.Component{
             <br />
 
             <button type='submit'>Sign-Up!</button>
+
           </div>
           </form>
 

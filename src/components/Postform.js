@@ -48,6 +48,7 @@ class Postform extends React.Component{
           <textarea name="body" cols="45" rows="5" placeholder="Body" onChange={this.onChange} value={this.state.body}></textarea>
           <br />
           <button type='submit'>Spread The Luck</button>
+
         </div>
         </form>
 

@@ -47,6 +47,7 @@ class EditUserForm extends React.Component{
 
           <form onSubmit={this.handleSubmit}>
           <div>
+
             <label htmlFor="name">Name: </label>
             <input type="text" name="name" onChange={this.onChange} value={this.state.name}></input>
             <br />
@@ -77,6 +78,7 @@ class EditUserForm extends React.Component{
             <br />
             <br />
             <button type='submit'>Update Profile!</button>
+
           </div>
           </form>
 
