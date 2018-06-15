@@ -4,6 +4,8 @@ import { Route, Switch, Redirect, withRouter } from 'react-router-dom'
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { fetchUsers } from '../actions/userActions';
+
+// Components //
 import Postform from './Postform';
 import LoginForm from './LoginForm';
 import RegisterForm from './RegisterForm';
@@ -15,7 +17,11 @@ import Users from './Users'
 import UserProfile from './UserProfile'
 import EditUserForm from './EditUserForm'
 import NotFound from './NotFound'
+
+//Round-about component that is a copy of above component//
 import NotFoundHelp from './NotFoundHelp'
+
+
 
 class App extends Component {
 

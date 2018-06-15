@@ -229,6 +229,16 @@ button:active {
   overflow-y: scroll;
 }
 
+.member-title{
+  border: 2px solid white;
+  border-radius: 2pc;
+  width: 400px;
+  margin: 25px auto;
+  text-shadow: 5px 3px green;
+  padding: 8px;
+  background-color: rgba(0,0,0,0.8);
+}
+
 .not-found{
   border: 2px solid white;
   border-radius: 2pc;
