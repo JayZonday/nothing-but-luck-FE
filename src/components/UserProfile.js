@@ -30,7 +30,7 @@ class UserProfile extends React.Component {
       ));
       return (
         <div className="user-profile">
-          <h1> The {this.props.user.username} NBL Zone </h1>
+          <h1> The {localStorage.username} NBL Zone </h1>
           <hr />
 
         <div className="profile-info">
