@@ -14,23 +14,19 @@ body {
 
 
 /* scrollbar styling */
-
-.members-container::-webkit-scrollbar-track
-{
+.members-container::-webkit-scrollbar-track{
 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1);
 	background-color: rgba(0,0,0,0.8);
 	border-radius: 2pc;
 
 }
 
-.members-container::-webkit-scrollbar
-{
+.members-container::-webkit-scrollbar{
 	width: 10px;
 	background-color: rgba(0,0,0,0.8);
 }
 
-.members-container::-webkit-scrollbar-thumb
-{
+.members-container::-webkit-scrollbar-thumb{
   border-radius: 10px;
 	background-color: #FFF;
 	background-image: -webkit-gradient(linear,
@@ -40,21 +36,18 @@ body {
 									   to(#19911D),
 									   color-stop(.6,#54DE5D))
 }
-.post-container::-webkit-scrollbar-track
-{
+.post-container::-webkit-scrollbar-track{
 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1);
 	background-color: rgba(0,0,0,0.8);
 	border-radius: 2pc;
 }
 
-.post-container::-webkit-scrollbar
-{
+.post-container::-webkit-scrollbar{
 	width: 10px;
 	background-color: rgba(0,0,0,0.8);
 }
 
-.post-container::-webkit-scrollbar-thumb
-{
+.post-container::-webkit-scrollbar-thumb{
 	border-radius: 10px;
 	background-color: #FFF;
 	background-image: -webkit-gradient(linear,
@@ -81,11 +74,13 @@ input#submit{
   width: 125px;
   font-weight: bold;
 }
+
 input#submit:hover{
   background-color: #3e8e41; /* Green */
   color: white;
   width: 200px;
 }
+
 input#submit:active{
   background-color: #3e8e41;
   box-shadow: 0 5px #666;
@@ -103,6 +98,7 @@ input#submit:active{
   margin: 5% auto;
   box-shadow: 8px 4px rgba(0,180,150,0.6);
 }
+
 /*Main App Logo Styling*/
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
@@ -119,6 +115,7 @@ input#submit:active{
   background: white;
   color: black;
 }
+
 /*Main AppPage Logo Spinning Clover Sizing*/
 #clover{
   height: 70px;
@@ -132,6 +129,7 @@ input#submit:active{
 .logout:hover{
   width: 120px;
 }
+
 .navBar{
   border: 2px solid white;
   border-radius: 2pc;
@@ -277,31 +275,35 @@ button:active {
   background-color: #141414;
   border: 2px solid white;
   border-radius: 2pc;
-
 }
+
 .profile-card * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease;
 }
+
 .profile-card img {
   width: 100%;
   vertical-align: top;
   opacity: 0.85;
 }
+
 .profile-card img#b {
   width: 315px;
   height: 180px;
   vertical-align: top;
   opacity: 0.85;
 }
+
 .profile-card figcaption {
   width: 100%;
   background-color: #141414;
   padding: 25px;
   position: relative;
 }
+
 .profile-card figcaption:before {
   position: absolute;
   content: '';
@@ -313,6 +315,7 @@ button:active {
   border-width: 55px 0 0 400px;
   border-color: transparent transparent transparent #141414;
 }
+
 .profile-card figcaption a {
   padding: 5px;
   border: 1px solid #ffffff;
@@ -328,9 +331,11 @@ button:active {
   font-weight: 600;
   letter-spacing: 1px;
 }
+
 .profile-card figcaption a:hover {
   opacity: 1;
 }
+
 .profile-card .profile {
   border-radius: 50%;
   position: absolute;
@@ -347,6 +352,7 @@ button:active {
   margin: 0 0 5px;
   font-weight: 300;
 }
+
 .profile-card h2 span {
   display: block;
   font-size: 0.5em;
@@ -366,6 +372,7 @@ button:active {
   padding: 10px;
   margin: 25px;
 }
+
 .profileposts-container{
   overflow-y: scroll;
   height:600px;
@@ -427,6 +434,7 @@ button:active {
   background: rgba(0,0,0,0.6);
   box-shadow: 8px 4px rgba(0,180,150,0.6);
 }
+
 .profile-post{
   border: 2px solid white;
   overflow-y: scroll;
@@ -439,7 +447,6 @@ button:active {
   background: rgba(0,0,0,0.6);
   box-shadow: 8px 4px rgba(0,180,150,0.6);
 }
-
 
 .post-body{
   color:white;
@@ -458,6 +465,7 @@ button:active {
   height: 150px;
   margin: 2% auto;
 }
+
 .nba-title-bg{
   border: 2px solid white;
   border-radius: 2pc;
@@ -466,6 +474,7 @@ button:active {
   height: 150px;
   margin: 2% auto;
 }
+
 .nfl-title-bg{
   border: 2px solid white;
   border-radius: 2pc;
@@ -485,6 +494,7 @@ button:active {
   background: black;
   text-shadow: 2px 2px rgb(0,180,150);
 }
+
 .forum-title2{
   border: 2px solid white;
   margin: 30px auto;
