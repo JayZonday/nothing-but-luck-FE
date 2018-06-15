@@ -29,7 +29,8 @@ class App extends Component {
     loggedOut: false
   }
 
-  onClickHandler = () => {
+  onClickHandler = (event) => {
+    event.preventDefault();
     localStorage.clear();
     alert('You Logged Out! - Have a Great Day!')
   }
