@@ -15,6 +15,7 @@ import Users from './Users'
 import UserProfile from './UserProfile'
 import EditUserForm from './EditUserForm'
 import NotFound from './NotFound'
+import NotFoundHelp from './NotFoundHelp'
 
 class App extends Component {
 
@@ -45,10 +46,11 @@ class App extends Component {
           <Route path="/login" component={ LoginForm } />
           <Route path="/signup" component={ RegisterForm } />
           <Route path='/' exact component={ Users }/>
-          {(localStorage.getItem("token"))?
-          <Route component={ NotFound } />
+          <Route path='/notfoundhelp' component= { NotFoundHelp } />
+          {!(localStorage.getItem("token"))?
+          <Route path='/notfound' component={ NotFound } />
           :
-          <Redirect to="/" />
+          <Redirect to='/NotFoundHelp' />
           }
           {(localStorage.getItem("token"))?
           <Route path='/mlb' component={ MlbForum }/>
