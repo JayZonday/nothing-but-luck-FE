@@ -24,7 +24,7 @@ class NflForum extends React.Component{
     const filtered = postItems.map(post => (
       <div className='post' key={post.id}>
         <h2>{post.title}</h2>
-        <h5>contributed by: {post.user.username}</h5>
+        <h5>Contributed by: {post.user.username}</h5>
         <hr></hr>
         <p className="post-body">{post.body}</p>
       </div>
@@ -35,10 +35,11 @@ class NflForum extends React.Component{
         <div className="nfl-title-bg"><h1 className="forum-title">NFL Forum</h1></div>
         <br />
         <hr />
-        <Postform league="NFL" />
-        <hr />
-        <h2>NFL Articles</h2>
+      <h2>NFL Posts</h2>
         <div className="post-container">{filtered}</div>
+        <br />
+        <hr />
+        <Postform league='NFL'/>
       </div>
     )
   }
