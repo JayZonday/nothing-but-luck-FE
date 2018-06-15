@@ -485,6 +485,15 @@ button:active {
   background: black;
   text-shadow: 2px 2px rgb(0,180,150);
 }
+.forum-title2{
+  border: 2px solid white;
+  margin: 30px auto;
+  width: 200px;
+  height: auto;
+  border-radius: 2pc;
+  background: black;
+  text-shadow: 2px 2px rgb(0,180,150);
+}
 
 
 

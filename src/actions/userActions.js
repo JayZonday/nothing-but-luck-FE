@@ -65,7 +65,7 @@ export const register = (username, password, motto, email, name, favsport, profu
 export const edit = (username, password, motto, email, name, favsport, profurl, bgurl) => {
 
   return (dispatch) => {
-    fetch(`http://localhost:3000/api/v1/user/${localStorage.user_id}`,{
+    fetch(`http://localhost:3000/api/v1/user/${localStorage.getItem('user_id')}`,{
       method: 'PATCH',
       headers: {
         'Content-Type': 'application/json',
