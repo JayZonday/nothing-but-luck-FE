@@ -19,14 +19,12 @@ class UserProfile extends React.Component {
         return post.user_id === parseInt(localStorage.user_id)
       })
       const filtered = postItems.map(post => (
-      <div className="profile-posts">
         <div className='profile-post' key={post.id}>
           <h4>{post.league}</h4>
           <h2>{post.title}</h2>
           <hr />
           <p className="post-body">{post.body}</p>
         </div>
-      </div>
       ));
       return (
         <div className="user-profile">
