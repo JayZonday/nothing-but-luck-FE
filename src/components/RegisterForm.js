@@ -47,7 +47,7 @@ class RegisterForm extends React.Component{
   render() {
     return (
       <div className="login-form">
-        <h1>Join The NBL Squad!</h1>
+        <h1 className="login-title">Join The NBL Squad!</h1>
         <div>
 
           <form onSubmit={this.handleSubmit}>
@@ -93,7 +93,7 @@ class RegisterForm extends React.Component{
             <br />
             <br />
 
-            <button type='submit'>Sign-Up!</button>
+            <button type='submit'>Welcome to NBL!</button>
 
           </div>
           </form>

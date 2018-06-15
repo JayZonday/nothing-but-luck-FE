@@ -372,6 +372,16 @@ button:active {
   border: 2px solid lightgreen;
 }
 
+.login-title{
+  border: 1px solid white;
+  width: 350px;
+  margin: 25px auto;
+  border-radius: 2pc;
+  background-color: rgba(0,0,0,0.7);
+  text-shadow: 1px 1px white;
+  padding: 6px;
+}
+
 .login-form{
   border: 2px solid white;
   border-radius: 2pc;
