@@ -18,6 +18,7 @@ export default function(state = initialState, action) {
         item: action.payload,
       };
     case UPDATE_POST:
+      debugger
       return {
         ...state,
         item: action.payload,

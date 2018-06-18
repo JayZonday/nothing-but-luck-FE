@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { fetchPosts, editPost} from '../actions/postActions';
-import { fetchUsers } from '../actions/userActions';
+import { fetchUsers, persistData } from '../actions/userActions';
 import { Link } from 'react-router-dom'
 
 class UserProfile extends React.Component {
@@ -10,6 +10,7 @@ class UserProfile extends React.Component {
   componentDidMount(){
     this.props.fetchPosts();
     this.props.fetchUsers();
+    this.props.persistData()
   }
 
   render (){
@@ -19,14 +20,14 @@ class UserProfile extends React.Component {
         return post.user_id === parseInt(localStorage.user_id)
       })
       const rPostItems = postItems.reverse()
-      
+
       const filtered = rPostItems.map(post => (
         <div className='profile-post' key={post.id}>
           <h4>{post.league}</h4>
           <h2>{post.title}</h2>
           <hr />
           <p className="post-body">{post.body}</p>
-          <Link to={`/edit-post/${post.id}`}><button> edit </button></Link>
+          <Link to={`/edit-post/${post.id}`}><button> Update </button></Link>
         </div>
       ));
 
@@ -85,4 +86,4 @@ const mapStateToProps = state => ({
     user: state.users.item
 });
 
-export default connect(mapStateToProps, { fetchUsers, fetchPosts})(UserProfile);
+export default connect(mapStateToProps, { fetchUsers, fetchPosts, persistData})(UserProfile);

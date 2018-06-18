@@ -53,6 +53,7 @@ class App extends Component {
       <Route path="/signup" component={ RegisterForm } />
       <Route path='/' exact component={ Users }/>
       <Route path='/notfoundhelp' component= { NotFoundHelp } />
+
       {!(localStorage.getItem("token") === 'undefined')?
         <Route path='/notfound' component={ NotFound } />
         :
