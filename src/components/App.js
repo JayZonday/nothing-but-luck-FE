@@ -37,6 +37,7 @@ class App extends Component {
 
   componentDidMount(){
     this.props.fetchUsers();
+    
     this.props.persistData();
   }
 
