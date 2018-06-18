@@ -3,7 +3,7 @@ import './App.css';
 import { Route, Switch, Redirect, withRouter } from 'react-router-dom'
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { fetchUsers } from '../actions/userActions';
+import { fetchUsers, persistData } from '../actions/userActions';
 
 // Components //
 import LoginForm from './LoginForm';
@@ -37,6 +37,7 @@ class App extends Component {
 
   componentDidMount(){
     this.props.fetchUsers();
+    this.props.persistData();
   }
 
 
@@ -113,4 +114,4 @@ App.propTypes = {
   });
 
 
-export default withRouter(connect(mapStateToProps, { fetchUsers })(App))
+export default withRouter(connect(mapStateToProps, { fetchUsers, persistData })(App))

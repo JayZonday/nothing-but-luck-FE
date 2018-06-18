@@ -2,6 +2,7 @@ import React from 'react'
 import { connect } from 'react-redux'
 import PropTypes from 'prop-types'
 import { editPost } from '../actions/postActions'
+import { persistData } from '../actions/userActions'
 
 class EditPostform extends React.Component{
 
@@ -65,4 +66,4 @@ EditPostform.propTypes = {
 }
 
 
-export default connect(null,{ editPost })(EditPostform)
+export default connect(null,{ editPost, persistData})(EditPostform)

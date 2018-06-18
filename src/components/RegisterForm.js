@@ -47,7 +47,8 @@ class RegisterForm extends React.Component{
   render() {
     return (
       <div className="login-form">
-        <h1 className="login-title">Join The NBL Squad!</h1>
+        <h1 className="login-title">Sign-Up Now!</h1>
+        <p className="ls-info">Become an exclusive member of NBL</p>
         <div>
 
           <form onSubmit={this.handleSubmit}>

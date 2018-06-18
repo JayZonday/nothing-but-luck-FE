@@ -122,6 +122,10 @@ input#submit:active{
   width: 70px;
 }
 
+.ls-info{
+  color: white;
+}
+
 .logout{
   width: 100px;
 }

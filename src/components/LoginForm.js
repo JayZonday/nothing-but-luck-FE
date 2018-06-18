@@ -29,6 +29,7 @@ class LoginForm extends React.Component{
     return (
       <div className="login-form">
         <h1 className="login-title">Login into NBL!</h1>
+        <p className="ls-info">For Exclusive Access to NBL Content</p>
         <div>
 
           <form onSubmit={this.handleSubmit}>
