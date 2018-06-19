@@ -33,7 +33,7 @@ class App extends Component {
   onClickHandler = (event) => {
     event.preventDefault();
     localStorage.clear();
-    this.props.history.push("/logout");
+    this.props.history.push("/Logout");
   }
 
   componentDidMount(){
@@ -43,7 +43,7 @@ class App extends Component {
   }
 
 
-  render() {
+  render() { 
     return (
     <div className="App">
       <header className="App-header">

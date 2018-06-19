@@ -10,7 +10,7 @@ class UserProfile extends React.Component {
   componentDidMount(){
     this.props.fetchPosts();
     this.props.fetchUsers();
-    this.props.persistData()
+    this.props.persistData();
   }
 
   render (){
