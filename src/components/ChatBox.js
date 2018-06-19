@@ -1,5 +1,8 @@
 import React from 'react';
 import ActionCable from 'actioncable'
+import { connect } from 'react-redux';
+import { fetchPosts, editPost} from '../actions/postActions';
+import { fetchUsers, persistData } from '../actions/userActions';
 
 class ChatBox extends React.Component{
 
@@ -15,7 +18,7 @@ class ChatBox extends React.Component{
   updateCurrentChatMessage = (event) => {
     console.log(event.target.value)
   this.setState({
-    currentChatMessage: event.target.value
+    [event.target.name]: event.target.value
     });
   }
 
@@ -23,10 +26,10 @@ class ChatBox extends React.Component{
   renderChatLog = () => {
   return this.state.chatLogs.map((el) => {
     return (
-      <li key={`chat_${el.id}`}>
+      <div key={`chat_${el.id}`}>
+        <span className='chat-username'>{el.username}<span className='chat-created-at'>[{ el.created_at }]</span>: </span>
         <span className='chat-message'>{ el.content }</span>
-        <span className='chat-created-at'>{ el.created_at }</span>
-      </li>
+      </div>
     );
   });
   }
@@ -42,9 +45,10 @@ class ChatBox extends React.Component{
       chatLogs.push(data);
       this.setState({ chatLogs: chatLogs });
     },
-    create: function(chatContent) {
+    create: function(chatContent, chatUsername) {
       this.perform('create', {
-        content: chatContent
+        content: chatContent,
+        username: chatUsername
       });
     }
   });
@@ -52,7 +56,7 @@ class ChatBox extends React.Component{
 
 handleSendEvent = (event) => {
   event.preventDefault();
-  this.chats.create(this.state.currentChatMessage);
+  this.chats.create(this.state.currentChatMessage, this.state.currentChateUsername);
   this.setState({
     currentChatMessage: ''
   });
@@ -74,7 +78,15 @@ handleSendEvent = (event) => {
           value={ this.state.currentChatMessage }
           onChange={ (e) => this.updateCurrentChatMessage(e) }
            type='text'
+           name="currentChatMessage"
            placeholder='Enter your message...'
+           className='chat-input'/>
+          <input
+          value={ this.state.username }
+          onChange={ (e) => this.updateCurrentChatMessage(e) }
+           type='text'
+           name="currentChateUsername"
+           placeholder='Enter an Alias'
            className='chat-input'/>
            <button onClick={ (e) => this.handleSendEvent(e) }
            className='send'>
@@ -86,4 +98,12 @@ handleSendEvent = (event) => {
   }
 }
 
-export default ChatBox
+const mapStateToProps = state => ({
+    users: state.users.items,
+    posts: state.posts.items,
+    user: state.users.item
+});
+
+
+
+export default connect(mapStateToProps,{})(ChatBox)

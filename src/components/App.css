@@ -87,6 +87,31 @@ input#submit:active{
   transform: translateY(4px);
 }
 
+.stage{
+  border: 2px solid white;
+  border-radius: 2pc;
+  width: 500px;
+  height: auto;
+  margin: 35px auto;
+}
+
+
+#chatButton{
+  width: 400px;
+}
+
+#chatButton:hover{
+  width: 475px;
+}
+
+.chat-logs{
+  border: 2px solid white;
+  border-radius: 2pc;
+  width: 350px;
+  margin: 10px auto;
+  height: 400px;
+  overflow: scroll;
+}
 
 /*App Styling over main background image*/
 .App {

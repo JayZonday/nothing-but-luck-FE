@@ -18,12 +18,13 @@ export default function(state = initialState, action) {
         item: action.payload,
       };
     case UPDATE_POST:
-      debugger
+      // debugger
       return {
         ...state,
         item: action.payload,
       };
     default:
+      console.log('postReducer')
       return state;
   }
 }
