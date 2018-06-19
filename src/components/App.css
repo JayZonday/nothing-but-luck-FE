@@ -232,7 +232,7 @@ button:active {
 }
 
 .members{
-  border: 5px solid white;
+  border: 2px solid white;
   border-radius: 2pc;
   width: 200px;
   height: 300px;
@@ -241,6 +241,7 @@ button:active {
   display: inline-block;
   background: black;
   overflow-y: scroll;
+  box-shadow: 8px 4px rgba(0,180,150,0.6);
 }
 
 .member-title{
