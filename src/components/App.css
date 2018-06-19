@@ -433,6 +433,16 @@ button:active {
   background: rgba(0,0,0,0.6);
   box-shadow: 8px 4px rgba(0,180,150,0.6);
 }
+.edit-post{
+  border: 2px solid white;
+  border-radius: 2pc;
+  margin: 20px auto;
+  width: 500px;
+  height: auto;
+  color: rgb(0,180,150);
+  background: rgba(0,0,0,0.6);
+  box-shadow: 8px 4px rgba(0,180,150,0.6);
+}
 
 .post{
   border: 2px solid white;

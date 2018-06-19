@@ -38,18 +38,17 @@ class EditPostform extends React.Component{
     console.log()
 
     return (
-      <div className="add-post">
-        <h1>AM I VISIBLE? </h1>
-        <h2>Posterizer</h2>
+      <div className="edit-post">
+        <h2>Posterizer Editor</h2>
 
         <form onSubmit={this.onSubmit}>
         <div>
 
-          <textarea name="title" cols="40" rows="1" placeholder="Headline" onChange={this.onChange} value={this.state.title}></textarea>
+          <textarea name="title" cols="40" rows="1" placeholder="Edit Title" onChange={this.onChange} value={this.state.title}></textarea>
           <br />
           <br />
 
-          <textarea name="body" cols="45" rows="5" placeholder="Body" onChange={this.onChange} value={this.state.body}></textarea>
+          <textarea name="body" cols="45" rows="5" placeholder="Edit Body" onChange={this.onChange} value={this.state.body}></textarea>
           <br />
           <button type='submit'>Spread The Luck</button>
 
