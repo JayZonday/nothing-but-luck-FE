@@ -553,6 +553,9 @@ button:active {
 #members-motto{
   color: rgb(0,180,150)
 }
+#members-username{
+  text-shadow: 2px 2px rgb(0,180,150)
+}
 
 
 

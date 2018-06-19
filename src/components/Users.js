@@ -14,7 +14,7 @@ class Users extends React.Component{
 
     const userItems = this.props.users.map(user => (
       <div className="members" key={user.id}>
-        <h4>{user.username}</h4>
+        <h4 id="members-username">{user.username}</h4>
         <img src={user.profurl} alt="prof-pic" className="member-img" />
         <p id="members-motto">"{user.motto}"</p>
       </div>
