@@ -6,6 +6,7 @@ import { connect } from 'react-redux';
 import { fetchUsers, persistData } from '../actions/userActions';
 
 // Components //
+import ChatBox from './ChatBox'
 import LoginForm from './LoginForm';
 import RegisterForm from './RegisterForm';
 import Nav from './Nav';
@@ -43,7 +44,7 @@ class App extends Component {
   }
 
 
-  render() { 
+  render() {
     return (
     <div className="App">
       <header className="App-header">
@@ -57,6 +58,7 @@ class App extends Component {
       <Route path='/' exact component={ Users }/>
       <Route path='/notfoundhelp' component= { NotFoundHelp } />
       <Route path='/logout' component = { Logout } />
+      <Route path='/chat' component = { ChatBox } />
 
       {!(localStorage.getItem("token") === 'undefined')?
         <Route path='/notfound' component={ NotFound } />
