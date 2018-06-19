@@ -26,6 +26,10 @@ class Postform extends React.Component{
       user_id: localStorage.user_id
     }
     this.props.createPost(post);
+    this.setState({
+      title: "",
+      body: ""
+    })
   }
 
 

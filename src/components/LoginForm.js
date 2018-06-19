@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux'
 import { login } from '../actions/userActions'
 import PropTypes from 'prop-types'
-import { Link } from 'react-router-dom'
+import { Link, Redirect } from 'react-router-dom'
 
 
 class LoginForm extends React.Component{
@@ -33,7 +33,7 @@ class LoginForm extends React.Component{
         <div>
 
           <form onSubmit={this.handleSubmit}>
-          <div>
+          <div className="inputs">
 
             <label htmlFor="username">Username: </label>
             <input type="text" name="username" onChange={this.onChange} value={this.state.username}></input>

@@ -402,6 +402,15 @@ button:active {
   border: 2px solid lightgreen;
 }
 
+
+#username-title{
+  border: 2px solid white;
+  text-shadow: 2px 2px rgb(0,180,150);
+  border-radius: 2pc;
+  width: 675px;
+  margin: 35px auto;
+}
+
 .login-title{
   border: 1px solid white;
   width: 350px;
@@ -412,6 +421,9 @@ button:active {
   padding: 6px;
 }
 
+.inputs{
+}
+
 .login-form{
   border: 2px solid white;
   border-radius: 2pc;
@@ -419,7 +431,8 @@ button:active {
   width: 500px;
   height: auto;
   color: rgb(0,180,150);
-  background: rgba(0,0,0,0.7);
+  background: rgba(0,0,0,0.6);
+  background-size: contain;
   box-shadow: 8px 4px rgba(0,180,150,0.6);
 }
 
