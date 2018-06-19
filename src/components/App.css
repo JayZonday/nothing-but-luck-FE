@@ -457,6 +457,15 @@ button:active {
   box-shadow: 8px 4px rgba(0,180,150,0.6);
 }
 
+
+#posterizer-title{
+  text-shadow: 2px 1px white;
+}
+
+#post-title{
+  text-shadow: 2px 1px white;
+}
+
 .post{
   border: 2px solid white;
   height: 200px;

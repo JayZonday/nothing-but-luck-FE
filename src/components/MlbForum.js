@@ -28,7 +28,7 @@ class MlbForum extends React.Component{
     const rPostItems = postItems.reverse()
     const filtered = rPostItems.map(post => (
       <div className='post' key={post.id}>
-        <h2>{post.title}</h2>
+        <h2 id="post-title">{post.title}</h2>
         <h5>Contributed by: {post.user.username}</h5>
         <hr></hr>
         <p className="post-body">{post.body}</p>

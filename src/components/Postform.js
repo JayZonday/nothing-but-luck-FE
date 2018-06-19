@@ -40,7 +40,7 @@ class Postform extends React.Component{
     return (
       <div className="add-post">
 
-        <h2>Posterizer</h2>
+        <h2 id="posterizer-title">Posterizer</h2>
 
         <form onSubmit={this.onSubmit}>
         <div>
