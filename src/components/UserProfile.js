@@ -45,16 +45,16 @@ class UserProfile extends React.Component {
                 <hr />
                 <br />
                 <br />
-                <span>Motto: {this.props.user.motto}</span>
+                <span className="profile-attr">Motto: </span> <span>{this.props.user.motto}</span>
                 <br />
                 <hr />
-                <span>Name: {this.props.user.name}</span>
+                <span className="profile-attr">Name: </span> <span>{this.props.user.name}</span>
                 <br />
                 <hr />
-                <span>Email: {this.props.user.email}</span>
+                <span className="profile-attr">Email: </span> <span>{this.props.user.email}</span>
                 <br />
                 <hr />
-                <span>Favorite Sport: {this.props.user.favsport}</span>
+                <span className="profile-attr">Favorite Sport: </span> <span>{this.props.user.favsport}</span>
               </figcaption>
             </figure>
 

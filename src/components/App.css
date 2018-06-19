@@ -228,6 +228,7 @@ button:active {
   border: 2px solid white;
   padding: 10px;
   margin: 25px;
+  background: rgba(0,0,0,0.6);
 }
 
 .members{
@@ -362,6 +363,11 @@ button:active {
   font-size: 0.5em;
   color: #2980b9;
 }
+
+.profile-attr{
+  color: rgb(0,180,150);
+}
+
 /*  End Profile Card */
 
 .members:hover{
@@ -375,6 +381,7 @@ button:active {
   border: 2px solid white;
   padding: 10px;
   margin: 25px;
+  background: rgba(0,0,0,0.7);
 }
 
 .profileposts-container{
@@ -385,6 +392,7 @@ button:active {
   padding: 10px;
   margin: 0px 0px 15px 45%;
   width: 460px;
+  background: rgba(0,0,0,0.6);
 }
 
 .member-img{
@@ -507,6 +515,10 @@ button:active {
   border-radius: 2pc;
   background: black;
   text-shadow: 2px 2px rgb(0,180,150);
+}
+
+#members-motto{
+  color: rgb(0,180,150)
 }
 
 

@@ -17,6 +17,7 @@ import UserProfile from './UserProfile'
 import EditUserForm from './EditUserForm'
 import EditPostform from './EditPostform'
 import NotFound from './NotFound'
+import Logout from './Logout'
 
 //Round-about component that is a copy of above component//
 import NotFoundHelp from './NotFoundHelp'
@@ -32,12 +33,12 @@ class App extends Component {
   onClickHandler = (event) => {
     event.preventDefault();
     localStorage.clear();
-    alert('You Logged Out! - Have a Great Day!')
+    this.props.history.push("/Logout");
   }
 
   componentDidMount(){
     this.props.fetchUsers();
-    
+
     this.props.persistData();
   }
 
@@ -48,13 +49,14 @@ class App extends Component {
       <header className="App-header">
         <h1 className="App-title"><img src='https://upload.wikimedia.org/wikipedia/commons/1/15/Shamrock_svg.svg' id="clover" className="App-logo" alt="logo" />   Nothing But Luck   <img src='https://upload.wikimedia.org/wikipedia/commons/1/15/Shamrock_svg.svg' id="clover" className="App-logo" alt="logo" /></h1><img src='https://cdn-images-1.medium.com/max/532/0*EbTpf1h92YKCdNNv.png' id="fanasty-logo" className='animated infinite pulse' alt="flogo" /><h3 id="intro">A One-Spot, Non-Stop Fantasy Sports's Center</h3>
       </header>
-      <div className="App-intro">Current User:  {(localStorage.username === this.props.user.username)? this.props.user.username:null}<button className="logout" onClick={this.onClickHandler}>Logout</button></div>
+      <div className="App-intro">Current User:  {(localStorage.username === this.props.user.username)? this.props.user.username:null}<button className="logout" onClick={this.onClickHandler}>Logout</button> </div>
       <Nav/>
       <Switch>
       <Route path="/login" component={ LoginForm } />
       <Route path="/signup" component={ RegisterForm } />
       <Route path='/' exact component={ Users }/>
       <Route path='/notfoundhelp' component= { NotFoundHelp } />
+      <Route path='/logout' component = { Logout } />
 
       {!(localStorage.getItem("token") === 'undefined')?
         <Route path='/notfound' component={ NotFound } />
