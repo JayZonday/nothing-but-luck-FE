@@ -33,7 +33,6 @@ export default function(state = initialState, action) {
           item: action.payload
       }
     default:
-      console.log('userReducer')
       return state;
   }
 }
