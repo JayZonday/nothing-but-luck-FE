@@ -58,7 +58,7 @@ class ChatBox extends React.Component{
 handleChatInputKeyPress = (event) => {
   if(event.key === 'Enter') {
     this.handleSendEvent(event);
-  }//end if
+  }
 }
 
 
@@ -82,6 +82,7 @@ handleSendEvent = (event) => {
           {this.renderChatLog()}
         </ul>
         </div>
+          <div className="chat-inputs">
           <input
           value={ this.state.username }
           onChange={ (e) => this.updateCurrentChatMessage(e) }
@@ -103,6 +104,7 @@ handleSendEvent = (event) => {
            className='send'>
            Send
            </button>
+           </div>
          </div>
        </div>
     )
