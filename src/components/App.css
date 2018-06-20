@@ -93,8 +93,13 @@ input#submit:active{
   width: 500px;
   height: auto;
   margin: 35px auto;
+  margin: 35px auto;
+  background: url(https://hips.hearstapps.com/clv.h-cdn.co/assets/16/07/768x384/landscape-1455634949-gettyimages-200347581-001.jpg);
 }
 
+.chat-username{
+  color: rgb(0,180,150);
+}
 
 #chatButton{
   width: 400px;
@@ -111,7 +116,7 @@ input#submit:active{
   margin: 10px auto;
   height: 400px;
   overflow-y: scroll;
-  background: rgba(0,0,0,0.8);
+  background: rgba(0,0,0,0.9);
 }
 
 /*App Styling over main background image*/
@@ -126,7 +131,7 @@ input#submit:active{
 }
 
 .chat-inputs{
-  background: rgba(0,0,0,0.7);
+  background: rgba(0,0,0,0.9);
   border: 2px solid white;
   border-radius: 2pc;
   width: 200px;

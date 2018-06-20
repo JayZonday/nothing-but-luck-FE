@@ -76,7 +76,7 @@ handleSendEvent = (event) => {
     return (
       <div>
       <div className='stage'>
-        <h1>Chat</h1>
+        <h1 className='forum-title'>NBL Campfire</h1>
         <div className='chatlogs'>
         <ul className='chat-logs'>
           {this.renderChatLog()}
