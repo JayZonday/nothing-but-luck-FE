@@ -67,17 +67,18 @@ class App extends Component {
         <Redirect to='/notfoundhelp' />
       }
       {(localStorage.getItem("token"))?
-        <Route path='/MLB' component={ MlbForum }/>
+        <Route path='/mlb' component={ MlbForum }/>
+        :
+        <Redirect to="/" />
+      }
+
+      {(localStorage.getItem("token"))?
+        <Route path='/nfl' component={ NflForum }/>
         :
         <Redirect to="/" />
       }
       {(localStorage.getItem("token"))?
-        <Route path='/NFL' component={ NflForum }/>
-        :
-        <Redirect to="/" />
-      }
-      {(localStorage.getItem("token"))?
-        <Route path='/NBA' component={ NbaForum }/>
+        <Route path='/nba' component={ NbaForum }/>
         :
         <Redirect to="/" />
       }
