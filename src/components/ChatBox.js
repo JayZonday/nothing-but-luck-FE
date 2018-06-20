@@ -26,9 +26,11 @@ class ChatBox extends React.Component{
   renderChatLog = () => {
   return this.state.chatLogs.map((el) => {
     return (
+      <div className='b-message'>
       <div id="a-message" key={`chat_${el.id}`}>
         <span className='chat-username'>{el.username} <span className='chat-created-at'>[{ el.created_at }]</span>: </span>
         <span className='chat-message'>{ el.content }</span>
+        </div>
         <hr />
       </div>
     );

@@ -90,7 +90,7 @@ input#submit:active{
 .stage{
   border: 2px solid white;
   border-radius: 2pc;
-  width: 500px;
+  width: 660px;
   height: auto;
   margin: 35px auto;
   margin: 35px auto;
@@ -116,7 +116,7 @@ input#submit:active{
 .chat-logs{
   border: 2px solid white;
   border-radius: 2pc;
-  width: 350px;
+  width: 550px;
   margin: 10px auto;
   height: 400px;
   overflow-y: scroll;
@@ -150,10 +150,14 @@ input#submit:active{
   width:135px;
 }
 
-
 #a-message{
-  margin: 10px 0px 0px -5px;
-  width: 321px;
+  width: 520px;
+  margin: 10px 0px 20px 0px;
+  text-align: -webkit-auto;
+}
+.b-message{
+  margin: 10px 0px 0px -10px;
+  width: 540px;
 }
 
 /*Main App Logo Styling*/
