@@ -613,11 +613,12 @@ button:active {
 .forum-title2{
   border: 2px solid white;
   margin: 30px auto;
-  width: 200px;
+  width: 275px;
   height: auto;
   border-radius: 2pc;
   background: black;
   text-shadow: 2px 2px rgb(0,180,150);
+  padding: 10px;
 }
 
 #members-motto{

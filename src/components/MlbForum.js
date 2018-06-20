@@ -40,7 +40,7 @@ class MlbForum extends React.Component{
         <div className="mlb-title-bg"><h1 className="forum-title">MLB Forum</h1></div>
         <br />
         <hr />
-      <h2 className="forum-title2">MLB Posts</h2>
+      <h2 className="forum-title2">The Homer Zone</h2>
         <div className="post-container">{filtered}</div>
         <br />
         <hr />
