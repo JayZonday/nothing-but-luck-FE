@@ -12,7 +12,7 @@ class Nav extends React.Component{
       <NavLink to='/nfl'><button id='nflButton' >NFL</button></NavLink>
       <NavLink to='/mlb'><button id='mlbButton' >MLB</button></NavLink>
       <NavLink to='/nba'><button id='nbaButton' >NBA</button></NavLink>
-      <NavLink to='/chat'><button id='chatButton' >The Chat</button></NavLink>
+      <NavLink to='/chat'><button id='chatButton' >The NBL Campfire Chat</button></NavLink>
     </div>
     )
   }
