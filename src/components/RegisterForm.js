@@ -41,6 +41,7 @@ class RegisterForm extends React.Component{
 
   render() {
     return (
+      <div className="login-container">
       <div className="login-form">
         <h1 className="login-title">Sign-Up Now!</h1>
         <p className="ls-info">Become an exclusive member of NBL</p>
@@ -94,6 +95,7 @@ class RegisterForm extends React.Component{
           </div>
           </form>
 
+        </div>
         </div>
       </div>
     );

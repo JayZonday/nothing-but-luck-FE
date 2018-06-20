@@ -498,25 +498,51 @@ button:active {
 .login-form{
   border: 2px solid white;
   border-radius: 2pc;
-  margin: 10px auto 20px auto;
+  margin: 30px auto 20px auto;
+  width: 400px;
+  height: auto;
+  color: rgb(0,180,150);
+  background: rgba(0,0,0,0.9);
+  background-size: contain;
+}
+
+.login-container{
+  border: 2px solid white;
+  border-radius: 2pc;
+  margin: 30px auto 20px auto;
   width: 500px;
   height: auto;
   color: rgb(0,180,150);
-  background: rgba(0,0,0,0.6);
+  background: url(https://hips.hearstapps.com/clv.h-cdn.co/assets/16/07/768x384/landscape-1455634949-gettyimages-200347581-001.jpg);
   background-size: contain;
+  -webkit-box-shadow: 8px 4px rgba(0,180,150,0.6);
   box-shadow: 8px 4px rgba(0,180,150,0.6);
 }
 
-.add-post{
+.add-post {
+  border: 2px solid white;
+  border-radius: 2pc;
+  margin: 22px auto;
+  width: 400px;
+  height: auto;
+  color: rgb(0,180,150);
+  background: rgba(0,0,0,0.8);
+  -webkit-box-shadow: 8px 4px rgba(0,180,150,0.6);
+  box-shadow: 8px 4px rgba(0,180,150,0.6);
+}
+.add-post-container{
   border: 2px solid white;
   border-radius: 2pc;
   margin: auto;
   width: 500px;
   height: auto;
   color: rgb(0,180,150);
-  background: rgba(0,0,0,0.6);
+  background: url(https://hips.hearstapps.com/clv.h-cdn.co/assets/16/07/768x384/landscape-1455634949-gettyimages-200347581-001.jpg);
   box-shadow: 8px 4px rgba(0,180,150,0.6);
 }
+
+
+
 .edit-post{
   border: 2px solid white;
   border-radius: 2pc;

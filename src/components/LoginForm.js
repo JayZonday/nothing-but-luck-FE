@@ -29,6 +29,7 @@ class LoginForm extends React.Component{
 
   render() {
     return (
+      <div className="login-container">
       <div className="login-form">
         <h1 className="login-title">Login into NBL!</h1>
         <p className="ls-info">For Exclusive Access to NBL Content</p>
@@ -52,7 +53,7 @@ class LoginForm extends React.Component{
 
           </div>
           </form>
-
+        </div>
         </div>
       </div>
     );

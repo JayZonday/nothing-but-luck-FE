@@ -38,6 +38,7 @@ class Postform extends React.Component{
   render(){
 
     return (
+      <div className="add-post-container">
       <div className="add-post">
 
         <h2 id="posterizer-title">Posterizer</h2>
@@ -55,7 +56,7 @@ class Postform extends React.Component{
 
         </div>
         </form>
-
+      </div>
       </div>
     )
   }
