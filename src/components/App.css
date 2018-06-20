@@ -110,7 +110,8 @@ input#submit:active{
   width: 350px;
   margin: 10px auto;
   height: 400px;
-  overflow: scroll;
+  overflow-y: scroll;
+  background: rgba(0,0,0,0.8);
 }
 
 /*App Styling over main background image*/

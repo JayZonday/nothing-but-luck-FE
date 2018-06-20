@@ -75,19 +75,21 @@ handleSendEvent = (event) => {
         </ul>
         </div>
           <input
+          value={ this.state.username }
+          onChange={ (e) => this.updateCurrentChatMessage(e) }
+          type='text'
+          name="currentChateUsername"
+          placeholder='Enter an Alias'
+          className='chat-input'/>
+          <br />
+          <input
           value={ this.state.currentChatMessage }
           onChange={ (e) => this.updateCurrentChatMessage(e) }
            type='text'
            name="currentChatMessage"
-           placeholder='Enter your message...'
+           placeholder='message...'
            className='chat-input'/>
-          <input
-          value={ this.state.username }
-          onChange={ (e) => this.updateCurrentChatMessage(e) }
-           type='text'
-           name="currentChateUsername"
-           placeholder='Enter an Alias'
-           className='chat-input'/>
+           <br />
            <button onClick={ (e) => this.handleSendEvent(e) }
            className='send'>
            Send
