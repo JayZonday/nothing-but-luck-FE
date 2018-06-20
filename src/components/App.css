@@ -125,6 +125,11 @@ input#submit:active{
   box-shadow: 8px 4px rgba(0,180,150,0.6);
 }
 
+#a-message{
+  margin: 10px 0px 0px -5px;
+  width: 321px;
+}
+
 /*Main App Logo Styling*/
 .App-logo {
   animation: App-logo-spin infinite 20s linear;

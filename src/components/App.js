@@ -60,15 +60,11 @@ class App extends Component {
       <Route path='/logout' component = { Logout } />
       <Route path='/chat' component = { ChatBox } />
 
+
       {!(localStorage.getItem("token") === 'undefined')?
         <Route path='/notfound' component={ NotFound } />
         :
         <Redirect to='/notfoundhelp' />
-      }
-      {(localStorage.getItem("token"))?
-        <Route path='/mlb' component={ MlbForum }/>
-        :
-        <Redirect to="/" />
       }
       {(localStorage.getItem("token"))?
         <Route path='/mlb' component={ MlbForum }/>

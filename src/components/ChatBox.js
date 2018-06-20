@@ -26,9 +26,10 @@ class ChatBox extends React.Component{
   renderChatLog = () => {
   return this.state.chatLogs.map((el) => {
     return (
-      <div key={`chat_${el.id}`}>
-        <span className='chat-username'>{el.username}<span className='chat-created-at'>[{ el.created_at }]</span>: </span>
+      <div id="a-message" key={`chat_${el.id}`}>
+        <span className='chat-username'>{el.username} <span className='chat-created-at'>[{ el.created_at }]</span>: </span>
         <span className='chat-message'>{ el.content }</span>
+        <hr />
       </div>
     );
   });
@@ -53,6 +54,13 @@ class ChatBox extends React.Component{
     }
   });
 }
+
+handleChatInputKeyPress = (event) => {
+  if(event.key === 'Enter') {
+    this.handleSendEvent(event);
+  }//end if
+}
+
 
 handleSendEvent = (event) => {
   event.preventDefault();
@@ -85,6 +93,7 @@ handleSendEvent = (event) => {
           <input
           value={ this.state.currentChatMessage }
           onChange={ (e) => this.updateCurrentChatMessage(e) }
+          onKeyPress={ (e) => this.handleChatInputKeyPress(e) }
            type='text'
            name="currentChatMessage"
            placeholder='message...'
