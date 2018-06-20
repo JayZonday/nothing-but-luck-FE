@@ -35,12 +35,7 @@ class RegisterForm extends React.Component{
       this.state.profurl,
       this.state.bgurl
     );
-
-    if (localStorage.username !== "undefined"){
-      alert("YOU'VE JOINED THE SQUAD - START SPREADIN THE LUCK")
-    }else{
-      alert("Something went haywire -- TRY AGAIN...or email me jmoloughney25@gmail.com")
-    }
+    this.props.history.push("/chat");
   }
 
 
