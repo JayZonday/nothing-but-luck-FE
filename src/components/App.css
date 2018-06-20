@@ -138,6 +138,15 @@ input#submit:active{
   margin: 8px auto;
 }
 
+#chat-button{
+  width: 100px;
+}
+
+#chat-button:hover{
+  width:135px;
+}
+
+
 #a-message{
   margin: 10px 0px 0px -5px;
   width: 321px;

@@ -100,9 +100,9 @@ handleSendEvent = (event) => {
            placeholder='message...'
            className='chat-input'/>
            <br />
-           <button onClick={ (e) => this.handleSendEvent(e) }
+           <button id="chat-button" onClick={ (e) => this.handleSendEvent(e) }
            className='send'>
-           Send
+           Full Send
            </button>
            </div>
          </div>
