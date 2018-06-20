@@ -101,6 +101,10 @@ input#submit:active{
   color: rgb(0,180,150);
 }
 
+.logout-msg{
+  color: rgb(0,180,150);
+}
+
 #chatButton{
   width: 400px;
 }
