@@ -7,6 +7,7 @@ body {
   background-size: cover;
   color:white;
 }
+
 /* https://hdwallsource.com/img/2014/12/basketball-wallpaper-13988-14427-hd-wallpapers.jpg */
 /* https://images7.alphacoders.com/662/662365.jpg  */
 /* https://www.pixelstalk.net/wp-content/uploads/2016/10/Football-field-desktop-background-wallpapers-1920x1080.jpg*/
@@ -131,7 +132,7 @@ input#submit:active{
   border-radius:  2pc;
   width: 900px;
   margin: 5% auto;
-  box-shadow: 8px 4px rgba(0,180,150,0.6);
+  box-shadow: 8px 4px rgba(0,180,150,0.6)
 }
 
 .chat-inputs{
@@ -160,6 +161,10 @@ input#submit:active{
   width: 540px;
 }
 
+
+/* for users to sign up with  */
+/* https://www.gannett-cdn.com/-mm-/a86cbfd5d747bf4f37e304696e3390da938e7f70/c=0-207-950-743&r=x1683&c=3200x1680/local/-/media/Indianapolis/GenericImages/2014/01/04//1388842358004-PrestoLogo-ND-fightingIrish.jpg  */
+/* http://flurrysports.org/wp-content/uploads/2018/02/fantasy-sports.jpg */
 /*Main App Logo Styling*/
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
@@ -267,18 +272,21 @@ button{
     border-radius: 2pc;
     width: 150px;
     font-weight: bold;
+    cursor: pointer;
 }
 
 button:hover{
     background-color: #3e8e41; /* Green */
     color: white;
     width: 200px;
+    cursor: pointer;
 }
 
 button:active {
   background-color: #3e8e41;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
+  cursor: pointer;
 }
 
 
@@ -533,8 +541,8 @@ button:active {
   height: 200px;
   overflow-y: scroll;
   width: 475px;
-  margin: auto;
-  padding: 5%;
+  margin: 20px auto;
+  padding: 8%;
   border-radius: 2pc;
   color: rgb(0,180,150);
   background: rgba(0,0,0,0.6);
@@ -546,7 +554,7 @@ button:active {
   overflow-y: scroll;
   height: 275px;
   width: 300px;
-  margin: auto;
+  margin: 20px auto;
   padding: 5%;
   border-radius: 2pc;
   color: rgb(0,180,150);
