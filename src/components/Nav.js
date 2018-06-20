@@ -9,9 +9,9 @@ class Nav extends React.Component{
       <NavLink to='/login'><button id='Login' >Login into NBL</button></NavLink>
       <NavLink to='/profile'><button>Your NBL-Zone</button></NavLink>
       <NavLink to='/'><button id='members' >NBL Members</button></NavLink>
-      <NavLink to='/nfl'><button id='nflButton' >NFL</button></NavLink>
-      <NavLink to='/mlb'><button id='mlbButton' >MLB</button></NavLink>
-      <NavLink to='/nba'><button id='nbaButton' >NBA</button></NavLink>
+      <NavLink to='/NFL'><button id='nflButton' >NFL</button></NavLink>
+      <NavLink to='/MLB'><button id='mlbButton' >MLB</button></NavLink>
+      <NavLink to='/NBA'><button id='nbaButton' >NBA</button></NavLink>
       <NavLink to='/chat'><button id='chatButton' >The NBL Potluck Chat</button></NavLink>
     </div>
     )

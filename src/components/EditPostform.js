@@ -1,6 +1,7 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import PropTypes from 'prop-types'
+import { Redirect } from 'react-router-dom'
 import { editPost } from '../actions/postActions'
 import { persistData } from '../actions/userActions'
 
@@ -10,6 +11,11 @@ class EditPostform extends React.Component{
     title: "",
     body: "",
     league: this.props.league,
+    fireRedirect: false
+  }
+
+  componentDidMount(){
+    this.props.persistData();
   }
 
   onChange = (e) => {
@@ -29,6 +35,12 @@ class EditPostform extends React.Component{
 
     }
     this.props.editPost(post);
+    this.setState({
+      title: "",
+      body: "",
+      fireRedirect: true
+    })
+    window.location.reload();
   }
 
 
@@ -36,7 +48,7 @@ class EditPostform extends React.Component{
 
   render(){
     console.log()
-
+    const { fireRedirect } = this.state
     return (
       <div className="edit-post">
         <h2>Posterizer Editor</h2>
@@ -54,6 +66,9 @@ class EditPostform extends React.Component{
 
         </div>
         </form>
+        {fireRedirect && (
+        <Redirect to={'/profile'}/>
+        )}
 
       </div>
     )
