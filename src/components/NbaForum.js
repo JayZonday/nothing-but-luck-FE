@@ -27,17 +27,19 @@ class NbaForum extends React.Component{
     })
     const rPostItems = postItems.reverse()
     const filtered = rPostItems.map(post => (
+      <div className="post-bg">
       <div className='post' key={post.id}>
         <h2 id="post-title">{post.title}</h2>
         <h5>Contributed by: {post.user.username}</h5>
         <hr></hr>
         <p className="post-body">{post.body}</p>
       </div>
+      </div>
     ));
 
     return (
       <div className="forum-container">
-        <div className="nba-title-bg"><h1 className="forum-title">NBA Forum<img className="title-img"src="https://cdn.dribbble.com/users/428994/screenshots/4728188/basket_dribbblegif.gif"/></h1></div>
+        <div className="nba-title-bg"><h1 className="forum-title">NBA Forum<img className="title-img"src="https://cdn.dribbble.com/users/99875/screenshots/1785649/russell-westbrook-dribbble-blue.gif"/></h1></div>
         <br />
         <hr />
         <h2 className="forum-title2">The Hoop Zone</h2>

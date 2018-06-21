@@ -525,18 +525,19 @@ button:active {
   margin: 22px auto;
   width: 400px;
   height: auto;
-  color: rgb(0,180,150);
+  color: white;
   background: rgba(0,0,0,0.8);
   -webkit-box-shadow: 8px 4px rgba(0,180,150,0.6);
   box-shadow: 8px 4px rgba(0,180,150,0.6);
 }
+
 .add-post-container{
   border: 2px solid white;
   border-radius: 2pc;
   margin: auto;
   width: 500px;
   height: auto;
-  color: rgb(0,180,150);
+  color: white;
   background: url(https://hips.hearstapps.com/clv.h-cdn.co/assets/16/07/768x384/landscape-1455634949-gettyimages-200347581-001.jpg);
   box-shadow: 8px 4px rgba(0,180,150,0.6);
 }
@@ -549,18 +550,20 @@ button:active {
   margin: 20px auto;
   width: 500px;
   height: auto;
-  color: rgb(0,180,150);
+  color: white;
   background: rgba(0,0,0,0.6);
   box-shadow: 8px 4px rgba(0,180,150,0.6);
 }
 
 
 #posterizer-title{
-  text-shadow: 2px 1px white;
+  text-shadow: 2px 1px (0,180,150);
+  color:white;
 }
 
 #post-title{
-  text-shadow: 2px 1px white;
+  text-shadow: 2px 2px rgb(0,180,150);
+  color:white;
 }
 
 .post{
@@ -572,8 +575,7 @@ button:active {
   padding: 8%;
   border-radius: 2pc;
   color: rgb(0,180,150);
-  background: rgba(0,0,0,0.6);
-  box-shadow: 8px 4px rgba(0,180,150,0.6);
+  background: rgba(0,0,0,1);
 }
 
 .profile-post{
@@ -586,7 +588,6 @@ button:active {
   border-radius: 2pc;
   color: rgb(0,180,150);
   background: rgba(0,0,0,0.6);
-  box-shadow: 8px 4px rgba(0,180,150,0.6);
 }
 
 .post-body{
@@ -630,6 +631,15 @@ button:active {
   width: 500px;
   height: 350px;
   margin: 2% auto;
+}
+
+.post-bg{
+  border: 2px solid white;
+  margin: 20px auto;
+  width: 640px;
+  border-radius: 2pc;
+  background-image: url('https://hips.hearstapps.com/clv.h-cdn.co/assets/16/07/768x384/landscape-1455634949-gettyimages-200347581-001.jpg');
+  box-shadow: 8px 4px rgba(0,180,150,0.6);
 }
 
 .forum-title{
