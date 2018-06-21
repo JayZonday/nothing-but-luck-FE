@@ -88,6 +88,10 @@ handleSendEvent = (event) => {
         <ul className='chat-logs'>
           {this.renderChatLog()}
         </ul>
+        <br />
+        <hr />
+        <hr />
+        <br />
         </div>
           <div className="chat-inputs">
           <input
