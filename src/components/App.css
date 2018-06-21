@@ -143,6 +143,22 @@ input#submit:active{
   margin: 8px auto;
 }
 
+#modal-body{
+  border: 2px solid white;
+  border-radius: 2pc;
+  padding: 10px;
+  color: white;
+}
+
+#modal-title{
+  text-shadow: 2px 4px rgb(0,180,150);
+  color: white;
+}
+
+#modal-league{
+  color: rgb(0,180,150)
+}
+
 #chat-input-a{
   background-color: black;
   border-radius: 2pc;
