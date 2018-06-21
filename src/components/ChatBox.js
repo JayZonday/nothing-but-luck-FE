@@ -63,6 +63,11 @@ handleChatInputKeyPress = (event) => {
   }
 }
 
+handleClear = (event) => {
+  this.setState({
+    currentChatMessage: ""
+  })
+}
 
 handleSendEvent = (event) => {
   event.preventDefault();
@@ -91,7 +96,7 @@ handleSendEvent = (event) => {
           type='text'
           name="currentChateUsername"
           placeholder='Enter an Alias'
-          className='chat-input'/>
+          id='chat-input-a'/>
           <br />
           <input
           value={ this.state.currentChatMessage }
@@ -100,12 +105,13 @@ handleSendEvent = (event) => {
            type='text'
            name="currentChatMessage"
            placeholder='message...'
-           className='chat-input'/>
+           id='chat-input-b'/>
            <br />
            <button id="chat-button" onClick={ (e) => this.handleSendEvent(e) }
            className='send'>
            Full Send
            </button>
+           <button onClick={this.handleClear}>Quick Clear</button>
            </div>
          </div>
        </div>

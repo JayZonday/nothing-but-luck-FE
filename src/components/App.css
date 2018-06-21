@@ -139,10 +139,32 @@ input#submit:active{
   background: rgba(0,0,0,0.9);
   border: 2px solid white;
   border-radius: 2pc;
-  width: 200px;
+  width: 500px;
   margin: 8px auto;
 }
 
+#chat-input-a{
+  background-color: black;
+  border-radius: 2pc;
+  color: rgb(0,180,150);
+  width: 180px;
+  height: 30px;
+  font-size: 14px;
+  margin: 10px auto;
+  padding: 5px;
+  text-align: center;
+  overflow-x: scroll;
+}
+#chat-input-b{
+  background-color: black;
+  border-radius: 2pc;
+  color: white;
+  width: 400px;
+  height: 50px;
+  font-size: 14px;
+  margin: 10px auto;
+  padding: 5px;
+}
 #chat-button{
   width: 100px;
 }
@@ -173,7 +195,7 @@ input#submit:active{
 
 .App-intro{
   border: 2px solid rgba(0,180,150,0.6);
-  width: 270px;
+  width: 300px;
   height: 35px;
   border-radius: 2pc;
   margin: 20px auto;
@@ -262,6 +284,10 @@ input#submit:active{
   font-size: large;
 }
 
+#cuser{
+  color: rgb(0,180,150)
+}
+
 
 
 
@@ -329,7 +355,8 @@ button:active {
   margin: 25px auto;
   text-shadow: 5px 3px green;
   padding: 8px;
-  background-color: rgba(0,0,0,0.8);
+  background-image: url('starring.png');
+  background-size: repeat;
 }
 
 .not-found{
@@ -495,7 +522,8 @@ button:active {
   border-radius: 2pc;
   width: 675px;
   margin: 35px auto;
-  background: rgba(0,0,0,0.8);
+  background-image: url('starring.png');
+  background-size: repeat;
 }
 
 .login-title{
@@ -654,7 +682,7 @@ button:active {
 .title-img{
   width: 250px;
   height: auto;
-  border: 2px solid white;
+  border: 2px solid lightgreen;
   border-radius: 2pc;
   margin: 10px auto;
 }
