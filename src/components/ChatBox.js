@@ -95,7 +95,7 @@ handleSendEvent = (event) => {
         </div>
           <div className="chat-inputs">
           <input
-          value= "Anonymous"
+          value={ this.state.username }
           onChange={ (e) => this.updateCurrentChatMessage(e) }
           type='text'
           name="currentChateUsername"
