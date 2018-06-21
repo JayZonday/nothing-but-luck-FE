@@ -132,7 +132,7 @@ input#submit:active{
   border-radius:  2pc;
   width: 900px;
   margin: 5% auto;
-  box-shadow: 8px 4px rgba(0,180,150,0.6)
+  box-shadow: 1px 5px 50px 3px rgb(0,180,150);
 }
 
 .chat-inputs{
@@ -303,6 +303,7 @@ input#submit:active{
   margin: auto;
   background-image: url('starring.png');
   background-size: repeat;
+  box-shadow: 1px 5px 50px 1px rgb(0,180,150);
 }
 
 
@@ -412,7 +413,7 @@ button:active {
   display: inline-block;
   background: black;
   overflow-y: scroll;
-  box-shadow: 8px 4px rgba(0,180,150,0.6);
+  box-shadow: 1px 5px 50px 2px rgb(0,180,150);
 }
 
 .member-title{
@@ -736,6 +737,7 @@ button:active {
   width: 500px;
   height: 350px;
   margin: 2% auto;
+  box-shadow: 1px 5px 50px 17px rgb(0,180,150);
 }
 
 .nba-title-bg{
@@ -745,6 +747,7 @@ button:active {
   width: 500px;
   height: 350px;
   margin: 2% auto;
+  box-shadow: 1px 5px 50px 17px rgb(0,180,150);
 }
 
 .title-img{
@@ -762,6 +765,7 @@ button:active {
   width: 500px;
   height: 350px;
   margin: 2% auto;
+  box-shadow: 1px 5px 50px 17px rgb(0,180,150);
 }
 
 .post-bg{
@@ -770,7 +774,7 @@ button:active {
   width: 640px;
   border-radius: 2pc;
   background-image: url('https://hips.hearstapps.com/clv.h-cdn.co/assets/16/07/768x384/landscape-1455634949-gettyimages-200347581-001.jpg');
-  box-shadow: 8px 4px rgba(0,180,150,0.6);
+  box-shadow: 1px 5px 50px 3px rgb(0,180,150)
 }
 .profile-postbg{
   border: 2px solid white;
@@ -778,7 +782,7 @@ button:active {
   width: 385px;
   border-radius: 2pc;
   background-image: url('https://hips.hearstapps.com/clv.h-cdn.co/assets/16/07/768x384/landscape-1455634949-gettyimages-200347581-001.jpg');
-  box-shadow: 8px 4px rgba(0,180,150,0.6);
+  box-shadow: 1px 5px 50px 3px rgb(0,180,150)
 }
 
 .forum-title{
