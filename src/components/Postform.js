@@ -45,15 +45,16 @@ class Postform extends React.Component{
 
         <form onSubmit={this.onSubmit}>
         <div>
-
-          <textarea name="title" cols="40" rows="1" placeholder="Headline" onChange={this.onChange} value={this.state.title}></textarea>
+        <div className="posterizer-inputs">
+          <textarea id="t-input"  name="title" cols="40" rows="1" placeholder="Headline" onChange={this.onChange} value={this.state.title}></textarea>
           <br />
           <br />
 
-          <textarea name="body" cols="45" rows="5" placeholder="Body" onChange={this.onChange} value={this.state.body}></textarea>
+          <textarea id="b-input"name="body" cols="45" rows="5" placeholder="Body" onChange={this.onChange} value={this.state.body}></textarea>
           <br />
           <button type='submit'>Spread The Luck</button>
 
+        </div>
         </div>
         </form>
       </div>

@@ -183,6 +183,10 @@ input#submit:active{
   padding: 22px;
 }
 
+#user-post-title{
+
+}
+
 #su-input{
   background-color: black;
   border-radius: 2pc;
@@ -252,10 +256,45 @@ input#submit:active{
   width: 300px;
   height: 35px;
   border-radius: 2pc;
-  margin: 20px auto;
+  margin: 35px auto;
   padding: 5px;
   background-color:black;
   color: white;
+}
+
+.posterizer-inputs{
+  border: 2px solid white;
+  background-color: black;
+  border-radius: 2pc;
+  color: rgb(0,180,150);
+  width: 315px;
+  font-size: 14px;
+  margin: 10px auto;
+  padding: 22px;
+}
+
+#t-input{
+  background-color: black;
+  border-radius: 2pc;
+  color: rgb(0,180,150);
+  width: 180px;
+  height: 30px;
+  font-size: 14px;
+  margin: 10px auto;
+  padding: 5px;
+  text-align: center;
+  overflow-x: scroll;
+}
+
+#b-input{
+  background-color: black;
+  border-radius: 2pc;
+  color: rgb(0,180,150);
+  width: 300px;
+  height: 50px;
+  font-size: 14px;
+  margin: 10px auto;
+  padding: 15px;
 }
 
 /* #morty-img{
@@ -319,6 +358,7 @@ input#submit:active{
   border-radius: 2pc;
   align-content: center;
   margin: 2% auto;
+  box-shadow: 1px 5px 50px 1px rgb(0,180,150);
 }
 
 /*Main Page App Title Styling*/
@@ -364,7 +404,7 @@ button{
     margin-bottom: 10px;
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
-    border: 4px solid green;
+    border: 4px solid rgb(0,180,150);
     margin-left: 5px;
     margin-right: 5px;
     margin-bottom: 10px;
@@ -377,14 +417,14 @@ button{
 }
 
 button:hover{
-    background-color: #3e8e41; /* Green */
+    background-color: rgb(0,180,150); /* Green */
     color: white;
     width: 200px;
     cursor: pointer;
 }
 
 button:active {
-  background-color: #3e8e41;
+  background-color: rgb(0,180,150);
   box-shadow: 0 5px #666;
   transform: translateY(4px);
   cursor: pointer;
@@ -421,7 +461,7 @@ button:active {
   border-radius: 2pc;
   width: 400px;
   margin: 25px auto;
-  text-shadow: 5px 3px green;
+  text-shadow: 5px 3px rgb(0,180,150);
   padding: 8px;
   background-image: url('starring.png');
   background-size: repeat;
@@ -626,7 +666,6 @@ button:active {
   color: rgb(0,180,150);
   background: url(https://hips.hearstapps.com/clv.h-cdn.co/assets/16/07/768x384/landscape-1455634949-gettyimages-200347581-001.jpg);
   background-size: contain;
-  -webkit-box-shadow: 8px 4px rgba(0,180,150,0.6);
   box-shadow: 1px 5px 50px 1px rgb(0,180,150);
 }
 
@@ -638,8 +677,6 @@ button:active {
   height: auto;
   color: white;
   background: rgba(0,0,0,0.8);
-  -webkit-box-shadow: 8px 4px rgba(0,180,150,0.6);
-  box-shadow: 8px 4px rgba(0,180,150,0.6);
 }
 
 .add-post-container{
@@ -650,7 +687,7 @@ button:active {
   height: auto;
   color: white;
   background: url(https://hips.hearstapps.com/clv.h-cdn.co/assets/16/07/768x384/landscape-1455634949-gettyimages-200347581-001.jpg);
-  box-shadow: 8px 4px rgba(0,180,150,0.6);
+  box-shadow: 1px 5px 50px 1px rgb(0,180,150);
 }
 .edit-post-container{
   border: 2px solid white;
@@ -660,7 +697,7 @@ button:active {
   height: auto;
   color: white;
   background: url(https://hips.hearstapps.com/clv.h-cdn.co/assets/16/07/768x384/landscape-1455634949-gettyimages-200347581-001.jpg);
-  box-shadow: 8px 4px rgba(0,180,150,0.6);
+  box-shadow: 1px 5px 50px 1px rgb(0,180,150);
 }
 
 
@@ -677,8 +714,20 @@ button:active {
 
 
 #posterizer-title{
-  text-shadow: 2px 1px (0,180,150);
-  color:white;
+  border: 2px solid white;
+  border-radius: 2pc;
+  width: 182px;
+  background: black;
+  margin: 5px auto;
+  text-shadow: 2px 2px rgb(0,180,150);
+}
+#edit-posterizer-title{
+  border: 2px solid white;
+  border-radius: 2pc;
+  width: 300px;
+  background: black;
+  margin: 5px auto;
+  text-shadow: 2px 2px rgb(0,180,150);
 }
 
 #post-title{
