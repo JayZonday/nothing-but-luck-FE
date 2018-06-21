@@ -737,7 +737,7 @@ button:active {
   width: 500px;
   height: 350px;
   margin: 5% auto;
-  box-shadow: 1px 5px 50px 17px rgb(0,180,150);
+  box-shadow: 1px 5px 50px 1px rgb(0,180,150);
 }
 
 .nba-title-bg{
@@ -747,7 +747,7 @@ button:active {
   width: 500px;
   height: 350px;
   margin: 5% auto;
-  box-shadow: 1px 5px 50px 17px rgb(0,180,150);
+  box-shadow: 1px 5px 50px 1px rgb(0,180,150);
 }
 
 .title-img{
@@ -765,7 +765,7 @@ button:active {
   width: 500px;
   height: 350px;
   margin: 5% auto;
-  box-shadow: 1px 5px 50px 17px rgb(0,180,150);
+  box-shadow: 1px 5px 50px 1px rgb(0,180,150);
 }
 
 .post-bg{
