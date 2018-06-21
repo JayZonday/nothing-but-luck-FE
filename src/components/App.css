@@ -627,7 +627,7 @@ button:active {
   background: url(https://hips.hearstapps.com/clv.h-cdn.co/assets/16/07/768x384/landscape-1455634949-gettyimages-200347581-001.jpg);
   background-size: contain;
   -webkit-box-shadow: 8px 4px rgba(0,180,150,0.6);
-  box-shadow: 8px 4px rgba(0,180,150,0.6);
+  box-shadow: 1px 5px 50px 1px rgb(0,180,150);
 }
 
 .add-post {
@@ -736,7 +736,7 @@ button:active {
   background-image: url('https://hips.hearstapps.com/clv.h-cdn.co/assets/16/07/768x384/landscape-1455634949-gettyimages-200347581-001.jpg');
   width: 500px;
   height: 350px;
-  margin: 2% auto;
+  margin: 5% auto;
   box-shadow: 1px 5px 50px 17px rgb(0,180,150);
 }
 
@@ -746,7 +746,7 @@ button:active {
   background-image: url('https://hips.hearstapps.com/clv.h-cdn.co/assets/16/07/768x384/landscape-1455634949-gettyimages-200347581-001.jpg');
   width: 500px;
   height: 350px;
-  margin: 2% auto;
+  margin: 5% auto;
   box-shadow: 1px 5px 50px 17px rgb(0,180,150);
 }
 
@@ -764,7 +764,7 @@ button:active {
   background-image: url('https://hips.hearstapps.com/clv.h-cdn.co/assets/16/07/768x384/landscape-1455634949-gettyimages-200347581-001.jpg');
   width: 500px;
   height: 350px;
-  margin: 2% auto;
+  margin: 5% auto;
   box-shadow: 1px 5px 50px 17px rgb(0,180,150);
 }
 
