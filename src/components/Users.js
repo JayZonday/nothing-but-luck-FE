@@ -27,9 +27,9 @@ class Users extends React.Component{
   onClickHandler = (event) => {
     event.preventDefault()
     console.log('clicked', event.target.id)
-    var modal = document.getElementById('myModal')
-    var posts = document.getElementById('member-posts')
-    var btn = document.getElementsByClassName('members')
+    const modal = document.getElementById('myModal')
+    const posts = document.getElementById('member-posts')
+    const btn = document.getElementsByClassName('members')
     modal.style.display = 'block'
     const postItems = this.props.posts.filter((post) => {
       console.log(event.target.id)

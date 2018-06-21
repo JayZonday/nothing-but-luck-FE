@@ -200,8 +200,7 @@ input#submit:active{
   border-radius: 2pc;
   margin: 20px auto;
   padding: 5px;
-  background-image: url('starring.png');
-  background-size: repeat;
+  background-color:black;
   color: white;
 }
 
