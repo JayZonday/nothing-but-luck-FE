@@ -39,8 +39,8 @@ class Users extends React.Component{
     const filteredPosts = postItems.map((post) => {
           return (
           `<div className='profile-post' key=${post.id}>
-            <h4 id="modal-league">${post.league}</h4>
             <h2 id="modal-title">${post.title}</h2>
+            <h5 id="modal-league">Forum: ${post.league}</h5>
             <hr />
             <p id="modal-body">${post.body}</p>
             <hr />

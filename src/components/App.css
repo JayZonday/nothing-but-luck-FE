@@ -300,6 +300,7 @@ button:active {
   background: rgba(0,0,0,0.6);
 }
 
+
 .members{
   border: 2px solid white;
   border-radius: 2pc;
@@ -443,6 +444,13 @@ button:active {
 .members:hover{
   border: 5px solid white;
   background: green;
+  cursor: pointer;
+}
+
+.members:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
 
 .post-container{
