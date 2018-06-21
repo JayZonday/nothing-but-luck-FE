@@ -49,49 +49,49 @@ class RegisterForm extends React.Component{
 
           <form onSubmit={this.handleSubmit}>
           <div>
-
-            <label htmlFor="username">Username: </label>
-            <input type="text" name="username" onChange={this.onChange} value={this.state.username}></input>
+          <div className="signup-inputs">
+            <input id="su-input" type="text" name="username" placeholder="Username" onChange={this.onChange} value={this.state.username}></input>
             <br />
             <br />
 
-            <label htmlFor="password">Password: </label>
-            <input type="password" name="password" onChange={this.onChange} value={this.state.password}></input>
+
+            <input  id="su-input" type="password" name="password" placeholder="Password" onChange={this.onChange} value={this.state.password}></input>
             <br />
             <br />
 
-            <label htmlFor="name">Name: </label>
-            <input type="text" name="name" onChange={this.onChange} value={this.state.name}></input>
+
+            <input id="su-input" type="text" name="name" placeholder="Name" onChange={this.onChange} value={this.state.name}></input>
             <br />
             <br />
 
-            <label htmlFor="motto">Motto: </label>
-            <input type="text" name="motto" onChange={this.onChange} value={this.state.motto}></input>
+
+            <input id="su-input" type="text" name="motto" placeholder="Motto" onChange={this.onChange} value={this.state.motto}></input>
             <br />
             <br />
 
-            <label htmlFor="email">Email: </label>
-            <input type="text" name="email" onChange={this.onChange} value={this.state.email}></input>
+
+            <input id="su-input" type="text" name="email" placeholder="Email" onChange={this.onChange} value={this.state.email}></input>
             <br />
             <br />
 
-            <label htmlFor="favsport">Favorite Sport: </label>
-            <input type="text" name="favsport" onChange={this.onChange} value={this.state.favsport}></input>
+
+            <input id="su-input" type="text" name="favsport" placeholder="Favorite Sport" onChange={this.onChange} value={this.state.favsport}></input>
             <br />
             <br />
 
-            <label htmlFor="profurl">Profile Pic(url): </label>
-            <input type="text" name="profurl" onChange={this.onChange} value={this.state.profurl}></input>
+
+            <input id="su-input" type="text" name="profurl" placeholder="Profile Picture(url)" onChange={this.onChange} value={this.state.profurl}></input>
             <br />
             <br />
 
-            <label htmlFor="bgurl">Background Img(url): </label>
-            <input type="text" name="bgurl" onChange={this.onChange} value={this.state.bgurl}></input>
+
+            <input id="su-input" type="text" name="bgurl" placeholder="Background Image(url)" onChange={this.onChange} value={this.state.bgurl}></input>
             <br />
             <br />
 
             <button type='submit'>Welcome to NBL!</button>
 
+          </div>
           </div>
           </form>
 

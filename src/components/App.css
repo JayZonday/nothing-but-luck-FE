@@ -173,6 +173,28 @@ input#submit:active{
   text-align: center;
   overflow-x: scroll;
 }
+.signup-inputs{
+  background-color: black;
+  border-radius: 2pc;
+  color: rgb(0,180,150);
+  width: 315px;
+  font-size: 14px;
+  margin: 10px auto;
+  padding: 22px;
+}
+
+#su-input{
+  background-color: black;
+  border-radius: 2pc;
+  color: rgb(0,180,150);
+  width: 180px;
+  height: 30px;
+  font-size: 14px;
+  margin: 10px auto;
+  padding: 5px;
+  text-align: center;
+  overflow-x: scroll;
+}
 
 
 #chat-input-a{
