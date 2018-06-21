@@ -22,12 +22,15 @@ class UserProfile extends React.Component {
       const rPostItems = postItems.reverse()
 
       const filtered = rPostItems.map(post => (
+        <div className="profile-postbg">
         <div className='profile-post' key={post.id}>
-          <h4>{post.league}</h4>
-          <h2>{post.title}</h2>
+          <h4 id="prof-league">{post.league}</h4>
+          <h2 id="prof-title">{post.title}</h2>
           <hr />
-          <p className="post-body">{post.body}</p>
+          <p id="prof-body">{post.body}</p>
+          <hr />
           <Link to={`/edit-post/${post.id}`}><button> Update </button></Link>
+        </div>
         </div>
       ));
 
