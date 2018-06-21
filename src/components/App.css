@@ -160,6 +160,21 @@ input#submit:active{
   color: rgb(0,180,150)
 }
 
+
+#login-input{
+  background-color: black;
+  border-radius: 2pc;
+  color: rgb(0,180,150);
+  width: 180px;
+  height: 30px;
+  font-size: 14px;
+  margin: 10px auto;
+  padding: 5px;
+  text-align: center;
+  overflow-x: scroll;
+}
+
+
 #chat-input-a{
   background-color: black;
   border-radius: 2pc;
@@ -243,6 +258,19 @@ input#submit:active{
 
 .logout:hover{
   width: 120px;
+}
+
+.inputs{
+  background-color: black;
+  border-radius: 2pc;
+  color: rgb(0,180,150);
+  width: 260px;
+  font-size: 20px;
+  margin: 10px auto;
+  padding: 12px;
+  text-align: center;
+  overflow-x: scroll;
+  border: 2px solid white;
 }
 
 .navBar{
