@@ -37,13 +37,14 @@ class NbaForum extends React.Component{
 
     return (
       <div className="forum-container">
-        <div className="nba-title-bg"><h1 className="forum-title">NBA Forum</h1></div>
+        <div className="nba-title-bg"><h1 className="forum-title">NBA Forum<img className="title-img"src="https://cdn.dribbble.com/users/428994/screenshots/4728188/basket_dribbblegif.gif"/></h1></div>
         <br />
         <hr />
         <h2 className="forum-title2">The Hoop Zone</h2>
         <div className="post-container">{filtered}</div>
         <br />
         <hr />
+
         <Postform league='NBA'/>
       </div>
     )

@@ -34,7 +34,7 @@ class NflForum extends React.Component{
 
       return (
       <div className="forum-container">
-        <div className="nfl-title-bg"><h1 className="forum-title">NFL Forum</h1></div>
+        <div className="nfl-title-bg"><h1 className="forum-title">NFL Forum<img className="title-img"src="https://cdn.dribbble.com/users/99875/screenshots/2374213/thanksgiving-2.gif"/></h1></div>
         <br />
         <hr />
         <h2 className="forum-title2">The End Zone</h2>
