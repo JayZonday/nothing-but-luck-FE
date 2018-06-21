@@ -30,6 +30,7 @@ class Postform extends React.Component{
       title: "",
       body: ""
     })
+    window.location.reload();
   }
 
 
