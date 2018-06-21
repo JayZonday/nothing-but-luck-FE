@@ -24,8 +24,8 @@ class UserProfile extends React.Component {
       const filtered = rPostItems.map(post => (
         <div className="profile-postbg">
         <div className='profile-post' key={post.id}>
-          <h4 id="prof-league">{post.league}</h4>
           <h2 id="prof-title">{post.title}</h2>
+          <h5 id="prof-league">Forum: {post.league}</h5>
           <hr />
           <p id="prof-body">{post.body}</p>
           <hr />
