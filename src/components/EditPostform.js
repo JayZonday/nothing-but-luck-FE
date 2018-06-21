@@ -50,6 +50,7 @@ class EditPostform extends React.Component{
     console.log()
     const { fireRedirect } = this.state
     return (
+      <div className="edit-post-container">
       <div className="edit-post">
         <h2>Posterizer Editor</h2>
 
@@ -70,6 +71,7 @@ class EditPostform extends React.Component{
         <Redirect to={'/profile'}/>
         )}
 
+      </div>
       </div>
     )
   }

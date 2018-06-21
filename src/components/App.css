@@ -541,6 +541,16 @@ button:active {
   background: url(https://hips.hearstapps.com/clv.h-cdn.co/assets/16/07/768x384/landscape-1455634949-gettyimages-200347581-001.jpg);
   box-shadow: 8px 4px rgba(0,180,150,0.6);
 }
+.edit-post-container{
+  border: 2px solid white;
+  border-radius: 2pc;
+  margin: 20px auto;
+  width: 545px;
+  height: auto;
+  color: white;
+  background: url(https://hips.hearstapps.com/clv.h-cdn.co/assets/16/07/768x384/landscape-1455634949-gettyimages-200347581-001.jpg);
+  box-shadow: 8px 4px rgba(0,180,150,0.6);
+}
 
 
 
@@ -551,8 +561,7 @@ button:active {
   width: 500px;
   height: auto;
   color: white;
-  background: rgba(0,0,0,0.6);
-  box-shadow: 8px 4px rgba(0,180,150,0.6);
+  background: rgba(0,0,0,0.8);
 }
 
 
