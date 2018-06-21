@@ -93,9 +93,9 @@ input#submit:active{
   border-radius: 2pc;
   width: 660px;
   height: auto;
-  margin: 35px auto;
-  margin: 35px auto;
+  margin: 45px auto;
   background: url(https://hips.hearstapps.com/clv.h-cdn.co/assets/16/07/768x384/landscape-1455634949-gettyimages-200347581-001.jpg);
+  box-shadow: 1px 5px 50px 1px rgb(0,180,150);
 }
 
 .chat-username{
