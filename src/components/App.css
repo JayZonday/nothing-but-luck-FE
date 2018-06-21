@@ -178,9 +178,16 @@ input#submit:active{
   border-radius: 2pc;
   margin: 20px auto;
   padding: 5px;
-  background: rgba(0,0,0,0.8);
+  background-image: url('starring.png');
+  background-size: repeat;
   color: white;
 }
+
+/* #morty-img{
+  width: 300px;
+  border: 2px solid lightgreen;
+  border-radius: 2pc;
+} */
 
 /*Main AppPage Logo Spinning Clover Sizing*/
 #clover{
@@ -206,7 +213,8 @@ input#submit:active{
   padding: 5px;
   width: 600px;
   margin: auto;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-image: url('starring.png');
+  background-size: repeat;
 }
 
 
@@ -500,8 +508,6 @@ button:active {
   padding: 6px;
 }
 
-.inputs{
-}
 
 .login-form{
   border: 2px solid white;
