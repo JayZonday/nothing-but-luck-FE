@@ -744,7 +744,7 @@ button:active {
   padding: 8%;
   border-radius: 2pc;
   color: rgb(0,180,150);
-  background: rgba(0,0,0,1);
+  background: rgba(0,55,30,0.9);
 }
 
 .profile-post{
