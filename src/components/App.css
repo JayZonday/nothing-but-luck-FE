@@ -783,7 +783,7 @@ button:active {
   border: 2px solid white;
   border-radius: 2pc;
   background-image: url('https://hips.hearstapps.com/clv.h-cdn.co/assets/16/07/768x384/landscape-1455634949-gettyimages-200347581-001.jpg');
-  width: 500px;
+  width: 625px;
   height: 350px;
   margin: 5% auto;
   box-shadow: 1px 5px 50px 1px rgb(0,180,150);
@@ -793,15 +793,15 @@ button:active {
   border: 2px solid white;
   border-radius: 2pc;
   background-image: url('https://hips.hearstapps.com/clv.h-cdn.co/assets/16/07/768x384/landscape-1455634949-gettyimages-200347581-001.jpg');
-  width: 500px;
+  width: 625px;
   height: 350px;
   margin: 5% auto;
   box-shadow: 1px 5px 50px 1px rgb(0,180,150);
 }
 
 .title-img{
-  width: 250px;
-  height: auto;
+  width: 350px;
+  height: 190px;
   border: 2px solid lightgreen;
   border-radius: 2pc;
   margin: 10px auto;
@@ -811,7 +811,7 @@ button:active {
   border: 2px solid white;
   border-radius: 2pc;
   background-image: url('https://hips.hearstapps.com/clv.h-cdn.co/assets/16/07/768x384/landscape-1455634949-gettyimages-200347581-001.jpg');
-  width: 500px;
+  width: 625px;
   height: 350px;
   margin: 5% auto;
   box-shadow: 1px 5px 50px 1px rgb(0,180,150);
@@ -837,11 +837,11 @@ button:active {
 .forum-title{
   border: 2px solid white;
   margin: 30px auto;
-  width: 399px;
+  width: 525px;
   height: auto;
   border-radius: 2pc;
   background: rgba(0,0,0,0.8);
-  text-shadow: 7px 4px rgb(0,180,150);
+  text-shadow: 0px 4px 4px rgb(0,180,150);
   font-size: 60px;
 }
 
