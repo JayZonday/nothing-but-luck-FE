@@ -30,7 +30,7 @@ class NbaForum extends React.Component{
       <div className="post-bg">
       <div className='post' key={post.id}>
         <h2 id="post-title">{post.title}</h2>
-        <h5>Contributed by: {post.user.username}</h5>
+        <h5>Contributed by- {post.user.username}</h5>
         <hr></hr>
         <p className="post-body">{post.body}</p>
       </div>
