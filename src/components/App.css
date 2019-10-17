@@ -128,11 +128,10 @@ input#submit:active{
 .App {
   text-align: center;
   background: rgba(0, 0, 0, 0.8);
-  border: 5px solid white;
-  border-radius:  2pc;
-  width: 900px;
+  border: 3px solid white;
+  width: 75%;
   margin: 5% auto;
-  box-shadow: 1px 5px 50px 3px rgb(0,180,150);
+
 }
 
 .chat-inputs{
@@ -247,7 +246,7 @@ input#submit:active{
 /* http://flurrysports.org/wp-content/uploads/2018/02/fantasy-sports.jpg */
 /*Main App Logo Styling*/
 .App-logo {
-  animation: App-logo-spin infinite 20s linear;
+
   height: 80px;
 }
 
@@ -255,7 +254,6 @@ input#submit:active{
   border: 2px solid rgba(0,180,150,0.6);
   width: 300px;
   height: 35px;
-  border-radius: 2pc;
   margin: 35px auto;
   padding: 5px;
   background-color:black;
@@ -336,7 +334,7 @@ input#submit:active{
 
 .navBar{
   border: 2px solid white;
-  border-radius: 2pc;
+
   padding: 5px;
   width: 600px;
   margin: auto;
@@ -351,27 +349,22 @@ input#submit:active{
 .App-header {
   background-color: rgba(0,180,150,0.6);
   height: 355px;
-  width: 655px;
+  width: 75%;
   padding: 0px;
   color: white;
-  border: 4px solid white;
-  border-radius: 2pc;
+  border: 3px solid white;
   align-content: center;
   margin: 2% auto;
-  box-shadow: 1px 5px 50px 1px rgb(0,180,150);
 }
 
 /*Main Page App Title Styling*/
 .App-title {
   font-size: 2.5em;
-  border: 5px solid black;
-  border-radius: 3pc;
-  background: rgba(0,0,0,0.7);
-  width: 585px;
+  width: 80%;
   height: auto;
   margin: 2% auto;
-  text-shadow: 3px 2px green;
-  padding: 15px;
+  padding: 5px;
+  font-family: 'Acme', sans-serif;
 }
 
 /*Seconday App Logo Styling*/
@@ -408,7 +401,7 @@ button{
     margin-left: 5px;
     margin-right: 5px;
     margin-bottom: 10px;
-    margin-top: -5px;
+    margin-top: ;
     padding: 4px;
     border-radius: 2pc;
     width: 150px;
