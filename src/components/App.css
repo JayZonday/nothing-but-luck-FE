@@ -6,6 +6,7 @@ body {
   background-image: url('starring.png');
   background-size: repeat;
   color:white;
+  overflow-x: hidden;
 }
 
 /* https://hdwallsource.com/img/2014/12/basketball-wallpaper-13988-14427-hd-wallpapers.jpg */
@@ -90,12 +91,10 @@ input#submit:active{
 
 .stage{
   border: 2px solid white;
-  border-radius: 2pc;
   width: 660px;
   height: auto;
   margin: 45px auto;
   background: url(https://hips.hearstapps.com/clv.h-cdn.co/assets/16/07/768x384/landscape-1455634949-gettyimages-200347581-001.jpg);
-  box-shadow: 1px 5px 50px 1px rgb(0,180,150);
 }
 
 .chat-username{
@@ -130,7 +129,7 @@ input#submit:active{
   background: rgba(0, 0, 0, 0.8);
   border: 3px solid white;
   width: 75%;
-  margin: 5% auto;
+  margin: 7% auto;
 
 }
 
@@ -334,53 +333,52 @@ input#submit:active{
 
 .navBar{
   border: 2px solid white;
-
   padding: 5px;
   width: 600px;
   margin: auto;
-  background-image: url('starring.png');
   background-size: repeat;
-  box-shadow: 1px 5px 50px 1px rgb(0,180,150);
 }
 
 
 
 /*Second background for Main Page*/
 .App-header {
-  background-color: rgba(0,180,150,0.6);
+  background-color: none;
   height: 355px;
-  width: 75%;
+  width: 65%;
   padding: 0px;
   color: white;
-  border: 3px solid white;
   align-content: center;
   margin: 2% auto;
+
 }
 
 /*Main Page App Title Styling*/
 .App-title {
-  font-size: 2.5em;
-  width: 80%;
+  position: absolute;
+  font-size: 4.5em;
+  width: 60%;
   height: auto;
-  margin: 2% auto;
+  transform: rotate(-15deg);
+  margin: -2% 0% 0% -35%;
   padding: 5px;
-  font-family: 'Acme', sans-serif;
+  font-family: 'Bangers', cursive;
+  letter-spacing: 0.05em;
+  text-shadow: 2px 2px 0px black;
 }
 
 /*Seconday App Logo Styling*/
 #fanasty-logo{
+
   height: 160px;
   width: 250px;
-  margin-top: 5px;
-  margin-bottom: -20px;
   -webkit-animation-duration: 2s;
   -webkit-animation-iteration-count: infinite;
 }
 
 /*Intro Text on Main Page*/
 #intro{
-  color:white;
-  text-shadow: 3px 3px black;
+  color: rgb(0,180,150);
   font-size: large;
 }
 
@@ -394,7 +392,6 @@ input#submit:active{
 /*General Stylings Buttons/Forms/Ect*/
 
 button{
-    margin-bottom: 10px;
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
     border: 4px solid rgb(0,180,150);
@@ -629,19 +626,17 @@ button:active {
 }
 
 .login-title{
-  border: 1px solid white;
+
   width: 350px;
   margin: 25px auto;
-  border-radius: 2pc;
-  background-color: rgba(0,0,0,0.7);
-  text-shadow: 1px 1px white;
+
+
   padding: 6px;
 }
 
 
 .login-form{
   border: 2px solid white;
-  border-radius: 2pc;
   margin: 30px auto 20px auto;
   width: 400px;
   height: auto;
@@ -651,15 +646,13 @@ button:active {
 }
 
 .login-container{
-  border: 2px solid white;
-  border-radius: 2pc;
   margin: 30px auto 20px auto;
   width: 500px;
   height: auto;
   color: rgb(0,180,150);
   background: url(https://hips.hearstapps.com/clv.h-cdn.co/assets/16/07/768x384/landscape-1455634949-gettyimages-200347581-001.jpg);
   background-size: contain;
-  box-shadow: 1px 5px 50px 1px rgb(0,180,150);
+
 }
 
 .add-post {
