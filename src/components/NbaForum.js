@@ -39,7 +39,10 @@ class NbaForum extends React.Component{
 
     return (
       <div className="forum-container">
-        <div className="nba-title-bg"><h1 className="forum-title">NBA Forum<img className="title-img"src="https://cdn.dribbble.com/users/99875/screenshots/1785649/russell-westbrook-dribbble-blue.gif"/></h1></div>
+        <div className='forum-title-container'>
+          <h1 className="forum-title">NBA Forum</h1>
+          <img className="title-img"src="https://cdn.dribbble.com/users/99875/screenshots/1785649/russell-westbrook-dribbble-blue.gif"/>
+        </div>
         <br />
         <hr />
         <h2 className="forum-title2">The Hoop Zone</h2>

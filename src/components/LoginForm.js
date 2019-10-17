@@ -48,8 +48,8 @@ class LoginForm extends React.Component{
             <br />
             <br />
 
-            <button type='submit'>Feelin' Lucky</button>
-            <Link to='/signup'><button>Don't Have an Account?</button></Link>
+            <button type='submit'>Welcome Back</button>
+            <Link to='/signup'><button>Sign Up</button></Link>
 
           </div>
           </form>
