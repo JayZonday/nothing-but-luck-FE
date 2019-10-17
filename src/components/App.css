@@ -250,12 +250,12 @@ input#submit:active{
 }
 
 .App-intro{
-  border: 2px solid rgba(0,180,150,0.6);
-  width: 300px;
+
+  width: 20%;
   height: 35px;
-  margin: 35px auto;
+  position: absolute;
+  margin: -10% 0% 0% 55%;
   padding: 5px;
-  background-color:black;
   color: white;
 }
 
@@ -332,11 +332,10 @@ input#submit:active{
 }
 
 .navBar{
-  border: 2px solid white;
   padding: 5px;
-  width: 600px;
-  margin: auto;
-  background-size: repeat;
+  width: 50%;
+  position: absolute;
+  margin: -13% 0% 0% 3%;
 }
 
 
@@ -375,7 +374,7 @@ input#submit:active{
   width: 325px;
   border: 2px solid rgb(0,180,150);
   border-radius: 10pc;
-  padding: 3%;
+  padding: 2.5%;
   background: black;
   -webkit-animation-duration: 2s;
   -webkit-animation-iteration-count: infinite;
@@ -391,6 +390,7 @@ input#submit:active{
 }
 
 #cuser{
+
   color: rgb(0,180,150)
 }
 
@@ -461,8 +461,6 @@ button:active {
   margin: 25px auto;
   text-shadow: 5px 3px rgb(0,180,150);
   padding: 8px;
-  background-image: url('starring.png');
-  background-size: repeat;
 }
 
 .not-found{
@@ -626,11 +624,8 @@ button:active {
 #username-title{
   border: 2px solid white;
   text-shadow: 0px 0px 50px rgb(0,180,150);
-  border-radius: 2pc;
   width: 675px;
   margin: 35px auto;
-  background-image: url('starring.png');
-  background-size: repeat;
 }
 
 .login-title{
@@ -644,7 +639,7 @@ button:active {
 
 
 .login-form{
-  border: 2px solid white;
+
   margin: 30px auto 20px auto;
   width: 400px;
   height: auto;
@@ -708,16 +703,14 @@ button:active {
 
 
 #posterizer-title{
-  border: 2px solid white;
-  border-radius: 2pc;
+
   width: 182px;
   background: black;
   margin: 5px auto;
   text-shadow: 2px 2px rgb(0,180,150);
 }
 #edit-posterizer-title{
-  border: 2px solid white;
-  border-radius: 2pc;
+
   width: 300px;
   background: black;
   margin: 5px auto;
@@ -774,23 +767,17 @@ button:active {
 }
 
 .mlb-title-bg{
-  border: 2px solid white;
-  border-radius: 2pc;
   background-image: url('https://hips.hearstapps.com/clv.h-cdn.co/assets/16/07/768x384/landscape-1455634949-gettyimages-200347581-001.jpg');
   width: 625px;
   height: 350px;
   margin: 5% auto;
-  box-shadow: 1px 5px 50px 1px rgb(0,180,150);
 }
 
 .nba-title-bg{
-  border: 2px solid white;
-  border-radius: 2pc;
   background-image: url('https://hips.hearstapps.com/clv.h-cdn.co/assets/16/07/768x384/landscape-1455634949-gettyimages-200347581-001.jpg');
   width: 625px;
   height: 350px;
   margin: 5% auto;
-  box-shadow: 1px 5px 50px 1px rgb(0,180,150);
 }
 
 .title-img{
@@ -802,13 +789,10 @@ button:active {
 }
 
 .nfl-title-bg{
-  border: 2px solid white;
-  border-radius: 2pc;
   background-image: url('https://hips.hearstapps.com/clv.h-cdn.co/assets/16/07/768x384/landscape-1455634949-gettyimages-200347581-001.jpg');
   width: 625px;
   height: 350px;
   margin: 5% auto;
-  box-shadow: 1px 5px 50px 1px rgb(0,180,150);
 }
 
 .post-bg{
@@ -829,23 +813,22 @@ button:active {
 }
 
 .forum-title{
-  border: 2px solid white;
+
   margin: 30px auto;
   width: 525px;
   height: auto;
-  border-radius: 2pc;
+
   background: rgba(0,0,0,0.8);
   text-shadow: 0px 4px 4px rgb(0,180,150);
   font-size: 60px;
 }
 
 .forum-title2{
-  border: 2px solid white;
+
   margin: 30px auto;
   width: 275px;
   height: auto;
-  border-radius: 2pc;
-  background: black;
+
   text-shadow: 2px 2px rgb(0,180,150);
   padding: 10px;
 }
