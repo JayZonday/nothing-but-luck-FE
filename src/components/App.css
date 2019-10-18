@@ -301,11 +301,6 @@ input#submit:active{
 } */
 
 /*Main AppPage Logo Spinning Clover Sizing*/
-#clover{
-  height: 70px;
-  width: 70px;
-}
-
 .ls-info{
   color: white;
 }
@@ -464,8 +459,7 @@ button:active {
 }
 
 .not-found{
-  border: 2px solid white;
-  border-radius: 2pc;
+  border: 1px solid white;
   background:black;
   width: 600px;
   height: auto;
@@ -476,7 +470,6 @@ button:active {
 
 /* Profile Card */
 .profile-card {
-  font-family: 'Roboto', Arial, sans-serif;
   position: relative;
   float: left;
   overflow: hidden;
@@ -668,27 +661,24 @@ button:active {
 
 .add-post {
   border: 2px solid white;
-  border-radius: 2pc;
   margin: 22px auto;
   width: 400px;
   height: auto;
   color: white;
-  background: rgba(0,0,0,0.8);
+  background: rgba(0,0,0,1);
 }
 
 .add-post-container{
   border: 2px solid white;
-  border-radius: 2pc;
   margin: auto;
   width: 500px;
   height: auto;
   color: white;
   background: url(https://hips.hearstapps.com/clv.h-cdn.co/assets/16/07/768x384/landscape-1455634949-gettyimages-200347581-001.jpg);
-  box-shadow: 1px 5px 50px 1px rgb(0,180,150);
 }
 .edit-post-container{
   border: 2px solid white;
-  border-radius: 2pc;
+
   margin: 20px auto;
   width: 545px;
   height: auto;
@@ -713,14 +703,12 @@ button:active {
 #posterizer-title{
 
   width: 182px;
-  background: black;
   margin: 5px auto;
   text-shadow: 2px 2px rgb(0,180,150);
 }
 #edit-posterizer-title{
 
   width: 300px;
-  background: black;
   margin: 5px auto;
   text-shadow: 2px 2px rgb(0,180,150);
 }
@@ -745,12 +733,12 @@ button:active {
 .profile-post{
   border: 2px solid white;
   overflow-y: scroll;
-  height: 275px;
-  width: 300px;
+  height: 255px;
+  width: 100;
   margin: 20px auto;
   padding: 5%;
-  border-radius: 2pc;
-  background: rgba(0,0,0,1);
+  border-radius: 1%;
+  background: rgba(0,0,0,8);
 }
 
 #prof-title{
@@ -793,9 +781,8 @@ button:active {
   border: 2px solid white;
   margin: 40px auto;
   width: 385px;
-  border-radius: 2pc;
+  border-radius: 1%;
   background-image: url('https://hips.hearstapps.com/clv.h-cdn.co/assets/16/07/768x384/landscape-1455634949-gettyimages-200347581-001.jpg');
-  box-shadow: 1px 5px 50px 3px rgb(0,180,150);
 }
 
 .forum-title{
@@ -818,8 +805,11 @@ button:active {
 .title-img{
   width: 50%;
   height: 190px;
-  border: 2px solid rgb(0,180,150);;
-  margin: -11% 0 0 51%;
+  border-left: 1px solid rgb(0,180,150);;
+  border-top: 1px solid rgb(0,180,150);;
+  border-bottom: 1px solid rgb(0,180,150);;
+  margin: -11% 0 0 51.4%;
+  border-radius: 1%;
 }
 
 .members-motto{
