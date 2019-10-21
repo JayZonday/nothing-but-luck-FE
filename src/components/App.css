@@ -428,7 +428,7 @@ button:active {
   color: white;
   height: 440px;
   overflow-y: scroll;
-  border: 2px solid white;
+  border: 1px solid white;
   padding: 10px;
   margin: 25px;
   background: rgba(0,0,0,0.6);
@@ -623,7 +623,7 @@ button:active {
 #username-title{
   text-shadow: 2px 2px 0px rgb(0,180,150);
   font-size: 3em;
-  font-family: 'Permanent Marker', cursive;
+  font-family: 'Asap Condensed', sans-serif;
   letter-spacing: 0.08em;
   width: 100%;
   margin: 2% auto;
@@ -819,7 +819,7 @@ button:active {
 .members-username{
   color: rgb(0,180,150);
   text-shadow: 2px 2px 0px  #fff;
-  font-family: 'Permanent Marker', cursive;
+  font-family: 'Asap Condensed', sans-serif;
   font-size: 1.5em;
   letter-spacing: .08em;
   transition: .3s ease-in-out;
