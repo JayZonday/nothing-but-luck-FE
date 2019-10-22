@@ -41,7 +41,7 @@ class NflForum extends React.Component{
           <img className="title-img"src="https://cdn.dribbble.com/users/99875/screenshots/2374213/thanksgiving-2.gif"/>
         </div>
         <br />
-        <hr />
+
         <h2 className="forum-title2">The End Zone</h2>
         <div className="post-container">{filtered}</div>
         <br />

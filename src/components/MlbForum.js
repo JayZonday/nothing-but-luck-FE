@@ -44,7 +44,7 @@ class MlbForum extends React.Component{
             <img className="title-img"src="https://cdn.dribbble.com/users/31664/screenshots/2666221/second-base.gif"/>
         </div>
         <br />
-        <hr />
+        
       <h2 className="forum-title2">The Homer Zone</h2>
         <div className="post-container">{filtered}</div>
         <br />

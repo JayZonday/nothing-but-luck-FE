@@ -44,7 +44,7 @@ class NbaForum extends React.Component{
           <img className="title-img"src="https://cdn.dribbble.com/users/99875/screenshots/1785649/russell-westbrook-dribbble-blue.gif"/>
         </div>
         <br />
-        <hr />
+        
         <h2 className="forum-title2">The Hoop Zone</h2>
         <div className="post-container">{filtered}</div>
         <br />

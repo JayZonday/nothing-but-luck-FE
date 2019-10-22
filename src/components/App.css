@@ -106,11 +106,7 @@ input#submit:active{
 }
 
 #chatButton{
-  width: 400px;
-}
-
-#chatButton:hover{
-  width: 475px;
+  width: 315px;
 }
 
 .chat-logs{
@@ -254,7 +250,7 @@ input#submit:active{
   width: 20%;
   height: 35px;
   position: absolute;
-  margin: -10% 0% 0% 55%;
+  margin: -13% 0% 0% 55%;
   padding: 5px;
   color: white;
 }
@@ -327,10 +323,17 @@ input#submit:active{
 }
 
 .navBar{
-  padding: 5px;
+  padding-top: 1.5%;
+  padding-bottom: 1%;
   width: 50%;
   position: absolute;
-  margin: -13% 0% 0% 3%;
+  margin: -14% 0% 0% 0%;
+  background: rgba(0,180,150,.35);
+  border-top-right-radius: 1%;
+  border-bottom-right-radius: 1%;
+  border-bottom: 1px solid rgb(0,180,150);;
+  border-right: 1px solid rgb(0,180,150);;
+  border-top: 1px solid rgb(0,180,150);;
 }
 
 
@@ -364,11 +367,11 @@ input#submit:active{
 /*Seconday App Logo Styling*/
 #fanasty-logo{
   position: absolute;
-  margin: -4.5% 0 0 13%;
-  height: 200px;
-  width: 325px;
+  margin: -4.5% 0 0 14%;
+  height: 175px;
+  width: 300px;
   border: 1px solid rgb(0,180,150);
-  border-radius: 10pc;
+  border-radius: 5%;
   padding: 2.5%;
   background: black;
   -webkit-animation-duration: 2s;
@@ -397,29 +400,31 @@ input#submit:active{
 button{
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
-    border: 2px solid rgb(0,180,150);
+    border: 2px solid rgb(0,180,150);;
     margin-left: 5px;
     margin-right: 5px;
     margin-bottom: 10px;
-    margin-top: ;
+    margin-top: 2px;
     padding: 4px;
-    border-radius: 1pc;
+    border-radius: 5%;
     width: 150px;
     font-weight: bold;
     cursor: pointer;
+    background: rgba(255,255,255,.7);
 }
 
 button:hover{
-    background-color: rgb(0,180,150); /* Green */
-    color: white;
-    width: 200px;
+    background: rgba(255,255,255,1);; /* Green */
+    color: black;
     cursor: pointer;
+    border: 2px solid black;
 }
 
 button:active {
   background-color: rgb(0,180,150);
   box-shadow: 0 5px #666;
   transform: translateY(4px);
+  border: 1px solid white;
   cursor: pointer;
 }
 
@@ -430,7 +435,7 @@ button:active {
   overflow-y: scroll;
   border: 1px solid white;
   padding: 10px;
-  margin: 25px;
+  margin: 3%;
   background: rgba(0,0,0,0.6);
 
 }
@@ -451,19 +456,22 @@ button:active {
 .member-title{
   text-shadow: 3px 3px 0px rgb(0,180,150);
   width: 400px;
-  margin: 25px auto;
+  margin: -3% auto;
   padding: 3px;
+  padding-bottom: 4%;
   font-size: 4em;
   font-family: 'Bangers', cursive;
   letter-spacing: 0.08em;
 }
 
 .not-found{
-  border: 1px solid white;
+  border-right: 10px solid white;
+  border-left: 10px solid white;
   background:black;
   width: 600px;
   height: auto;
-  padding: 10px;
+  padding-right: 10%;
+  padding-left: 10%;
   margin: 2% auto;
 }
 
@@ -594,11 +602,11 @@ button:active {
 .post-container{
   overflow-y: scroll;
   height:600px;
-  border: 2px solid white;
+  border: 1px solid white;
   padding: 10px;
   margin: 25px;
   background: rgba(0,0,0,0.7);
-  border-radius: 1pc;
+  border-radius: 1%;
 }
 
 .profileposts-container{
@@ -787,11 +795,13 @@ button:active {
 
 .forum-title{
   width: 30%;
-  margin: 2% 0 0 13%;
+  margin: 2% 0 0 4%;
   font-family: 'Bangers', cursive;
   letter-spacing: .07em;
   text-shadow: 3px 3px 0px rgb(0,180,150);
+  border-left: 10px solid white;
   font-size: 4em;
+  padding: 2%;
   height: auto;
 }
 .forum-title-container{
@@ -803,26 +813,26 @@ button:active {
   height: auto;
 }
 .title-img{
-  width: 50%;
+  width: 55%;
   height: 190px;
   border-left: 1px solid rgb(0,180,150);;
   border-top: 1px solid rgb(0,180,150);;
   border-bottom: 1px solid rgb(0,180,150);;
-  margin: -11% 0 0 51.4%;
-  border-radius: 1%;
+  margin: -14% 0 0 46.4%;
 }
 
 .members-motto{
-  color: rgb(0,180,150);;
+  color: #fff;
   transition: .3s ease-in-out;
 }
 .members-username{
   color: rgb(0,180,150);
-  text-shadow: 2px 2px 0px  #fff;
+  text-shadow: 2px 2px 0px black;
   font-family: 'Asap Condensed', sans-serif;
   font-size: 1.5em;
   letter-spacing: .08em;
   transition: .3s ease-in-out;
+  font-weight: bold;
 }
 
 /* Modal Stuff */
