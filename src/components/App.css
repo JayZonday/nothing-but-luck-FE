@@ -408,9 +408,11 @@ button{
     padding: 4px;
     border-radius: 5%;
     width: 150px;
-    font-weight: bold;
+    font-size: .9em;
+    letter-spacing: .07em;
     cursor: pointer;
     background: rgba(255,255,255,.7);
+    font-family: 'Bangers', cursive;
 }
 
 button:hover{
@@ -795,11 +797,11 @@ button:active {
 
 .forum-title{
   width: 30%;
-  margin: 2% 0 0 4%;
+  margin: 2% 0 0 2%;
   font-family: 'Bangers', cursive;
   letter-spacing: .07em;
   text-shadow: 3px 3px 0px rgb(0,180,150);
-  border-left: 10px solid white;
+  border-left: 12px solid #fff;
   font-size: 4em;
   padding: 2%;
   height: auto;
