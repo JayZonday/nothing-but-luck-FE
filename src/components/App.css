@@ -250,7 +250,7 @@ input#submit:active{
   width: 20%;
   height: 35px;
   position: absolute;
-  margin: -13% 0% 0% 55%;
+  margin: -15% 0% 0% 55%;
   padding: 5px;
   color: white;
 }
@@ -367,9 +367,9 @@ input#submit:active{
 /*Seconday App Logo Styling*/
 #fanasty-logo{
   position: absolute;
-  margin: -4.5% 0 0 14%;
-  height: 175px;
-  width: 300px;
+  margin: -5.5% 0 0 16.5%;
+  height: 155px;
+  width: 260px;
   border: 1px solid rgb(0,180,150);
   border-radius: 5%;
   padding: 2.5%;
