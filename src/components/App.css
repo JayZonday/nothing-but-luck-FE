@@ -411,7 +411,7 @@ button{
     font-size: .9em;
     letter-spacing: .07em;
     cursor: pointer;
-    background: rgba(255,255,255,.7);
+    background: rgba(255,255,255,.8);
     font-family: 'Bangers', cursive;
 }
 
@@ -492,7 +492,7 @@ button:active {
   line-height: 1.4em;
   background-color: #141414;
   border: 2px solid white;
-  border-radius: 2pc;
+;
 }
 
 .profile-card * {
@@ -608,14 +608,12 @@ button:active {
   padding: 10px;
   margin: 25px;
   background: rgba(0,0,0,0.7);
-  border-radius: 1%;
 }
 
 .profileposts-container{
   overflow-y: scroll;
   height:600px;
   border: 2px solid white;
-  border-radius: 2pc;
   padding: 10px;
   margin: 0px 0px 15px 45%;
   width: 460px;
@@ -729,13 +727,13 @@ button:active {
 }
 
 .post{
+  fontL
   border: 2px solid white;
   height: 200px;
   overflow-y: scroll;
   width: 475px;
   margin: 20px auto;
   padding: 8%;
-  border-radius: 2pc;
   color: rgb(0,180,150);
   background: rgba(0,55,30,0.9);
 }
@@ -753,7 +751,7 @@ button:active {
 
 #prof-title{
   color: white;
-  text-shadow: 2px 1px rgb(0,180,150);
+  text-shadow: 2px 1px rgb(0,0,0);
 }
 
 #prof-league{
@@ -783,9 +781,7 @@ button:active {
   border: 2px solid white;
   margin: 40px auto;
   width: 640px;
-  border-radius: 2pc;
   background-image: url('https://hips.hearstapps.com/clv.h-cdn.co/assets/16/07/768x384/landscape-1455634949-gettyimages-200347581-001.jpg');
-  box-shadow: 1px 5px 50px 3px rgb(0,180,150)
 }
 .profile-postbg{
   border: 2px solid white;
