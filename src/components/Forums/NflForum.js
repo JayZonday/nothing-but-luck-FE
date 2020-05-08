@@ -1,10 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { fetchPosts } from '../actions/postActions';
+import { fetchPosts } from '../../actions/postActions';
 
 //Component//
-import Postform from './Postform';
+import Postform from '../Postform';
 
 class NflForum extends React.Component{
 

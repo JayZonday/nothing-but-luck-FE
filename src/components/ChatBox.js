@@ -82,17 +82,17 @@ handleSendEvent = (event) => {
     console.log(this.state.chatLogs)
     return (
       <div>
-      <div className='stage'>
         <h1 className='forum-title'>NBL Potluck</h1>
-        <div className='chatlogs'>
-        <ul className='chat-logs'>
-          {this.renderChatLog()}
-        </ul>
-        <br />
-        <hr />
-        <hr />
-        <br />
-        </div>
+        <div className='stage'>
+          <div className='chatlogs'>
+          <ul className='chat-logs'>
+            {this.renderChatLog()}
+          </ul>
+          <br />
+          <hr />
+          <hr />
+          <br />
+          </div>
           <div className="chat-inputs">
           <input
           value={ this.state.username }

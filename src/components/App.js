@@ -10,9 +10,9 @@ import ChatBox from './ChatBox'
 import LoginForm from './LoginForm';
 import RegisterForm from './RegisterForm';
 import Nav from './Nav';
-import NflForum from './NflForum'
-import NbaForum from './NbaForum'
-import MlbForum from './MlbForum'
+import NflForum from './Forums/NflForum'
+import NbaForum from './Forums/NbaForum'
+import MlbForum from './Forums/MlbForum'
 import Users from './Users'
 import UserProfile from './UserProfile'
 import EditUserForm from './EditUserForm'

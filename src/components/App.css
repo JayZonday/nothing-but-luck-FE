@@ -412,7 +412,7 @@ button{
     letter-spacing: .07em;
     cursor: pointer;
     background: rgba(255,255,255,.8);
-    font-family: 'Bangers', cursive;
+    font-family: 'Asap Condensed', sans-serif;
 }
 
 button:hover{
@@ -435,8 +435,8 @@ button:active {
   color: white;
   height: 440px;
   overflow-y: scroll;
-  border: 1px solid white;
-  padding: 10px;
+
+  width: 95%;
   margin: 3%;
   background: rgba(0,0,0,0.6);
 
@@ -444,14 +444,12 @@ button:active {
 
 
 .members{
-
-  width: 200px;
+  width: 300px;
   height: 300px;
   padding: 5px;
-  margin: 5px;
+  margin: 1%;
   display: inline-block;
   background: none;
-  overflow-y: scroll;
   transition: .35s ease-in-out;
 }
 
@@ -826,7 +824,7 @@ button:active {
 .members-username{
   color: rgb(0,180,150);
   text-shadow: 2px 2px 0px black;
-  font-family: 'Asap Condensed', sans-serif;
+  font-family: 'Bangers', cursive;
   font-size: 1.5em;
   letter-spacing: .08em;
   transition: .3s ease-in-out;
@@ -835,23 +833,25 @@ button:active {
 
 /* Modal Stuff */
 .modal {
-  display:none;
+  display: none;
   position: fixed;
+  top:  20%;
+  left: 30%;
   z-index: 1;
-  left: 34%;
-  top: 319px;
-  width: 500px;
+  width: 50%;
   height: 500px;
-  margin: 10px auto;
   overflow-y: scroll;
-  background-color: rgba(0,0,0,0.6);
+  background-color: rgba(0,0,0,1);
   color: lightgreen;
 }
+#text{
+  color: black;
+}
+
 
 /* Modal Content/Box */
 .modal-content {
     background-color: rgba(0,0,0,0.9);
-    margin: 15% auto; /* 15% from the top and centered */
     padding: 20px;
     border: 1px solid #888;
     width: 80%; /* Could be more or less, depending on screen size */
